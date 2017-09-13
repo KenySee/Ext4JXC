@@ -1,0 +1,113 @@
+.x-column-header {
+	font: normal 12px tahoma,arial,verdana,sans-serif;
+}
+.x-grid-row .x-grid-cell {
+	font: normal 11px tahoma,arial,verdana,sans-serif;
+}
+.x-form-field {
+ font: 12px tahoma,verdana,arial,sans-serif;
+}
+.x-small-editor .x-form-field {
+ font: 12px tahoma,verdana,arial,sans-serif;
+}
+.x-grid-cell.row-height{
+	height:60px;width:300px;
+}
+.x-panel-header-text-container-default {
+	font-size: 12px;
+	font-family: 微软雅黑,tahoma,arial,verdana,sans-serif;
+}
+
+.x-tab-default .x-tab-inner {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 微软雅黑,tahoma,arial,verdana,sans-serif;
+	line-height: 13px;
+}
+.x-window-header-text-container-default {
+	color: #04468c;
+	font-weight: bold;
+	line-height: 15px;
+	font-family: 微软雅黑,tahoma,arial,verdana,sans-serif;
+	font-size: 12px;
+	text-transform: none;
+}
+.x-btn-default-toolbar-small-icon-text-top .x-btn-inner {
+	font: normal 12px tahoma,verdana,arial,sans-serif;
+}
+/*extjs在火狐下字体过小补丁样式*/
+.ext-el-mask-msg div,.loading-indicator,.x-tab-strip span.x-tab-strip-text,.x-form-invalid-msg,.x-small-editor .x-form-field,.x-fieldset legend,.x-btn,.x-btn button,.x-toolbar td,.x-toolbar span,.x-toolbar input,.x-toolbar div,.x-toolbar select,.x-toolbar label,.x-grid3-hd-row td,.x-grid3-row td,.x-grid3-summary-row td,.x-grid3-topbar,.x-grid3-bottombar,.x-grid-group-hd div,.x-grid-empty,.x-dd-drag-ghost,.x-tree-node,.x-date-middle,.x-date-left,.x-date-right,.x-date-inner a,.x-date-mp td,.x-date-mp-btns button,.x-tip .x-tip-mc,.x-tip .x-tip-header-text,.x-tip .x-tip-body,.x-menu-list-item,#x-debug-browser .x-tree .x-tree-node a span,.x-combo-list-hd,.x-combo-list-small .x-combo-list-item,.x-panel-header,.x-panel-tl .x-panel-header,.x-panel-mc,.x-window-tl .x-window-header,.x-window-mc,.x-progress-text,.x-date-inner th,.x-date-mmenu .x-menu-item{font-size:12px}
+
+.x-window-footer {
+ position: relative;
+ top: 0;
+ right: 0;
+}
+.x-tab-strip SPAN.x-tab-strip-text {
+ font-size: 12px;
+}
+.x-panel-header {
+ font-size: 12px;
+}
+.x-tree-node {
+ font-size: 12px;
+}
+.x-grid3-hd-row TD {
+ font-size: 12px;
+}
+.x-grid3-row TD {
+ font-size: 12px;
+ LINE-HEIGHT: 16px;
+}
+.x-tip .x-tip-bd {
+ font-size: 12px;
+}
+.x-tip h3{
+ font-size: 12px;
+}
+.x-tip .x-tip-bd-inner{
+ font-size:12px;
+}
+.x-panel-tl .x-panel-header {
+ FONT: normal 12px tahoma,arial,verdana,sans-serif;
+}
+.x-form-field {
+ FONT: 12px tahoma,arial,helvetica,sans-serif 
+}
+.x-small-editor .x-form-field {
+ FONT: 12px tahoma,arial,helvetica,sans-serif 
+}
+.x-combo-list-item {
+ FONT: 12px tahoma,arial,helvetica,sans-serif; 
+} 
+.x-menu-list-item {
+ FONT: 12px tahoma,arial,sans-serif;
+}
+.x-window-tl .x-window-header {
+ FONT: bold 12px tahoma,arial,verdana,sans-serif; 
+}
+.x-layout-split-west .x-layout-mini { 
+ BACKGROUND-IMAGE: url(../images/mini-left.jpg); 
+}
+.ext-ie .x-form-text {
+ margin-top:1px;
+}
+.x-form-item { 
+ FONT: 12px tahoma,arial,helvetica,sans-serif
+}
+.x-grid-group-hd DIV { 
+ FONT: bold 12px tahoma,arial,helvetica,sans-serif;
+}
+
+.x-btn-text-icon .x-btn-center .x-btn-text {
+background-position:0pt 2px;
+background-repeat:no-repeat;
+padding:3px 0pt 2px 18px;
+}
+.ext-gecko .x-btn button {
+padding-left:0pt;
+padding-right:0pt;
+}
+.x-btn button{
+ font-size:12px;
+}

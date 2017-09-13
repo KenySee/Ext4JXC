@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans 
+ 	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- ActiveMQ 连接工厂 -->
+	 <bean id="MQConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+	  <property name="brokerURL" value="${jms.broker_url}" />
+	  <!-- Durable订阅者必须设置ClientId -->
+	  <property name="clientID" value="${jms.clicent_id}" />
+	 </bean>
+	 
+	<!-- Spring Caching 连接工厂 -->
+	 <bean id="CachingconnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+	  <property name="targetConnectionFactory" ref="MQConnectionFactory" />
+	  <property name="sessionCacheSize" value="10" />
+	 </bean>
+	 
+	 <bean id="defaultMessageMapping" class="com.keertech.demo.service.jms.DefaultMessageMapping"/>
+	 
+	 <bean id="defaultMessageManager" class="com.keer.core.service.jms.impl.DefaultMessageManager">
+	 	<property name="messageMapping" ref="defaultMessageMapping"/>
+	 	<property name="messageConsumer" value="defaultMessageConsumer"/>
+	 	<property name="messageProducer" value="messageProducerContainer"/>
+	 </bean>
+	 
+	 <!-- 自定义消息处理类,负责将接收消息缓冲表的消息提取并执行,执行成功后将消息存入接收消息历史表-->
+	 <bean id="defaultMessageConsumer" class="com.keer.core.service.jms.impl.DefaultMessageConsumer">
+	 	<property name="enableConsumer" value="false"/>
+	 	<property name="recoveryInterval" value="10000"/>
+	 	<property name="messageHandler" ref="defaultMessageManager"/>
+	 </bean>
+	 	 	
+	 <!-- Topic定义 -->
+	 <bean id="HxNotifyTopic" class="org.apache.activemq.command.ActiveMQTopic">
+	  <constructor-arg index="0" value="Hx.RMReport,Hx.RMRoleReport,Hx.Role,Hx.User,Hx.Enterprise" /> 
+	 </bean>	 	
+	 <!-- 自定义发送消息监听容器,负责将系统生产的发送消息缓冲表的消息提取并发送到MQ消息队列--> 
+	 <bean id="messageProducerContainer" class="com.keer.core.service.jms.impl.ProducerMessageListenerContainer">
+	 	<property name="connectionFactory" ref="CachingconnectionFactory" />
+	 	<property name="destination" ref="HxNotifyTopic" />
+	 	<property name="pubSubDomain" value="true"/>
+	 	<property name="enableListener" value="false"/>
+	 	<property name="messageProducer" ref="defaultMessageManager" />
+	 </bean>
+</beans>

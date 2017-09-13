@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+.bg{ width:100%; background:url(../images/bj_02.gif) repeat-x; height:88px; overflow:hidden;}
+.logo{ float:left; width:333px;}
+.nav{ float:left; padding:0 15px;}
+.nav ul li{ float:left; }
+.li1{ padding-right:5px;}
+.li1 a{ background:url(../images/222_02.gif) no-repeat; display:block; width:62px; height:88px;}
+.li1 a:hover{ background:url(../images/111_02.gif) no-repeat;}
+.li2{ padding-right:5px;}
+.li2 a{ background:url(../images/22222_02.gif)no-repeat;display:block; width:62px; height:88px;}
+.li2 a:hover{background:url(../images/2222_02.gif) no-repeat;}
+.li3{ padding-right:5px;}
+.li3 a{ background:url(../images/33_02.gif) no-repeat;display:block; width:62px; height:88px;}
+.li3 a:hover{ background:url(../images/3_02.gif) no-repeat;}
+.li4{ padding-right:5px;}
+.li4 a{ background:url(../images/44_02.gif) no-repeat;display:block; width:62px; height:88px;}
+.li4 a:hover{ background:url(../images/4_02.gif) no-repeat;}
+.li5{ padding-right:5px;}
+.li5 a{ background:url(../images/55_02.gif) no-repeat;display:block; width:62px; height:88px;}
+.li5 a:hover{ background:url(../images/5_02.gif) no-repeat;}
+.li6{ padding-right:5px;}
+.li6 a{ background:url(../images/66_02.gif) no-repeat;display:block; width:62px; height:88px;}
+.li6 a:hover{ background:url(../images/6_02.gif) no-repeat;}
+.li7{ padding-right:0;}
+.li7 a{ background:url(../images/77_02.gif) no-repeat;display:block;width:62px; height:88px;}
+.li7 a:hover{ background:url(../images/7_02.gif) no-repeat;}
+.top_help{ float:right; padding-right:5px; height:88px;}
+.h_top{ color:#FFF; font-family:"微软雅黑"; font-size:14px; padding:20px 0 5px 0; width:157px;text-align:center;}
+.h_top a{color:#FFF;}
+.h_top a:hover{ text-decoration:underline;}
+.xx{ background:url(../images/xx_05.gif) no-repeat; width:157px; height:30px;color:#FFF; font-size:12px; line-height:27px;}
+.xx b{ font-weight:normal; padding-left:10px;}
+.xx em{ font-weight:normal; padding-left:25px; width:85px; display:block; float:left;}
+.xx span{ padding:0 0 0 10px;}
+
+
+
+

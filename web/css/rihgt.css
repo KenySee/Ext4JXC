@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+.right_cont{ width:100%; font-family:"微软雅黑"; font-size:14px; overflow:hidden;}
+.wz_top{ background:url(../images/tt_03.gif) repeat-x; height:41px; line-height:41px; padding-left:10px;}
+.wz_top span{ font-weight:bold;}
+.wz_but{ width:97%; padding:15px; overflow:hidden;}
+.wz_but_top{ margin-bottom:15px; overflow:hidden;}
+.wz_left{ width:65%; margin-right:15px; float:left; border:1px solid #d3dbde;}
+.wz_right{ width:32%; float:left; border:1px solid #d3dbde;}
+.dh{ background:url(../images/ttt_07.gif) repeat-x; height:38px; line-height:38px;}
+.dh span{ float:left; display:block; padding-left:10px;font-weight:bold;}
+.dh a{ float:right; display:block;padding-right:10px;}
+.dh a:hover{ text-decoration:underline; color:#999;}
+.wz_height{ overflow:hidden; height:160px; padding:15px 10px;}
+.wz_but_but{ margin-bottom:5px; overflow:hidden;}
+.but_left{width:31%; float:left; border:1px solid #d3dbde; margin-right:18px;}
+.but_left1{width:32%; float:left; border:1px solid #d3dbde; margin-right:18px;}
+.wz_height1{ overflow:hidden; height:200px; padding:15px 10px; text-align:center; }
+.wz_height1 ul{text-align:center; overflow:hidden;}
+.kjan a{ color:#333;}
+.kjan a:hover{ text-decoration:none;}
+.kjan li{text-align:center; float:left; padding:10px 15px 15px 15px;}
+.kjan li p{ line-height:15px; font-size:14px;}
+.kjan li img{ text-align:center;}

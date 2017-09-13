@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS 初始化*/
+body { font-family: "宋体"; font-size:12px; color:#000; margin: 0px; padding: 0px; behavior:url(iehoverfix.htc);}
+div,ul,li,h1,h2,h3,h4,h5,h6,img,p,dl,dt,dd,ol,th,td{margin: 0px;padding: 0px;}
+li {list-style-type: none;}
+form,input,button,option,textarea,select{ margin: 0px;padding: 0px;}
+input,button,textarea,select{font:100% Tahoma,Helvetica,Arial,sans-serif;}
+a {text-decoration: none; color:#333;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover{text-decoration: none;color:#ff4800;}
+a:active {text-decoration: none;}
+table {font-size:inherit;font:100%;}
+th { font-weight:normal;}
+img { border: 0;}
+h3 { font-size: 18px; color: #ebdcdc;}
+h4 { font-size: 12px;}
+.clear { clear: both; height: 0px; overflow: hidden;}
+.section { width: 100%; clear:both; overflow: hidden;}

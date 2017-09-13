@@ -1,0 +1,5256 @@
+.x-button-back { background-image: url(../images/grid/back.png) !important; background-repeat: no-repeat; }
+.x-button-delete {background-image: url(../images/grid/delete.gif) !important; background-repeat: no-repeat; }
+.x-button-view {background-image: url(../images/grid/view.png) !important; background-repeat: no-repeat; }
+.x-button-add { background-image: url(../images/grid/add.gif) !important; background-repeat: no-repeat; }
+.x-button-ok { background-image: url(../images/grid/ok.png) !important; background-repeat: no-repeat; }
+.x-button-edit { background-image: url(../images/grid/edit.png) !important; background-repeat: no-repeat; }
+.x-button-save { background-image: url(../images/grid/save.gif) !important; background-repeat: no-repeat; }
+.x-button-refresh { background-image: url(../images/grid/refresh.gif) !important; background-repeat: no-repeat; }
+.x-button-close { background-image: url(../images/grid/close.png) !important; background-repeat: no-repeat; }
+.x-button-clear { background-image: url(../images/grid/clean.gif) !important; background-repeat: no-repeat; }
+.x-button-import { background-image: url(../images/grid/import.gif) !important; background-repeat: no-repeat; }
+.x-button-export { background-image: url(../images/grid/printer.png) !important; background-repeat: no-repeat; }
+.x-button-search { background-image: url(../images/grid/query.png) !important; background-repeat: no-repeat; }
+.x-button-submit { background-image: url(../images/grid/submit.png) !important; background-repeat: no-repeat; }
+.x-button-cancel { background-image: url(../images/grid/close.png) !important; background-repeat: no-repeat; }
+.x-button-clear { background-image: url(../images/grid/clear.png) !important; background-repeat: no-repeat; }
+.x-button-login { background-image: url(../images/grid/key.png) !important; background-repeat: no-repeat; }
+.x-button-grid { background-image: url(../images/grid/grid.png) !important; background-repeat: no-repeat; }
+.x-button-execute { background-image: url(../images/grid/executed.png) !important; background-repeat: no-repeat; }
+.x-button-bricks { background-image: url(../images/grid/bricks.png) !important; background-repeat: no-repeat; }
+.x-button-upload { background-image: url(../images/grid/up.png) !important; background-repeat: no-repeat; }
+.x-button-download { background-image: url(../images/grid/download.gif) !important; background-repeat: no-repeat; }
+.x-button-tabs { background-image: url(../images/grid/tabs.gif) !important; background-repeat: no-repeat; }
+.x-button-apply { background-image: url(../images/grid/apply.png) !important; background-repeat: no-repeat; }
+.x-button-print { background-image: url(../images/grid/printer.png) !important; background-repeat: no-repeat; }
+.x-inbox { background-image: url(../images/grid/mail_inbox.png) !important; background-repeat: no-repeat; }
+.x-outbox { background-image: url(../images/grid/mail_outbox.png) !important; background-repeat: no-repeat; }
+.x-draft { background-image: url(../images/grid/mail_draft.png) !important; background-repeat: no-repeat; }
+.x-sent { background-image: url(../images/grid/mail_sent.png) !important; background-repeat: no-repeat; }
+.x-trash { background-image: url(../images/grid/mail_trash.png) !important; background-repeat: no-repeat; }
+.x-addEmail { background-image: url(../images/grid/addEmail.gif) !important; background-repeat: no-repeat; }
+.x-deleteEmail { background-image: url(../images/grid/email_delete.png) !important; background-repeat: no-repeat; }
+.x-openEmail { background-image: url(../images/grid/email_open.png) !important; background-repeat: no-repeat; }
+.x-sentEmail { background-image: url(../images/grid/email_go.png) !important; background-repeat: no-repeat; }
+.x-editEmail { background-image: url(../images/grid/email_edit.png) !important; background-repeat: no-repeat; }
+.x-email { background-image: url(../images/grid/email.png) !important; background-repeat: no-repeat; }
+.x-attachEmail { background-image: url(../images/grid/email_attach.png) !important; background-repeat: no-repeat; }
+.x-user { background-image: url(../images/grid/user.png) !important; background-repeat: no-repeat; }
+.x-cog { background-image: url(../images/grid/cog.png) !important; background-repeat: no-repeat; }
+.x-start { background-image: url(../images/grid/start_workFlow.png) !important; background-repeat: no-repeat; }
+.x-upload_workFlow { background-image: url(../images/grid/upload_workFlow.png) !important; background-repeat: no-repeat; }
+.x-image { background-image: url(../images/grid/image.png) !important; background-repeat: no-repeat; }
+.x-flag_red { background-image: url(../images/grid/flag_red.png) !important; background-repeat: no-repeat; }
+.x-stop { background-image: url(../images/grid/stop.png) !important; background-repeat: no-repeat; }
+.x-button-search { background-image: url(../images/grid/query.png) !important; background-repeat: no-repeat; }
+.x-button-clear { background-image: url(../images/grid/clear.png) !important; background-repeat: no-repeat; }
+.x-button-deploy {background-image: url(../images/grid/deploy1.png) !important; background-repeat: no-repeat; }
+.x-grid-editable { color:#FF0000}
+.required .x-form-item-label {color:red;}
+.innv_logo {
+	background-image: url(icons/innv_logo.png) !important;
+}
+.index_news {
+	background-image: url(icons/index_news.png) !important;
+}
+.index_photo {
+	background-image: url(icons/index_photo.png) !important;
+}
+.index_video {
+	background-image: url(icons/index_video.png) !important;
+}
+
+.menu_item {
+	background-image: url(icons/menu_item.png) !important;
+}
+.menu_group {
+	background-image: url(icons/menu_group.png) !important;
+}
+.storage_dbase {
+	background-image: url(icons/storage_dbase.png) !important;
+}
+.container_widget {
+	background-image: url(icons/container_widget.png) !important;
+}
+.enums_list {
+	background-image: url(icons/enums_list.png) !important;
+}
+.copy {
+	background-image: url(icons/page_copy.png) !important;
+}
+.apply { background-image: url(../images/grid/apply.png) !important; background-repeat: no-repeat; }
+.agree { background-image: url(../images/grid/ok.png) !important; background-repeat: no-repeat; }
+.goback {
+	background-image: url(icons/page_back.png) !important;
+}
+.upload { background-image: url(../images/grid/up.png) !important; background-repeat: no-repeat; }
+.download { background-image: url(../images/grid/download.gif) !important; background-repeat: no-repeat; }
+.lookup {background-image: url(../images/grid/view.png) !important; background-repeat: no-repeat; }
+
+
+.lookup_folder {
+	background-image: url(icons/lookup_folder.png) !important;
+}
+.arrow_medium_up {
+	background-image: url(icons/arrow_medium_up.png) !important;
+}
+.query {
+	background-image: url(icons/query.png) !important;
+}
+.cancel {
+	background-image: url(icons/cancel.png) !important;
+}
+.register {
+	background-image: url(icons/register.png) !important;
+}
+.accept {
+	background-image: url(icons/accept.png) !important;
+}
+.add {
+	background-image: url(icons/add.png) !important;
+}
+.anchor {
+	background-image: url(icons/anchor.png) !important;
+}
+.application {
+	background-image: url(icons/application.png) !important;
+}
+.application_add {
+	background-image: url(icons/application_add.png) !important;
+}
+.application_cascade {
+	background-image: url(icons/application_cascade.png) !important;
+}
+.application_delete {
+	background-image: url(icons/application_delete.png) !important;
+}
+.application_double {
+	background-image: url(icons/application_double.png) !important;
+}
+.application_edit {
+	background-image: url(icons/application_edit.png) !important;
+}
+.application_error {
+	background-image: url(icons/application_error.png) !important;
+}
+.application_form {
+	background-image: url(icons/application_form.png) !important;
+}
+.application_form_add {
+	background-image: url(icons/application_form_add.png) !important;
+}
+.application_form_delete {
+	background-image: url(icons/application_form_delete.png) !important;
+}
+.application_form_edit {
+	background-image: url(icons/application_form_edit.png) !important;
+}
+.application_form_magnify {
+	background-image: url(icons/application_form_magnify.png) !important;
+}
+.application_get {
+	background-image: url(icons/application_get.png) !important;
+}
+.application_go {
+	background-image: url(icons/application_go.png) !important;
+}
+.application_home {
+	background-image: url(icons/application_home.png) !important;
+}
+.application_key {
+	background-image: url(icons/application_key.png) !important;
+}
+.application_lightning {
+	background-image: url(icons/application_lightning.png) !important;
+}
+.application_link {
+	background-image: url(icons/application_link.png) !important;
+}
+.application_osx {
+	background-image: url(icons/application_osx.png) !important;
+}
+.application_osx_add {
+	background-image: url(icons/application_osx_add.png) !important;
+}
+.application_osx_cascade {
+	background-image: url(icons/application_osx_cascade.png) !important;
+}
+.application_osx_delete {
+	background-image: url(icons/application_osx_delete.png) !important;
+}
+.application_osx_double {
+	background-image: url(icons/application_osx_double.png) !important;
+}
+.application_osx_error {
+	background-image: url(icons/application_osx_error.png) !important;
+}
+.application_osx_get {
+	background-image: url(icons/application_osx_get.png) !important;
+}
+.application_osx_go {
+	background-image: url(icons/application_osx_go.png) !important;
+}
+.application_osx_home {
+	background-image: url(icons/application_osx_home.png) !important;
+}
+.application_osx_key {
+	background-image: url(icons/application_osx_key.png) !important;
+}
+.application_osx_lightning {
+	background-image: url(icons/application_osx_lightning.png) !important;
+}
+.application_osx_link {
+	background-image: url(icons/application_osx_link.png) !important;
+}
+.application_osx_split {
+	background-image: url(icons/application_osx_split.png) !important;
+}
+.application_osx_start {
+	background-image: url(icons/application_osx_start.png) !important;
+}
+.application_osx_stop {
+	background-image: url(icons/application_osx_stop.png) !important;
+}
+.application_osx_terminal {
+	background-image: url(icons/application_osx_terminal.png) !important;
+}
+.application_put {
+	background-image: url(icons/application_put.png) !important;
+}
+.application_side_boxes {
+	background-image: url(icons/application_side_boxes.png) !important;
+}
+.application_side_contract {
+	background-image: url(icons/application_side_contract.png) !important;
+}
+.application_side_expand {
+	background-image: url(icons/application_side_expand.png) !important;
+}
+.application_side_list {
+	background-image: url(icons/application_side_list.png) !important;
+}
+.application_side_tree {
+	background-image: url(icons/application_side_tree.png) !important;
+}
+.application_split {
+	background-image: url(icons/application_split.png) !important;
+}
+.application_start {
+	background-image: url(icons/application_start.png) !important;
+}
+.application_stop {
+	background-image: url(icons/application_stop.png) !important;
+}
+.application_tile_horizontal {
+	background-image: url(icons/application_tile_horizontal.png) !important;
+}
+.application_tile_vertical {
+	background-image: url(icons/application_tile_vertical.png) !important;
+}
+.application_view_columns {
+	background-image: url(icons/application_view_columns.png) !important;
+}
+.application_view_detail {
+	background-image: url(icons/application_view_detail.png) !important;
+}
+.application_view_gallery {
+	background-image: url(icons/application_view_gallery.png) !important;
+}
+.application_view_icons {
+	background-image: url(icons/application_view_icons.png) !important;
+}
+.application_view_list {
+	background-image: url(icons/application_view_list.png) !important;
+}
+.application_view_tile {
+	background-image: url(icons/application_view_tile.png) !important;
+}
+.application_xp {
+	background-image: url(icons/application_xp.png) !important;
+}
+.application_xp_terminal {
+	background-image: url(icons/application_xp_terminal.png) !important;
+}
+.arrow_branch {
+	background-image: url(icons/arrow_branch.png) !important;
+}
+.arrow_divide {
+	background-image: url(icons/arrow_divide.png) !important;
+}
+.arrow_down {
+	background-image: url(icons/arrow_down.png) !important;
+}
+.arrow_ew {
+	background-image: url(icons/arrow_ew.png) !important;
+}
+.arrow_in {
+	background-image: url(icons/arrow_in.png) !important;
+}
+.arrow_inout {
+	background-image: url(icons/arrow_inout.png) !important;
+}
+.arrow_in_longer {
+	background-image: url(icons/arrow_in_longer.png) !important;
+}
+.arrow_join {
+	background-image: url(icons/arrow_join.png) !important;
+}
+.arrow_left {
+	background-image: url(icons/arrow_left.png) !important;
+}
+.arrow_merge {
+	background-image: url(icons/arrow_merge.png) !important;
+}
+.arrow_ne {
+	background-image: url(icons/arrow_ne.png) !important;
+}
+.arrow_ns {
+	background-image: url(icons/arrow_ns.png) !important;
+}
+.arrow_nsew {
+	background-image: url(icons/arrow_nsew.png) !important;
+}
+.arrow_nw {
+	background-image: url(icons/arrow_nw.png) !important;
+}
+.arrow_nw_ne_sw_se {
+	background-image: url(icons/arrow_nw_ne_sw_se.png) !important;
+}
+.arrow_nw_se {
+	background-image: url(icons/arrow_nw_se.png) !important;
+}
+.arrow_out {
+	background-image: url(icons/arrow_out.png) !important;
+}
+.arrow_out_longer {
+	background-image: url(icons/arrow_out_longer.png) !important;
+}
+.arrow_redo {
+	background-image: url(icons/arrow_redo.png) !important;
+}
+.arrow_refresh {
+	background-image: url(icons/arrow_refresh.png) !important;
+}
+.arrow_refresh_small {
+	background-image: url(icons/arrow_refresh_small.png) !important;
+}
+.arrow_right {
+	background-image: url(icons/arrow_right.png) !important;
+}
+.arrow_rotate_anticlockwise {
+	background-image: url(icons/arrow_rotate_anticlockwise.png) !important;
+}
+.arrow_rotate_clockwise {
+	background-image: url(icons/arrow_rotate_clockwise.png) !important;
+}
+.arrow_se {
+	background-image: url(icons/arrow_se.png) !important;
+}
+.arrow_sw {
+	background-image: url(icons/arrow_sw.png) !important;
+}
+.arrow_switch {
+	background-image: url(icons/arrow_switch.png) !important;
+}
+.arrow_switch_bluegreen {
+	background-image: url(icons/arrow_switch_bluegreen.png) !important;
+}
+.arrow_sw_ne {
+	background-image: url(icons/arrow_sw_ne.png) !important;
+}
+.arrow_turn_left {
+	background-image: url(icons/arrow_turn_left.png) !important;
+}
+.arrow_turn_right {
+	background-image: url(icons/arrow_turn_right.png) !important;
+}
+.arrow_undo {
+	background-image: url(icons/arrow_undo.png) !important;
+}
+.arrow_up {
+	background-image: url(icons/arrow_up.png) !important;
+}
+.asterisk_orange {
+	background-image: url(icons/asterisk_orange.png) !important;
+}
+.asterisk_red {
+	background-image: url(icons/asterisk_red.png) !important;
+}
+.asterisk_yellow {
+	background-image: url(icons/asterisk_yellow.png) !important;
+}
+.attach {
+	background-image: url(icons/attach.png) !important;
+}
+.award_star_add {
+	background-image: url(icons/award_star_add.png) !important;
+}
+.award_star_bronze_1 {
+	background-image: url(icons/award_star_bronze_1.png) !important;
+}
+.award_star_bronze_2 {
+	background-image: url(icons/award_star_bronze_2.png) !important;
+}
+.award_star_bronze_3 {
+	background-image: url(icons/award_star_bronze_3.png) !important;
+}
+.award_star_delete {
+	background-image: url(icons/award_star_delete.png) !important;
+}
+.award_star_gold_1 {
+	background-image: url(icons/award_star_gold_1.png) !important;
+}
+.award_star_gold_2 {
+	background-image: url(icons/award_star_gold_2.png) !important;
+}
+.award_star_gold_3 {
+	background-image: url(icons/award_star_gold_3.png) !important;
+}
+.award_star_silver_1 {
+	background-image: url(icons/award_star_silver_1.png) !important;
+}
+.award_star_silver_2 {
+	background-image: url(icons/award_star_silver_2.png) !important;
+}
+.award_star_silver_3 {
+	background-image: url(icons/award_star_silver_3.png) !important;
+}
+.basket {
+	background-image: url(icons/basket.png) !important;
+}
+.basket_add {
+	background-image: url(icons/basket_add.png) !important;
+}
+.basket_delete {
+	background-image: url(icons/basket_delete.png) !important;
+}
+.basket_edit {
+	background-image: url(icons/basket_edit.png) !important;
+}
+.basket_error {
+	background-image: url(icons/basket_error.png) !important;
+}
+.basket_go {
+	background-image: url(icons/basket_go.png) !important;
+}
+.basket_put {
+	background-image: url(icons/basket_put.png) !important;
+}
+.basket_remove {
+	background-image: url(icons/basket_remove.png) !important;
+}
+.bell {
+	background-image: url(icons/bell.png) !important;
+}
+.bell_add {
+	background-image: url(icons/bell_add.png) !important;
+}
+.bell_delete {
+	background-image: url(icons/bell_delete.png) !important;
+}
+.bell_error {
+	background-image: url(icons/bell_error.png) !important;
+}
+.bell_go {
+	background-image: url(icons/bell_go.png) !important;
+}
+.bell_link {
+	background-image: url(icons/bell_link.png) !important;
+}
+.bell_silver {
+	background-image: url(icons/bell_silver.png) !important;
+}
+.bell_silver_start {
+	background-image: url(icons/bell_silver_start.png) !important;
+}
+.bell_silver_stop {
+	background-image: url(icons/bell_silver_stop.png) !important;
+}
+.bell_start {
+	background-image: url(icons/bell_start.png) !important;
+}
+.bell_stop {
+	background-image: url(icons/bell_stop.png) !important;
+}
+.bin {
+	background-image: url(icons/bin.png) !important;
+}
+.bin_closed {
+	background-image: url(icons/bin_closed.png) !important;
+}
+.bin_empty {
+	background-image: url(icons/bin_empty.png) !important;
+}
+.blank {
+	background-image: url(icons/blank.png) !important;
+}
+.bomb {
+	background-image: url(icons/bomb.png) !important;
+}
+.book {
+	background-image: url(icons/book.png) !important;
+}
+.bookmark {
+	background-image: url(icons/bookmark.png) !important;
+}
+.bookmark_add {
+	background-image: url(icons/bookmark_add.png) !important;
+}
+.bookmark_delete {
+	background-image: url(icons/bookmark_delete.png) !important;
+}
+.bookmark_edit {
+	background-image: url(icons/bookmark_edit.png) !important;
+}
+.bookmark_error {
+	background-image: url(icons/bookmark_error.png) !important;
+}
+.bookmark_go {
+	background-image: url(icons/bookmark_go.png) !important;
+}
+.book_add {
+	background-image: url(icons/book_add.png) !important;
+}
+.book_addresses {
+	background-image: url(icons/book_addresses.png) !important;
+}
+.book_addresses_add {
+	background-image: url(icons/book_addresses_add.png) !important;
+}
+.book_addresses_delete {
+	background-image: url(icons/book_addresses_delete.png) !important;
+}
+.book_addresses_edit {
+	background-image: url(icons/book_addresses_edit.png) !important;
+}
+.book_addresses_error {
+	background-image: url(icons/book_addresses_error.png) !important;
+}
+.book_addresses_key {
+	background-image: url(icons/book_addresses_key.png) !important;
+}
+.book_delete {
+	background-image: url(icons/book_delete.png) !important;
+}
+.book_edit {
+	background-image: url(icons/book_edit.png) !important;
+}
+.book_error {
+	background-image: url(icons/book_error.png) !important;
+}
+.book_go {
+	background-image: url(icons/book_go.png) !important;
+}
+.book_key {
+	background-image: url(icons/book_key.png) !important;
+}
+.book_link {
+	background-image: url(icons/book_link.png) !important;
+}
+.book_magnify {
+	background-image: url(icons/book_magnify.png) !important;
+}
+.book_next {
+	background-image: url(icons/book_next.png) !important;
+}
+.book_open {
+	background-image: url(icons/book_open.png) !important;
+}
+.book_open_mark {
+	background-image: url(icons/book_open_mark.png) !important;
+}
+.book_previous {
+	background-image: url(icons/book_previous.png) !important;
+}
+.book_red {
+	background-image: url(icons/book_red.png) !important;
+}
+.book_tabs {
+	background-image: url(icons/book_tabs.png) !important;
+}
+.border_all {
+	background-image: url(icons/border_all.png) !important;
+}
+.border_bottom {
+	background-image: url(icons/border_bottom.png) !important;
+}
+.border_draw {
+	background-image: url(icons/border_draw.png) !important;
+}
+.border_inner {
+	background-image: url(icons/border_inner.png) !important;
+}
+.border_inner_horizontal {
+	background-image: url(icons/border_inner_horizontal.png) !important;
+}
+.border_inner_vertical {
+	background-image: url(icons/border_inner_vertical.png) !important;
+}
+.border_left {
+	background-image: url(icons/border_left.png) !important;
+}
+.border_none {
+	background-image: url(icons/border_none.png) !important;
+}
+.border_outer {
+	background-image: url(icons/border_outer.png) !important;
+}
+.border_right {
+	background-image: url(icons/border_right.png) !important;
+}
+.border_top {
+	background-image: url(icons/border_top.png) !important;
+}
+.box {
+	background-image: url(icons/box.png) !important;
+}
+.box_error {
+	background-image: url(icons/box_error.png) !important;
+}
+.box_picture {
+	background-image: url(icons/box_picture.png) !important;
+}
+.box_world {
+	background-image: url(icons/box_world.png) !important;
+}
+.brick {
+	background-image: url(icons/brick.png) !important;
+}
+.bricks {
+	background-image: url(icons/bricks.png) !important;
+}
+.brick_add {
+	background-image: url(icons/brick_add.png) !important;
+}
+.brick_delete {
+	background-image: url(icons/brick_delete.png) !important;
+}
+.brick_edit {
+	background-image: url(icons/brick_edit.png) !important;
+}
+.brick_error {
+	background-image: url(icons/brick_error.png) !important;
+}
+.brick_go {
+	background-image: url(icons/brick_go.png) !important;
+}
+.brick_link {
+	background-image: url(icons/brick_link.png) !important;
+}
+.brick_magnify {
+	background-image: url(icons/brick_magnify.png) !important;
+}
+.briefcase {
+	background-image: url(icons/briefcase.png) !important;
+}
+.bug {
+	background-image: url(icons/bug.png) !important;
+}
+.bug_add {
+	background-image: url(icons/bug_add.png) !important;
+}
+.bug_delete {
+	background-image: url(icons/bug_delete.png) !important;
+}
+.bug_edit {
+	background-image: url(icons/bug_edit.png) !important;
+}
+.bug_error {
+	background-image: url(icons/bug_error.png) !important;
+}
+.bug_fix {
+	background-image: url(icons/bug_fix.png) !important;
+}
+.bug_go {
+	background-image: url(icons/bug_go.png) !important;
+}
+.bug_link {
+	background-image: url(icons/bug_link.png) !important;
+}
+.bug_magnify {
+	background-image: url(icons/bug_magnify.png) !important;
+}
+.build {
+	background-image: url(icons/build.png) !important;
+}
+.building {
+	background-image: url(icons/building.png) !important;
+}
+.building_add {
+	background-image: url(icons/building_add.png) !important;
+}
+.building_delete {
+	background-image: url(icons/building_delete.png) !important;
+}
+.building_edit {
+	background-image: url(icons/building_edit.png) !important;
+}
+.building_error {
+	background-image: url(icons/building_error.png) !important;
+}
+.building_go {
+	background-image: url(icons/building_go.png) !important;
+}
+.building_key {
+	background-image: url(icons/building_key.png) !important;
+}
+.building_link {
+	background-image: url(icons/building_link.png) !important;
+}
+.build_cancel {
+	background-image: url(icons/build_cancel.png) !important;
+}
+.bullet_add {
+	background-image: url(icons/bullet_add.png) !important;
+}
+.bullet_arrow_bottom {
+	background-image: url(icons/bullet_arrow_bottom.png) !important;
+}
+.bullet_arrow_down {
+	background-image: url(icons/bullet_arrow_down.png) !important;
+}
+.bullet_arrow_top {
+	background-image: url(icons/bullet_arrow_top.png) !important;
+}
+.bullet_arrow_up {
+	background-image: url(icons/bullet_arrow_up.png) !important;
+}
+.bullet_black {
+	background-image: url(icons/bullet_black.png) !important;
+}
+.bullet_blue {
+	background-image: url(icons/bullet_blue.png) !important;
+}
+.bullet_connect {
+	background-image: url(icons/bullet_connect.png) !important;
+}
+.bullet_cross {
+	background-image: url(icons/bullet_cross.png) !important;
+}
+.bullet_database {
+	background-image: url(icons/bullet_database.png) !important;
+}
+.bullet_database_yellow {
+	background-image: url(icons/bullet_database_yellow.png) !important;
+}
+.bullet_delete {
+	background-image: url(icons/bullet_delete.png) !important;
+}
+.bullet_disk {
+	background-image: url(icons/bullet_disk.png) !important;
+}
+.bullet_earth {
+	background-image: url(icons/bullet_earth.png) !important;
+}
+.bullet_edit {
+	background-image: url(icons/bullet_edit.png) !important;
+}
+.bullet_eject {
+	background-image: url(icons/bullet_eject.png) !important;
+}
+.bullet_error {
+	background-image: url(icons/bullet_error.png) !important;
+}
+.bullet_feed {
+	background-image: url(icons/bullet_feed.png) !important;
+}
+.bullet_get {
+	background-image: url(icons/bullet_get.png) !important;
+}
+.bullet_go {
+	background-image: url(icons/bullet_go.png) !important;
+}
+.bullet_green {
+	background-image: url(icons/bullet_green.png) !important;
+}
+.bullet_home {
+	background-image: url(icons/bullet_home.png) !important;
+}
+.bullet_key {
+	background-image: url(icons/bullet_key.png) !important;
+}
+.bullet_left {
+	background-image: url(icons/bullet_left.png) !important;
+}
+.bullet_lightning {
+	background-image: url(icons/bullet_lightning.png) !important;
+}
+.bullet_magnify {
+	background-image: url(icons/bullet_magnify.png) !important;
+}
+.bullet_minus {
+	background-image: url(icons/bullet_minus.png) !important;
+}
+.bullet_orange {
+	background-image: url(icons/bullet_orange.png) !important;
+}
+.bullet_page_white {
+	background-image: url(icons/bullet_page_white.png) !important;
+}
+.bullet_picture {
+	background-image: url(icons/bullet_picture.png) !important;
+}
+.bullet_pink {
+	background-image: url(icons/bullet_pink.png) !important;
+}
+.bullet_plus {
+	background-image: url(icons/bullet_plus.png) !important;
+}
+.bullet_purple {
+	background-image: url(icons/bullet_purple.png) !important;
+}
+.bullet_red {
+	background-image: url(icons/bullet_red.png) !important;
+}
+.bullet_right {
+	background-image: url(icons/bullet_right.png) !important;
+}
+.bullet_shape {
+	background-image: url(icons/bullet_shape.png) !important;
+}
+.bullet_sparkle {
+	background-image: url(icons/bullet_sparkle.png) !important;
+}
+.bullet_star {
+	background-image: url(icons/bullet_star.png) !important;
+}
+.bullet_start {
+	background-image: url(icons/bullet_start.png) !important;
+}
+.bullet_stop {
+	background-image: url(icons/bullet_stop.png) !important;
+}
+.bullet_stop_alt {
+	background-image: url(icons/bullet_stop_alt.png) !important;
+}
+.bullet_tick {
+	background-image: url(icons/bullet_tick.png) !important;
+}
+.bullet_toggle_minus {
+	background-image: url(icons/bullet_toggle_minus.png) !important;
+}
+.bullet_toggle_plus {
+	background-image: url(icons/bullet_toggle_plus.png) !important;
+}
+.bullet_white {
+	background-image: url(icons/bullet_white.png) !important;
+}
+.bullet_wrench {
+	background-image: url(icons/bullet_wrench.png) !important;
+}
+.bullet_wrench_red {
+	background-image: url(icons/bullet_wrench_red.png) !important;
+}
+.bullet_yellow {
+	background-image: url(icons/bullet_yellow.png) !important;
+}
+.button {
+	background-image: url(icons/button.png) !important;
+}
+.cake {
+	background-image: url(icons/cake.png) !important;
+}
+.cake_out {
+	background-image: url(icons/cake_out.png) !important;
+}
+.cake_sliced {
+	background-image: url(icons/cake_sliced.png) !important;
+}
+.calculator {
+	background-image: url(icons/calculator.png) !important;
+}
+.calculator_add {
+	background-image: url(icons/calculator_add.png) !important;
+}
+.calculator_delete {
+	background-image: url(icons/calculator_delete.png) !important;
+}
+.calculator_edit {
+	background-image: url(icons/calculator_edit.png) !important;
+}
+.calculator_error {
+	background-image: url(icons/calculator_error.png) !important;
+}
+.calculator_link {
+	background-image: url(icons/calculator_link.png) !important;
+}
+.calendar {
+	background-image: url(icons/calendar.png) !important;
+}
+.calendar_add {
+	background-image: url(icons/calendar_add.png) !important;
+}
+.calendar_delete {
+	background-image: url(icons/calendar_delete.png) !important;
+}
+.calendar_edit {
+	background-image: url(icons/calendar_edit.png) !important;
+}
+.calendar_link {
+	background-image: url(icons/calendar_link.png) !important;
+}
+.calendar_select_day {
+	background-image: url(icons/calendar_select_day.png) !important;
+}
+.calendar_select_none {
+	background-image: url(icons/calendar_select_none.png) !important;
+}
+.calendar_select_week {
+	background-image: url(icons/calendar_select_week.png) !important;
+}
+.calendar_star {
+	background-image: url(icons/calendar_star.png) !important;
+}
+.calendar_view_day {
+	background-image: url(icons/calendar_view_day.png) !important;
+}
+.calendar_view_month {
+	background-image: url(icons/calendar_view_month.png) !important;
+}
+.calendar_view_week {
+	background-image: url(icons/calendar_view_week.png) !important;
+}
+.camera {
+	background-image: url(icons/camera.png) !important;
+}
+.camera_add {
+	background-image: url(icons/camera_add.png) !important;
+}
+.camera_connect {
+	background-image: url(icons/camera_connect.png) !important;
+}
+.camera_delete {
+	background-image: url(icons/camera_delete.png) !important;
+}
+.camera_edit {
+	background-image: url(icons/camera_edit.png) !important;
+}
+.camera_error {
+	background-image: url(icons/camera_error.png) !important;
+}
+.camera_go {
+	background-image: url(icons/camera_go.png) !important;
+}
+.camera_link {
+	background-image: url(icons/camera_link.png) !important;
+}
+.camera_magnify {
+	background-image: url(icons/camera_magnify.png) !important;
+}
+.camera_picture {
+	background-image: url(icons/camera_picture.png) !important;
+}
+.camera_small {
+	background-image: url(icons/camera_small.png) !important;
+}
+.camera_start {
+	background-image: url(icons/camera_start.png) !important;
+}
+.camera_stop {
+	background-image: url(icons/camera_stop.png) !important;
+}
+.cancel_go {
+	background-image: url(icons/cancel_go.png) !important;
+}
+.car {
+	background-image: url(icons/car.png) !important;
+}
+.cart {
+	background-image: url(icons/cart.png) !important;
+}
+.cart_add {
+	background-image: url(icons/cart_add.png) !important;
+}
+.cart_delete {
+	background-image: url(icons/cart_delete.png) !important;
+}
+.cart_edit {
+	background-image: url(icons/cart_edit.png) !important;
+}
+.cart_error {
+	background-image: url(icons/cart_error.png) !important;
+}
+.cart_full {
+	background-image: url(icons/cart_full.png) !important;
+}
+.cart_go {
+	background-image: url(icons/cart_go.png) !important;
+}
+.cart_magnify {
+	background-image: url(icons/cart_magnify.png) !important;
+}
+.cart_put {
+	background-image: url(icons/cart_put.png) !important;
+}
+.cart_remove {
+	background-image: url(icons/cart_remove.png) !important;
+}
+.car_add {
+	background-image: url(icons/car_add.png) !important;
+}
+.car_delete {
+	background-image: url(icons/car_delete.png) !important;
+}
+.car_error {
+	background-image: url(icons/car_error.png) !important;
+}
+.car_red {
+	background-image: url(icons/car_red.png) !important;
+}
+.car_start {
+	background-image: url(icons/car_start.png) !important;
+}
+.car_stop {
+	background-image: url(icons/car_stop.png) !important;
+}
+.cd {
+	background-image: url(icons/cd.png) !important;
+}
+.cdr {
+	background-image: url(icons/cdr.png) !important;
+}
+.cdr_add {
+	background-image: url(icons/cdr_add.png) !important;
+}
+.cdr_burn {
+	background-image: url(icons/cdr_burn.png) !important;
+}
+.cdr_cross {
+	background-image: url(icons/cdr_cross.png) !important;
+}
+.cdr_delete {
+	background-image: url(icons/cdr_delete.png) !important;
+}
+.cdr_edit {
+	background-image: url(icons/cdr_edit.png) !important;
+}
+.cdr_eject {
+	background-image: url(icons/cdr_eject.png) !important;
+}
+.cdr_error {
+	background-image: url(icons/cdr_error.png) !important;
+}
+.cdr_go {
+	background-image: url(icons/cdr_go.png) !important;
+}
+.cdr_magnify {
+	background-image: url(icons/cdr_magnify.png) !important;
+}
+.cdr_play {
+	background-image: url(icons/cdr_play.png) !important;
+}
+.cdr_start {
+	background-image: url(icons/cdr_start.png) !important;
+}
+.cdr_stop {
+	background-image: url(icons/cdr_stop.png) !important;
+}
+.cdr_stop_alt {
+	background-image: url(icons/cdr_stop_alt.png) !important;
+}
+.cdr_tick {
+	background-image: url(icons/cdr_tick.png) !important;
+}
+.cd_add {
+	background-image: url(icons/cd_add.png) !important;
+}
+.cd_burn {
+	background-image: url(icons/cd_burn.png) !important;
+}
+.cd_delete {
+	background-image: url(icons/cd_delete.png) !important;
+}
+.cd_edit {
+	background-image: url(icons/cd_edit.png) !important;
+}
+.cd_eject {
+	background-image: url(icons/cd_eject.png) !important;
+}
+.cd_go {
+	background-image: url(icons/cd_go.png) !important;
+}
+.cd_magnify {
+	background-image: url(icons/cd_magnify.png) !important;
+}
+.cd_play {
+	background-image: url(icons/cd_play.png) !important;
+}
+.cd_stop {
+	background-image: url(icons/cd_stop.png) !important;
+}
+.cd_stop_alt {
+	background-image: url(icons/cd_stop_alt.png) !important;
+}
+.cd_tick {
+	background-image: url(icons/cd_tick.png) !important;
+}
+.chart_bar {
+	background-image: url(icons/chart_bar.png) !important;
+}
+.chart_bar_add {
+	background-image: url(icons/chart_bar_add.png) !important;
+}
+.chart_bar_delete {
+	background-image: url(icons/chart_bar_delete.png) !important;
+}
+.chart_bar_edit {
+	background-image: url(icons/chart_bar_edit.png) !important;
+}
+.chart_bar_error {
+	background-image: url(icons/chart_bar_error.png) !important;
+}
+.chart_bar_link {
+	background-image: url(icons/chart_bar_link.png) !important;
+}
+.chart_curve {
+	background-image: url(icons/chart_curve.png) !important;
+}
+.chart_curve_add {
+	background-image: url(icons/chart_curve_add.png) !important;
+}
+.chart_curve_delete {
+	background-image: url(icons/chart_curve_delete.png) !important;
+}
+.chart_curve_edit {
+	background-image: url(icons/chart_curve_edit.png) !important;
+}
+.chart_curve_error {
+	background-image: url(icons/chart_curve_error.png) !important;
+}
+.chart_curve_go {
+	background-image: url(icons/chart_curve_go.png) !important;
+}
+.chart_curve_link {
+	background-image: url(icons/chart_curve_link.png) !important;
+}
+.chart_line {
+	background-image: url(icons/chart_line.png) !important;
+}
+.chart_line_add {
+	background-image: url(icons/chart_line_add.png) !important;
+}
+.chart_line_delete {
+	background-image: url(icons/chart_line_delete.png) !important;
+}
+.chart_line_edit {
+	background-image: url(icons/chart_line_edit.png) !important;
+}
+.chart_line_error {
+	background-image: url(icons/chart_line_error.png) !important;
+}
+.chart_line_link {
+	background-image: url(icons/chart_line_link.png) !important;
+}
+.chart_organisation {
+	background-image: url(icons/chart_organisation.png) !important;
+}
+.chart_organisation_add {
+	background-image: url(icons/chart_organisation_add.png) !important;
+}
+.chart_organisation_delete {
+	background-image: url(icons/chart_organisation_delete.png) !important;
+}
+.chart_org_inverted {
+	background-image: url(icons/chart_org_inverted.png) !important;
+}
+.chart_pie {
+	background-image: url(icons/chart_pie.png) !important;
+}
+.chart_pie_add {
+	background-image: url(icons/chart_pie_add.png) !important;
+}
+.chart_pie_delete {
+	background-image: url(icons/chart_pie_delete.png) !important;
+}
+.chart_pie_edit {
+	background-image: url(icons/chart_pie_edit.png) !important;
+}
+.chart_pie_error {
+	background-image: url(icons/chart_pie_error.png) !important;
+}
+.chart_pie_lightning {
+	background-image: url(icons/chart_pie_lightning.png) !important;
+}
+.chart_pie_link {
+	background-image: url(icons/chart_pie_link.png) !important;
+}
+.check_error {
+	background-image: url(icons/check_error.png) !important;
+}
+.clipboard {
+	background-image: url(icons/clipboard.png) !important;
+}
+.clock {
+	background-image: url(icons/clock.png) !important;
+}
+.clock_add {
+	background-image: url(icons/clock_add.png) !important;
+}
+.clock_delete {
+	background-image: url(icons/clock_delete.png) !important;
+}
+.clock_edit {
+	background-image: url(icons/clock_edit.png) !important;
+}
+.clock_error {
+	background-image: url(icons/clock_error.png) !important;
+}
+.clock_go {
+	background-image: url(icons/clock_go.png) !important;
+}
+.clock_link {
+	background-image: url(icons/clock_link.png) !important;
+}
+.clock_pause {
+	background-image: url(icons/clock_pause.png) !important;
+}
+.clock_play {
+	background-image: url(icons/clock_play.png) !important;
+}
+.clock_red {
+	background-image: url(icons/clock_red.png) !important;
+}
+.clock_start {
+	background-image: url(icons/clock_start.png) !important;
+}
+.clock_stop {
+	background-image: url(icons/clock_stop.png) !important;
+}
+.clock_stop_2 {
+	background-image: url(icons/clock_stop_2.png) !important;
+}
+.cmy {
+	background-image: url(icons/cmy.png) !important;
+}
+.cog {
+	background-image: url(icons/cog.png) !important;
+}
+.cog_add {
+	background-image: url(icons/cog_add.png) !important;
+}
+.cog_delete {
+	background-image: url(icons/cog_delete.png) !important;
+}
+.cog_edit {
+	background-image: url(icons/cog_edit.png) !important;
+}
+.cog_error {
+	background-image: url(icons/cog_error.png) !important;
+}
+.cog_go {
+	background-image: url(icons/cog_go.png) !important;
+}
+.cog_start {
+	background-image: url(icons/cog_start.png) !important;
+}
+.cog_stop {
+	background-image: url(icons/cog_stop.png) !important;
+}
+.coins {
+	background-image: url(icons/coins.png) !important;
+}
+.coins_add {
+	background-image: url(icons/coins_add.png) !important;
+}
+.coins_delete {
+	background-image: url(icons/coins_delete.png) !important;
+}
+.color {
+	background-image: url(icons/color.png) !important;
+}
+.color_swatch {
+	background-image: url(icons/color_swatch.png) !important;
+}
+.color_wheel {
+	background-image: url(icons/color_wheel.png) !important;
+}
+.comment {
+	background-image: url(icons/comment.png) !important;
+}
+.comments {
+	background-image: url(icons/comments.png) !important;
+}
+.comments_add {
+	background-image: url(icons/comments_add.png) !important;
+}
+.comments_delete {
+	background-image: url(icons/comments_delete.png) !important;
+}
+.comment_add {
+	background-image: url(icons/comment_add.png) !important;
+}
+.comment_delete {
+	background-image: url(icons/comment_delete.png) !important;
+}
+.comment_dull {
+	background-image: url(icons/comment_dull.png) !important;
+}
+.comment_edit {
+	background-image: url(icons/comment_edit.png) !important;
+}
+.comment_play {
+	background-image: url(icons/comment_play.png) !important;
+}
+.comment_record {
+	background-image: url(icons/comment_record.png) !important;
+}
+.compass {
+	background-image: url(icons/compass.png) !important;
+}
+.compress {
+	background-image: url(icons/compress.png) !important;
+}
+.computer {
+	background-image: url(icons/computer.png) !important;
+}
+.computer_add {
+	background-image: url(icons/computer_add.png) !important;
+}
+.computer_connect {
+	background-image: url(icons/computer_connect.png) !important;
+}
+.computer_delete {
+	background-image: url(icons/computer_delete.png) !important;
+}
+.computer_edit {
+	background-image: url(icons/computer_edit.png) !important;
+}
+.computer_error {
+	background-image: url(icons/computer_error.png) !important;
+}
+.computer_go {
+	background-image: url(icons/computer_go.png) !important;
+}
+.computer_key {
+	background-image: url(icons/computer_key.png) !important;
+}
+.computer_link {
+	background-image: url(icons/computer_link.png) !important;
+}
+.computer_magnify {
+	background-image: url(icons/computer_magnify.png) !important;
+}
+.computer_off {
+	background-image: url(icons/computer_off.png) !important;
+}
+.computer_start {
+	background-image: url(icons/computer_start.png) !important;
+}
+.computer_stop {
+	background-image: url(icons/computer_stop.png) !important;
+}
+.computer_wrench {
+	background-image: url(icons/computer_wrench.png) !important;
+}
+.connect {
+	background-image: url(icons/connect.png) !important;
+}
+.contrast {
+	background-image: url(icons/contrast.png) !important;
+}
+.contrast_decrease {
+	background-image: url(icons/contrast_decrease.png) !important;
+}
+.contrast_high {
+	background-image: url(icons/contrast_high.png) !important;
+}
+.contrast_increase {
+	background-image: url(icons/contrast_increase.png) !important;
+}
+.contrast_low {
+	background-image: url(icons/contrast_low.png) !important;
+}
+.controller {
+	background-image: url(icons/controller.png) !important;
+}
+.controller_add {
+	background-image: url(icons/controller_add.png) !important;
+}
+.controller_delete {
+	background-image: url(icons/controller_delete.png) !important;
+}
+.controller_error {
+	background-image: url(icons/controller_error.png) !important;
+}
+.control_add {
+	background-image: url(icons/control_add.png) !important;
+}
+.control_add_blue {
+	background-image: url(icons/control_add_blue.png) !important;
+}
+.control_blank {
+	background-image: url(icons/control_blank.png) !important;
+}
+.control_blank_blue {
+	background-image: url(icons/control_blank_blue.png) !important;
+}
+.control_eject {
+	background-image: url(icons/control_eject.png) !important;
+}
+.control_eject_blue {
+	background-image: url(icons/control_eject_blue.png) !important;
+}
+.control_end {
+	background-image: url(icons/control_end.png) !important;
+}
+.control_end_blue {
+	background-image: url(icons/control_end_blue.png) !important;
+}
+.control_equalizer {
+	background-image: url(icons/control_equalizer.png) !important;
+}
+.control_equalizer_blue {
+	background-image: url(icons/control_equalizer_blue.png) !important;
+}
+.control_fastforward {
+	background-image: url(icons/control_fastforward.png) !important;
+}
+.control_fastforward_blue {
+	background-image: url(icons/control_fastforward_blue.png) !important;
+}
+.control_pause {
+	background-image: url(icons/control_pause.png) !important;
+}
+.control_pause_blue {
+	background-image: url(icons/control_pause_blue.png) !important;
+}
+.control_play {
+	background-image: url(icons/control_play.png) !important;
+}
+.control_play_blue {
+	background-image: url(icons/control_play_blue.png) !important;
+}
+.control_power {
+	background-image: url(icons/control_power.png) !important;
+}
+.control_power_blue {
+	background-image: url(icons/control_power_blue.png) !important;
+}
+.control_record {
+	background-image: url(icons/control_record.png) !important;
+}
+.control_record_blue {
+	background-image: url(icons/control_record_blue.png) !important;
+}
+.control_remove {
+	background-image: url(icons/control_remove.png) !important;
+}
+.control_remove_blue {
+	background-image: url(icons/control_remove_blue.png) !important;
+}
+.control_repeat {
+	background-image: url(icons/control_repeat.png) !important;
+}
+.control_repeat_blue {
+	background-image: url(icons/control_repeat_blue.png) !important;
+}
+.control_rewind {
+	background-image: url(icons/control_rewind.png) !important;
+}
+.control_rewind_blue {
+	background-image: url(icons/control_rewind_blue.png) !important;
+}
+.control_start {
+	background-image: url(icons/control_start.png) !important;
+}
+.control_start_blue {
+	background-image: url(icons/control_start_blue.png) !important;
+}
+.control_stop {
+	background-image: url(icons/control_stop.png) !important;
+}
+.control_stop_blue {
+	background-image: url(icons/control_stop_blue.png) !important;
+}
+.creditcards {
+	background-image: url(icons/creditcards.png) !important;
+}
+.cross {
+	background-image: url(icons/cross.png) !important;
+}
+.css {
+	background-image: url(icons/css.png) !important;
+}
+.css_add {
+	background-image: url(icons/css_add.png) !important;
+}
+.css_delete {
+	background-image: url(icons/css_delete.png) !important;
+}
+.css_error {
+	background-image: url(icons/css_error.png) !important;
+}
+.css_go {
+	background-image: url(icons/css_go.png) !important;
+}
+.css_valid {
+	background-image: url(icons/css_valid.png) !important;
+}
+.cup {
+	background-image: url(icons/cup.png) !important;
+}
+.cup_add {
+	background-image: url(icons/cup_add.png) !important;
+}
+.cup_black {
+	background-image: url(icons/cup_black.png) !important;
+}
+.cup_delete {
+	background-image: url(icons/cup_delete.png) !important;
+}
+.cup_edit {
+	background-image: url(icons/cup_edit.png) !important;
+}
+.cup_error {
+	background-image: url(icons/cup_error.png) !important;
+}
+.cup_go {
+	background-image: url(icons/cup_go.png) !important;
+}
+.cup_green {
+	background-image: url(icons/cup_green.png) !important;
+}
+.cup_key {
+	background-image: url(icons/cup_key.png) !important;
+}
+.cup_link {
+	background-image: url(icons/cup_link.png) !important;
+}
+.cup_tea {
+	background-image: url(icons/cup_tea.png) !important;
+}
+.cursor {
+	background-image: url(icons/cursor.png) !important;
+}
+.cursor_small {
+	background-image: url(icons/cursor_small.png) !important;
+}
+.cut {
+	background-image: url(icons/cut.png) !important;
+}
+.cut_red {
+	background-image: url(icons/cut_red.png) !important;
+}
+.database {
+	background-image: url(icons/database.png) !important;
+}
+.database_add {
+	background-image: url(icons/database_add.png) !important;
+}
+.database_connect {
+	background-image: url(icons/database_connect.png) !important;
+}
+.database_copy {
+	background-image: url(icons/database_copy.png) !important;
+}
+.database_delete {
+	background-image: url(icons/database_delete.png) !important;
+}
+.database_edit {
+	background-image: url(icons/database_edit.png) !important;
+}
+.database_error {
+	background-image: url(icons/database_error.png) !important;
+}
+.database_gear {
+	background-image: url(icons/database_gear.png) !important;
+}
+.database_go {
+	background-image: url(icons/database_go.png) !important;
+}
+.database_key {
+	background-image: url(icons/database_key.png) !important;
+}
+.database_lightning {
+	background-image: url(icons/database_lightning.png) !important;
+}
+.database_link {
+	background-image: url(icons/database_link.png) !important;
+}
+.database_refresh {
+	background-image: url(icons/database_refresh.png) !important;
+}
+.database_save {
+	background-image: url(icons/database_save.png) !important;
+}
+.database_start {
+	background-image: url(icons/database_start.png) !important;
+}
+.database_stop {
+	background-image: url(icons/database_stop.png) !important;
+}
+.database_table {
+	background-image: url(icons/database_table.png) !important;
+}
+.database_wrench {
+	background-image: url(icons/database_wrench.png) !important;
+}
+.database_yellow {
+	background-image: url(icons/database_yellow.png) !important;
+}
+.database_yellow_start {
+	background-image: url(icons/database_yellow_start.png) !important;
+}
+.database_yellow_stop {
+	background-image: url(icons/database_yellow_stop.png) !important;
+}
+.date {
+	background-image: url(icons/date.png) !important;
+}
+.date_add {
+	background-image: url(icons/date_add.png) !important;
+}
+.date_delete {
+	background-image: url(icons/date_delete.png) !important;
+}
+.date_edit {
+	background-image: url(icons/date_edit.png) !important;
+}
+.date_error {
+	background-image: url(icons/date_error.png) !important;
+}
+.date_go {
+	background-image: url(icons/date_go.png) !important;
+}
+.date_link {
+	background-image: url(icons/date_link.png) !important;
+}
+.date_magnify {
+	background-image: url(icons/date_magnify.png) !important;
+}
+.date_next {
+	background-image: url(icons/date_next.png) !important;
+}
+.date_previous {
+	background-image: url(icons/date_previous.png) !important;
+}
+.decline {
+	background-image: url(icons/decline.png) !important;
+}
+.remove {
+	background-image: url(icons/delete.png) !important;
+}
+.device_stylus {
+	background-image: url(icons/device_stylus.png) !important;
+}
+.disconnect {
+	background-image: url(icons/disconnect.png) !important;
+}
+.save {
+	background-image: url(icons/disk.png) !important;
+}
+.disk_black {
+	background-image: url(icons/disk_black.png) !important;
+}
+.disk_black_error {
+	background-image: url(icons/disk_black_error.png) !important;
+}
+.disk_black_magnify {
+	background-image: url(icons/disk_black_magnify.png) !important;
+}
+.disk_download {
+	background-image: url(icons/disk_download.png) !important;
+}
+.disk_edit {
+	background-image: url(icons/disk_edit.png) !important;
+}
+.disk_error {
+	background-image: url(icons/disk_error.png) !important;
+}
+.disk_magnify {
+	background-image: url(icons/disk_magnify.png) !important;
+}
+.disk_multiple {
+	background-image: url(icons/disk_multiple.png) !important;
+}
+.disk_upload {
+	background-image: url(icons/disk_upload.png) !important;
+}
+.door {
+	background-image: url(icons/door.png) !important;
+}
+.door_error {
+	background-image: url(icons/door_error.png) !important;
+}
+.exit {
+	background-image: url(icons/door_in.png) !important;
+}
+.door_open {
+	background-image: url(icons/door_open.png) !important;
+}
+.door_out {
+	background-image: url(icons/door_out.png) !important;
+}
+.drink {
+	background-image: url(icons/drink.png) !important;
+}
+.drink_empty {
+	background-image: url(icons/drink_empty.png) !important;
+}
+.drink_red {
+	background-image: url(icons/drink_red.png) !important;
+}
+.drive {
+	background-image: url(icons/drive.png) !important;
+}
+.drive_add {
+	background-image: url(icons/drive_add.png) !important;
+}
+.drive_burn {
+	background-image: url(icons/drive_burn.png) !important;
+}
+.drive_cd {
+	background-image: url(icons/drive_cd.png) !important;
+}
+.drive_cdr {
+	background-image: url(icons/drive_cdr.png) !important;
+}
+.drive_cd_empty {
+	background-image: url(icons/drive_cd_empty.png) !important;
+}
+.drive_delete {
+	background-image: url(icons/drive_delete.png) !important;
+}
+.drive_disk {
+	background-image: url(icons/drive_disk.png) !important;
+}
+.drive_edit {
+	background-image: url(icons/drive_edit.png) !important;
+}
+.drive_error {
+	background-image: url(icons/drive_error.png) !important;
+}
+.drive_go {
+	background-image: url(icons/drive_go.png) !important;
+}
+.drive_key {
+	background-image: url(icons/drive_key.png) !important;
+}
+.drive_link {
+	background-image: url(icons/drive_link.png) !important;
+}
+.drive_magnify {
+	background-image: url(icons/drive_magnify.png) !important;
+}
+.drive_network {
+	background-image: url(icons/drive_network.png) !important;
+}
+.drive_network_error {
+	background-image: url(icons/drive_network_error.png) !important;
+}
+.drive_network_stop {
+	background-image: url(icons/drive_network_stop.png) !important;
+}
+.drive_rename {
+	background-image: url(icons/drive_rename.png) !important;
+}
+.drive_user {
+	background-image: url(icons/drive_user.png) !important;
+}
+.drive_web {
+	background-image: url(icons/drive_web.png) !important;
+}
+.dvd {
+	background-image: url(icons/dvd.png) !important;
+}
+.dvd_add {
+	background-image: url(icons/dvd_add.png) !important;
+}
+.dvd_delete {
+	background-image: url(icons/dvd_delete.png) !important;
+}
+.dvd_edit {
+	background-image: url(icons/dvd_edit.png) !important;
+}
+.dvd_error {
+	background-image: url(icons/dvd_error.png) !important;
+}
+.dvd_go {
+	background-image: url(icons/dvd_go.png) !important;
+}
+.dvd_key {
+	background-image: url(icons/dvd_key.png) !important;
+}
+.dvd_link {
+	background-image: url(icons/dvd_link.png) !important;
+}
+.dvd_start {
+	background-image: url(icons/dvd_start.png) !important;
+}
+.dvd_stop {
+	background-image: url(icons/dvd_stop.png) !important;
+}
+.eject_blue {
+	background-image: url(icons/eject_blue.png) !important;
+}
+.eject_green {
+	background-image: url(icons/eject_green.png) !important;
+}
+.email {
+	background-image: url(icons/email.png) !important;
+}
+.email_add {
+	background-image: url(icons/email_add.png) !important;
+}
+.email_attach {
+	background-image: url(icons/email_attach.png) !important;
+}
+.email_delete {
+	background-image: url(icons/email_delete.png) !important;
+}
+.email_edit {
+	background-image: url(icons/email_edit.png) !important;
+}
+.email_error {
+	background-image: url(icons/email_error.png) !important;
+}
+.email_go {
+	background-image: url(icons/email_go.png) !important;
+}
+.email_link {
+	background-image: url(icons/email_link.png) !important;
+}
+.email_magnify {
+	background-image: url(icons/email_magnify.png) !important;
+}
+.email_open {
+	background-image: url(icons/email_open.png) !important;
+}
+.email_open_image {
+	background-image: url(icons/email_open_image.png) !important;
+}
+.email_star {
+	background-image: url(icons/email_star.png) !important;
+}
+.email_start {
+	background-image: url(icons/email_start.png) !important;
+}
+.email_stop {
+	background-image: url(icons/email_stop.png) !important;
+}
+.email_transfer {
+	background-image: url(icons/email_transfer.png) !important;
+}
+.emoticon_evilgrin {
+	background-image: url(icons/emoticon_evilgrin.png) !important;
+}
+.emoticon_grin {
+	background-image: url(icons/emoticon_grin.png) !important;
+}
+.emoticon_happy {
+	background-image: url(icons/emoticon_happy.png) !important;
+}
+.emoticon_smile {
+	background-image: url(icons/emoticon_smile.png) !important;
+}
+.emoticon_surprised {
+	background-image: url(icons/emoticon_surprised.png) !important;
+}
+.emoticon_tongue {
+	background-image: url(icons/emoticon_tongue.png) !important;
+}
+.emoticon_unhappy {
+	background-image: url(icons/emoticon_unhappy.png) !important;
+}
+.emoticon_waii {
+	background-image: url(icons/emoticon_waii.png) !important;
+}
+.emoticon_wink {
+	background-image: url(icons/emoticon_wink.png) !important;
+}
+.erase {
+	background-image: url(icons/erase.png) !important;
+}
+.error {
+	background-image: url(icons/error.png) !important;
+}
+.error_add {
+	background-image: url(icons/error_add.png) !important;
+}
+.error_delete {
+	background-image: url(icons/error_delete.png) !important;
+}
+.error_go {
+	background-image: url(icons/error_go.png) !important;
+}
+.exclamation {
+	background-image: url(icons/exclamation.png) !important;
+}
+.eye {
+	background-image: url(icons/eye.png) !important;
+}
+.eyes {
+	background-image: url(icons/eyes.png) !important;
+}
+.feed {
+	background-image: url(icons/feed.png) !important;
+}
+.feed_add {
+	background-image: url(icons/feed_add.png) !important;
+}
+.feed_delete {
+	background-image: url(icons/feed_delete.png) !important;
+}
+.feed_disk {
+	background-image: url(icons/feed_disk.png) !important;
+}
+.feed_edit {
+	background-image: url(icons/feed_edit.png) !important;
+}
+.feed_error {
+	background-image: url(icons/feed_error.png) !important;
+}
+.feed_go {
+	background-image: url(icons/feed_go.png) !important;
+}
+.feed_key {
+	background-image: url(icons/feed_key.png) !important;
+}
+.feed_link {
+	background-image: url(icons/feed_link.png) !important;
+}
+.feed_magnify {
+	background-image: url(icons/feed_magnify.png) !important;
+}
+.feed_star {
+	background-image: url(icons/feed_star.png) !important;
+}
+.female {
+	background-image: url(icons/female.png) !important;
+}
+.film {
+	background-image: url(icons/film.png) !important;
+}
+.film_add {
+	background-image: url(icons/film_add.png) !important;
+}
+.film_delete {
+	background-image: url(icons/film_delete.png) !important;
+}
+.film_edit {
+	background-image: url(icons/film_edit.png) !important;
+}
+.film_eject {
+	background-image: url(icons/film_eject.png) !important;
+}
+.film_error {
+	background-image: url(icons/film_error.png) !important;
+}
+.film_go {
+	background-image: url(icons/film_go.png) !important;
+}
+.film_key {
+	background-image: url(icons/film_key.png) !important;
+}
+.film_link {
+	background-image: url(icons/film_link.png) !important;
+}
+.film_magnify {
+	background-image: url(icons/film_magnify.png) !important;
+}
+.film_save {
+	background-image: url(icons/film_save.png) !important;
+}
+.film_star {
+	background-image: url(icons/film_star.png) !important;
+}
+.film_start {
+	background-image: url(icons/film_start.png) !important;
+}
+.film_stop {
+	background-image: url(icons/film_stop.png) !important;
+}
+.find {
+	background-image: url(icons/find.png) !important;
+}
+.finger_point {
+	background-image: url(icons/finger_point.png) !important;
+}
+.flag_ad {
+	background-image: url(icons/flag_ad.png) !important;
+}
+.flag_ae {
+	background-image: url(icons/flag_ae.png) !important;
+}
+.flag_af {
+	background-image: url(icons/flag_af.png) !important;
+}
+.flag_ag {
+	background-image: url(icons/flag_ag.png) !important;
+}
+.flag_ai {
+	background-image: url(icons/flag_ai.png) !important;
+}
+.flag_al {
+	background-image: url(icons/flag_al.png) !important;
+}
+.flag_am {
+	background-image: url(icons/flag_am.png) !important;
+}
+.flag_an {
+	background-image: url(icons/flag_an.png) !important;
+}
+.flag_ao {
+	background-image: url(icons/flag_ao.png) !important;
+}
+.flag_ar {
+	background-image: url(icons/flag_ar.png) !important;
+}
+.flag_as {
+	background-image: url(icons/flag_as.png) !important;
+}
+.flag_at {
+	background-image: url(icons/flag_at.png) !important;
+}
+.flag_au {
+	background-image: url(icons/flag_au.png) !important;
+}
+.flag_aw {
+	background-image: url(icons/flag_aw.png) !important;
+}
+.flag_ax {
+	background-image: url(icons/flag_ax.png) !important;
+}
+.flag_az {
+	background-image: url(icons/flag_az.png) !important;
+}
+.flag_ba {
+	background-image: url(icons/flag_ba.png) !important;
+}
+.flag_bb {
+	background-image: url(icons/flag_bb.png) !important;
+}
+.flag_bd {
+	background-image: url(icons/flag_bd.png) !important;
+}
+.flag_be {
+	background-image: url(icons/flag_be.png) !important;
+}
+.flag_bf {
+	background-image: url(icons/flag_bf.png) !important;
+}
+.flag_bg {
+	background-image: url(icons/flag_bg.png) !important;
+}
+.flag_bh {
+	background-image: url(icons/flag_bh.png) !important;
+}
+.flag_bi {
+	background-image: url(icons/flag_bi.png) !important;
+}
+.flag_bj {
+	background-image: url(icons/flag_bj.png) !important;
+}
+.flag_black {
+	background-image: url(icons/flag_black.png) !important;
+}
+.flag_blue {
+	background-image: url(icons/flag_blue.png) !important;
+}
+.flag_bm {
+	background-image: url(icons/flag_bm.png) !important;
+}
+.flag_bn {
+	background-image: url(icons/flag_bn.png) !important;
+}
+.flag_bo {
+	background-image: url(icons/flag_bo.png) !important;
+}
+.flag_br {
+	background-image: url(icons/flag_br.png) !important;
+}
+.flag_bs {
+	background-image: url(icons/flag_bs.png) !important;
+}
+.flag_bt {
+	background-image: url(icons/flag_bt.png) !important;
+}
+.flag_bv {
+	background-image: url(icons/flag_bv.png) !important;
+}
+.flag_bw {
+	background-image: url(icons/flag_bw.png) !important;
+}
+.flag_by {
+	background-image: url(icons/flag_by.png) !important;
+}
+.flag_bz {
+	background-image: url(icons/flag_bz.png) !important;
+}
+.flag_ca {
+	background-image: url(icons/flag_ca.png) !important;
+}
+.flag_catalonia {
+	background-image: url(icons/flag_catalonia.png) !important;
+}
+.flag_cc {
+	background-image: url(icons/flag_cc.png) !important;
+}
+.flag_cd {
+	background-image: url(icons/flag_cd.png) !important;
+}
+.flag_cf {
+	background-image: url(icons/flag_cf.png) !important;
+}
+.flag_cg {
+	background-image: url(icons/flag_cg.png) !important;
+}
+.flag_ch {
+	background-image: url(icons/flag_ch.png) !important;
+}
+.flag_checked {
+	background-image: url(icons/flag_checked.png) !important;
+}
+.flag_ci {
+	background-image: url(icons/flag_ci.png) !important;
+}
+.flag_ck {
+	background-image: url(icons/flag_ck.png) !important;
+}
+.flag_cl {
+	background-image: url(icons/flag_cl.png) !important;
+}
+.flag_cm {
+	background-image: url(icons/flag_cm.png) !important;
+}
+.flag_cn {
+	background-image: url(icons/flag_cn.png) !important;
+}
+.flag_co {
+	background-image: url(icons/flag_co.png) !important;
+}
+.flag_cr {
+	background-image: url(icons/flag_cr.png) !important;
+}
+.flag_cs {
+	background-image: url(icons/flag_cs.png) !important;
+}
+.flag_cu {
+	background-image: url(icons/flag_cu.png) !important;
+}
+.flag_cv {
+	background-image: url(icons/flag_cv.png) !important;
+}
+.flag_cx {
+	background-image: url(icons/flag_cx.png) !important;
+}
+.flag_cy {
+	background-image: url(icons/flag_cy.png) !important;
+}
+.flag_cz {
+	background-image: url(icons/flag_cz.png) !important;
+}
+.flag_de {
+	background-image: url(icons/flag_de.png) !important;
+}
+.flag_dj {
+	background-image: url(icons/flag_dj.png) !important;
+}
+.flag_dk {
+	background-image: url(icons/flag_dk.png) !important;
+}
+.flag_dm {
+	background-image: url(icons/flag_dm.png) !important;
+}
+.flag_do {
+	background-image: url(icons/flag_do.png) !important;
+}
+.flag_dz {
+	background-image: url(icons/flag_dz.png) !important;
+}
+.flag_ec {
+	background-image: url(icons/flag_ec.png) !important;
+}
+.flag_ee {
+	background-image: url(icons/flag_ee.png) !important;
+}
+.flag_eg {
+	background-image: url(icons/flag_eg.png) !important;
+}
+.flag_eh {
+	background-image: url(icons/flag_eh.png) !important;
+}
+.flag_england {
+	background-image: url(icons/flag_england.png) !important;
+}
+.flag_er {
+	background-image: url(icons/flag_er.png) !important;
+}
+.flag_es {
+	background-image: url(icons/flag_es.png) !important;
+}
+.flag_et {
+	background-image: url(icons/flag_et.png) !important;
+}
+.flag_europeanunion {
+	background-image: url(icons/flag_europeanunion.png) !important;
+}
+.flag_fam {
+	background-image: url(icons/flag_fam.png) !important;
+}
+.flag_fi {
+	background-image: url(icons/flag_fi.png) !important;
+}
+.flag_fj {
+	background-image: url(icons/flag_fj.png) !important;
+}
+.flag_fk {
+	background-image: url(icons/flag_fk.png) !important;
+}
+.flag_fm {
+	background-image: url(icons/flag_fm.png) !important;
+}
+.flag_fo {
+	background-image: url(icons/flag_fo.png) !important;
+}
+.flag_fr {
+	background-image: url(icons/flag_fr.png) !important;
+}
+.flag_france {
+	background-image: url(icons/flag_france.png) !important;
+}
+.flag_ga {
+	background-image: url(icons/flag_ga.png) !important;
+}
+.flag_gb {
+	background-image: url(icons/flag_gb.png) !important;
+}
+.flag_gd {
+	background-image: url(icons/flag_gd.png) !important;
+}
+.flag_ge {
+	background-image: url(icons/flag_ge.png) !important;
+}
+.flag_gf {
+	background-image: url(icons/flag_gf.png) !important;
+}
+.flag_gg {
+	background-image: url(icons/flag_gg.png) !important;
+}
+.flag_gh {
+	background-image: url(icons/flag_gh.png) !important;
+}
+.flag_gi {
+	background-image: url(icons/flag_gi.png) !important;
+}
+.flag_gl {
+	background-image: url(icons/flag_gl.png) !important;
+}
+.flag_gm {
+	background-image: url(icons/flag_gm.png) !important;
+}
+.flag_gn {
+	background-image: url(icons/flag_gn.png) !important;
+}
+.flag_gp {
+	background-image: url(icons/flag_gp.png) !important;
+}
+.flag_gq {
+	background-image: url(icons/flag_gq.png) !important;
+}
+.flag_gr {
+	background-image: url(icons/flag_gr.png) !important;
+}
+.flag_green {
+	background-image: url(icons/flag_green.png) !important;
+}
+.flag_grey {
+	background-image: url(icons/flag_grey.png) !important;
+}
+.flag_gs {
+	background-image: url(icons/flag_gs.png) !important;
+}
+.flag_gt {
+	background-image: url(icons/flag_gt.png) !important;
+}
+.flag_gu {
+	background-image: url(icons/flag_gu.png) !important;
+}
+.flag_gw {
+	background-image: url(icons/flag_gw.png) !important;
+}
+.flag_gy {
+	background-image: url(icons/flag_gy.png) !important;
+}
+.flag_hk {
+	background-image: url(icons/flag_hk.png) !important;
+}
+.flag_hm {
+	background-image: url(icons/flag_hm.png) !important;
+}
+.flag_hn {
+	background-image: url(icons/flag_hn.png) !important;
+}
+.flag_hr {
+	background-image: url(icons/flag_hr.png) !important;
+}
+.flag_ht {
+	background-image: url(icons/flag_ht.png) !important;
+}
+.flag_hu {
+	background-image: url(icons/flag_hu.png) !important;
+}
+.flag_id {
+	background-image: url(icons/flag_id.png) !important;
+}
+.flag_ie {
+	background-image: url(icons/flag_ie.png) !important;
+}
+.flag_il {
+	background-image: url(icons/flag_il.png) !important;
+}
+.flag_in {
+	background-image: url(icons/flag_in.png) !important;
+}
+.flag_io {
+	background-image: url(icons/flag_io.png) !important;
+}
+.flag_iq {
+	background-image: url(icons/flag_iq.png) !important;
+}
+.flag_ir {
+	background-image: url(icons/flag_ir.png) !important;
+}
+.flag_is {
+	background-image: url(icons/flag_is.png) !important;
+}
+.flag_it {
+	background-image: url(icons/flag_it.png) !important;
+}
+.flag_jm {
+	background-image: url(icons/flag_jm.png) !important;
+}
+.flag_jo {
+	background-image: url(icons/flag_jo.png) !important;
+}
+.flag_jp {
+	background-image: url(icons/flag_jp.png) !important;
+}
+.flag_ke {
+	background-image: url(icons/flag_ke.png) !important;
+}
+.flag_kg {
+	background-image: url(icons/flag_kg.png) !important;
+}
+.flag_kh {
+	background-image: url(icons/flag_kh.png) !important;
+}
+.flag_ki {
+	background-image: url(icons/flag_ki.png) !important;
+}
+.flag_km {
+	background-image: url(icons/flag_km.png) !important;
+}
+.flag_kn {
+	background-image: url(icons/flag_kn.png) !important;
+}
+.flag_kp {
+	background-image: url(icons/flag_kp.png) !important;
+}
+.flag_kr {
+	background-image: url(icons/flag_kr.png) !important;
+}
+.flag_kw {
+	background-image: url(icons/flag_kw.png) !important;
+}
+.flag_ky {
+	background-image: url(icons/flag_ky.png) !important;
+}
+.flag_kz {
+	background-image: url(icons/flag_kz.png) !important;
+}
+.flag_la {
+	background-image: url(icons/flag_la.png) !important;
+}
+.flag_lb {
+	background-image: url(icons/flag_lb.png) !important;
+}
+.flag_lc {
+	background-image: url(icons/flag_lc.png) !important;
+}
+.flag_li {
+	background-image: url(icons/flag_li.png) !important;
+}
+.flag_lk {
+	background-image: url(icons/flag_lk.png) !important;
+}
+.flag_lr {
+	background-image: url(icons/flag_lr.png) !important;
+}
+.flag_ls {
+	background-image: url(icons/flag_ls.png) !important;
+}
+.flag_lt {
+	background-image: url(icons/flag_lt.png) !important;
+}
+.flag_lu {
+	background-image: url(icons/flag_lu.png) !important;
+}
+.flag_lv {
+	background-image: url(icons/flag_lv.png) !important;
+}
+.flag_ly {
+	background-image: url(icons/flag_ly.png) !important;
+}
+.flag_ma {
+	background-image: url(icons/flag_ma.png) !important;
+}
+.flag_mc {
+	background-image: url(icons/flag_mc.png) !important;
+}
+.flag_md {
+	background-image: url(icons/flag_md.png) !important;
+}
+.flag_me {
+	background-image: url(icons/flag_me.png) !important;
+}
+.flag_mg {
+	background-image: url(icons/flag_mg.png) !important;
+}
+.flag_mh {
+	background-image: url(icons/flag_mh.png) !important;
+}
+.flag_mk {
+	background-image: url(icons/flag_mk.png) !important;
+}
+.flag_ml {
+	background-image: url(icons/flag_ml.png) !important;
+}
+.flag_mm {
+	background-image: url(icons/flag_mm.png) !important;
+}
+.flag_mn {
+	background-image: url(icons/flag_mn.png) !important;
+}
+.flag_mo {
+	background-image: url(icons/flag_mo.png) !important;
+}
+.flag_mp {
+	background-image: url(icons/flag_mp.png) !important;
+}
+.flag_mq {
+	background-image: url(icons/flag_mq.png) !important;
+}
+.flag_mr {
+	background-image: url(icons/flag_mr.png) !important;
+}
+.flag_ms {
+	background-image: url(icons/flag_ms.png) !important;
+}
+.flag_mt {
+	background-image: url(icons/flag_mt.png) !important;
+}
+.flag_mu {
+	background-image: url(icons/flag_mu.png) !important;
+}
+.flag_mv {
+	background-image: url(icons/flag_mv.png) !important;
+}
+.flag_mw {
+	background-image: url(icons/flag_mw.png) !important;
+}
+.flag_mx {
+	background-image: url(icons/flag_mx.png) !important;
+}
+.flag_my {
+	background-image: url(icons/flag_my.png) !important;
+}
+.flag_mz {
+	background-image: url(icons/flag_mz.png) !important;
+}
+.flag_na {
+	background-image: url(icons/flag_na.png) !important;
+}
+.flag_nc {
+	background-image: url(icons/flag_nc.png) !important;
+}
+.flag_ne {
+	background-image: url(icons/flag_ne.png) !important;
+}
+.flag_nf {
+	background-image: url(icons/flag_nf.png) !important;
+}
+.flag_ng {
+	background-image: url(icons/flag_ng.png) !important;
+}
+.flag_ni {
+	background-image: url(icons/flag_ni.png) !important;
+}
+.flag_nl {
+	background-image: url(icons/flag_nl.png) !important;
+}
+.flag_no {
+	background-image: url(icons/flag_no.png) !important;
+}
+.flag_np {
+	background-image: url(icons/flag_np.png) !important;
+}
+.flag_nr {
+	background-image: url(icons/flag_nr.png) !important;
+}
+.flag_nu {
+	background-image: url(icons/flag_nu.png) !important;
+}
+.flag_nz {
+	background-image: url(icons/flag_nz.png) !important;
+}
+.flag_om {
+	background-image: url(icons/flag_om.png) !important;
+}
+.flag_orange {
+	background-image: url(icons/flag_orange.png) !important;
+}
+.flag_pa {
+	background-image: url(icons/flag_pa.png) !important;
+}
+.flag_pe {
+	background-image: url(icons/flag_pe.png) !important;
+}
+.flag_pf {
+	background-image: url(icons/flag_pf.png) !important;
+}
+.flag_pg {
+	background-image: url(icons/flag_pg.png) !important;
+}
+.flag_ph {
+	background-image: url(icons/flag_ph.png) !important;
+}
+.flag_pink {
+	background-image: url(icons/flag_pink.png) !important;
+}
+.flag_pk {
+	background-image: url(icons/flag_pk.png) !important;
+}
+.flag_pl {
+	background-image: url(icons/flag_pl.png) !important;
+}
+.flag_pm {
+	background-image: url(icons/flag_pm.png) !important;
+}
+.flag_pn {
+	background-image: url(icons/flag_pn.png) !important;
+}
+.flag_pr {
+	background-image: url(icons/flag_pr.png) !important;
+}
+.flag_ps {
+	background-image: url(icons/flag_ps.png) !important;
+}
+.flag_pt {
+	background-image: url(icons/flag_pt.png) !important;
+}
+.flag_purple {
+	background-image: url(icons/flag_purple.png) !important;
+}
+.flag_pw {
+	background-image: url(icons/flag_pw.png) !important;
+}
+.flag_py {
+	background-image: url(icons/flag_py.png) !important;
+}
+.flag_qa {
+	background-image: url(icons/flag_qa.png) !important;
+}
+.flag_re {
+	background-image: url(icons/flag_re.png) !important;
+}
+.flag_red {
+	background-image: url(icons/flag_red.png) !important;
+}
+.flag_ro {
+	background-image: url(icons/flag_ro.png) !important;
+}
+.flag_rs {
+	background-image: url(icons/flag_rs.png) !important;
+}
+.flag_ru {
+	background-image: url(icons/flag_ru.png) !important;
+}
+.flag_rw {
+	background-image: url(icons/flag_rw.png) !important;
+}
+.flag_sa {
+	background-image: url(icons/flag_sa.png) !important;
+}
+.flag_sb {
+	background-image: url(icons/flag_sb.png) !important;
+}
+.flag_sc {
+	background-image: url(icons/flag_sc.png) !important;
+}
+.flag_scotland {
+	background-image: url(icons/flag_scotland.png) !important;
+}
+.flag_sd {
+	background-image: url(icons/flag_sd.png) !important;
+}
+.flag_se {
+	background-image: url(icons/flag_se.png) !important;
+}
+.flag_sg {
+	background-image: url(icons/flag_sg.png) !important;
+}
+.flag_sh {
+	background-image: url(icons/flag_sh.png) !important;
+}
+.flag_si {
+	background-image: url(icons/flag_si.png) !important;
+}
+.flag_sj {
+	background-image: url(icons/flag_sj.png) !important;
+}
+.flag_sk {
+	background-image: url(icons/flag_sk.png) !important;
+}
+.flag_sl {
+	background-image: url(icons/flag_sl.png) !important;
+}
+.flag_sm {
+	background-image: url(icons/flag_sm.png) !important;
+}
+.flag_sn {
+	background-image: url(icons/flag_sn.png) !important;
+}
+.flag_so {
+	background-image: url(icons/flag_so.png) !important;
+}
+.flag_sr {
+	background-image: url(icons/flag_sr.png) !important;
+}
+.flag_st {
+	background-image: url(icons/flag_st.png) !important;
+}
+.flag_sv {
+	background-image: url(icons/flag_sv.png) !important;
+}
+.flag_sy {
+	background-image: url(icons/flag_sy.png) !important;
+}
+.flag_sz {
+	background-image: url(icons/flag_sz.png) !important;
+}
+.flag_tc {
+	background-image: url(icons/flag_tc.png) !important;
+}
+.flag_td {
+	background-image: url(icons/flag_td.png) !important;
+}
+.flag_tf {
+	background-image: url(icons/flag_tf.png) !important;
+}
+.flag_tg {
+	background-image: url(icons/flag_tg.png) !important;
+}
+.flag_th {
+	background-image: url(icons/flag_th.png) !important;
+}
+.flag_tj {
+	background-image: url(icons/flag_tj.png) !important;
+}
+.flag_tk {
+	background-image: url(icons/flag_tk.png) !important;
+}
+.flag_tl {
+	background-image: url(icons/flag_tl.png) !important;
+}
+.flag_tm {
+	background-image: url(icons/flag_tm.png) !important;
+}
+.flag_tn {
+	background-image: url(icons/flag_tn.png) !important;
+}
+.flag_to {
+	background-image: url(icons/flag_to.png) !important;
+}
+.flag_tr {
+	background-image: url(icons/flag_tr.png) !important;
+}
+.flag_tt {
+	background-image: url(icons/flag_tt.png) !important;
+}
+.flag_tv {
+	background-image: url(icons/flag_tv.png) !important;
+}
+.flag_tw {
+	background-image: url(icons/flag_tw.png) !important;
+}
+.flag_tz {
+	background-image: url(icons/flag_tz.png) !important;
+}
+.flag_ua {
+	background-image: url(icons/flag_ua.png) !important;
+}
+.flag_ug {
+	background-image: url(icons/flag_ug.png) !important;
+}
+.flag_um {
+	background-image: url(icons/flag_um.png) !important;
+}
+.flag_us {
+	background-image: url(icons/flag_us.png) !important;
+}
+.flag_uy {
+	background-image: url(icons/flag_uy.png) !important;
+}
+.flag_uz {
+	background-image: url(icons/flag_uz.png) !important;
+}
+.flag_va {
+	background-image: url(icons/flag_va.png) !important;
+}
+.flag_vc {
+	background-image: url(icons/flag_vc.png) !important;
+}
+.flag_ve {
+	background-image: url(icons/flag_ve.png) !important;
+}
+.flag_vg {
+	background-image: url(icons/flag_vg.png) !important;
+}
+.flag_vi {
+	background-image: url(icons/flag_vi.png) !important;
+}
+.flag_vn {
+	background-image: url(icons/flag_vn.png) !important;
+}
+.flag_vu {
+	background-image: url(icons/flag_vu.png) !important;
+}
+.flag_wales {
+	background-image: url(icons/flag_wales.png) !important;
+}
+.flag_wf {
+	background-image: url(icons/flag_wf.png) !important;
+}
+.flag_white {
+	background-image: url(icons/flag_white.png) !important;
+}
+.flag_ws {
+	background-image: url(icons/flag_ws.png) !important;
+}
+.flag_ye {
+	background-image: url(icons/flag_ye.png) !important;
+}
+.flag_yellow {
+	background-image: url(icons/flag_yellow.png) !important;
+}
+.flag_yt {
+	background-image: url(icons/flag_yt.png) !important;
+}
+.flag_za {
+	background-image: url(icons/flag_za.png) !important;
+}
+.flag_zm {
+	background-image: url(icons/flag_zm.png) !important;
+}
+.flag_zw {
+	background-image: url(icons/flag_zw.png) !important;
+}
+.flower_daisy {
+	background-image: url(icons/flower_daisy.png) !important;
+}
+.folder {
+	background-image: url(icons/folder.png) !important;
+}
+.folder_add {
+	background-image: url(icons/folder_add.png) !important;
+}
+.folder_bell {
+	background-image: url(icons/folder_bell.png) !important;
+}
+.folder_bookmark {
+	background-image: url(icons/folder_bookmark.png) !important;
+}
+.folder_brick {
+	background-image: url(icons/folder_brick.png) !important;
+}
+.folder_bug {
+	background-image: url(icons/folder_bug.png) !important;
+}
+.folder_camera {
+	background-image: url(icons/folder_camera.png) !important;
+}
+.folder_connect {
+	background-image: url(icons/folder_connect.png) !important;
+}
+.folder_database {
+	background-image: url(icons/folder_database.png) !important;
+}
+.folder_delete {
+	background-image: url(icons/folder_delete.png) !important;
+}
+.folder_edit {
+	background-image: url(icons/folder_edit.png) !important;
+}
+.folder_error {
+	background-image: url(icons/folder_error.png) !important;
+}
+.folder_explore {
+	background-image: url(icons/folder_explore.png) !important;
+}
+.folder_feed {
+	background-image: url(icons/folder_feed.png) !important;
+}
+.folder_film {
+	background-image: url(icons/folder_film.png) !important;
+}
+.folder_find {
+	background-image: url(icons/folder_find.png) !important;
+}
+.folder_font {
+	background-image: url(icons/folder_font.png) !important;
+}
+.folder_go {
+	background-image: url(icons/folder_go.png) !important;
+}
+.folder_heart {
+	background-image: url(icons/folder_heart.png) !important;
+}
+.folder_home {
+	background-image: url(icons/folder_home.png) !important;
+}
+.folder_image {
+	background-image: url(icons/folder_image.png) !important;
+}
+.folder_key {
+	background-image: url(icons/folder_key.png) !important;
+}
+.folder_lightbulb {
+	background-image: url(icons/folder_lightbulb.png) !important;
+}
+.folder_link {
+	background-image: url(icons/folder_link.png) !important;
+}
+.folder_magnify {
+	background-image: url(icons/folder_magnify.png) !important;
+}
+.folder_page {
+	background-image: url(icons/folder_page.png) !important;
+}
+.folder_page_white {
+	background-image: url(icons/folder_page_white.png) !important;
+}
+.folder_palette {
+	background-image: url(icons/folder_palette.png) !important;
+}
+.folder_picture {
+	background-image: url(icons/folder_picture.png) !important;
+}
+.folder_star {
+	background-image: url(icons/folder_star.png) !important;
+}
+.folder_table {
+	background-image: url(icons/folder_table.png) !important;
+}
+.folder_up {
+	background-image: url(icons/folder_up.png) !important;
+}
+.folder_user {
+	background-image: url(icons/folder_user.png) !important;
+}
+.folder_wrench {
+	background-image: url(icons/folder_wrench.png) !important;
+}
+.font {
+	background-image: url(icons/font.png) !important;
+}
+.font_add {
+	background-image: url(icons/font_add.png) !important;
+}
+.font_color {
+	background-image: url(icons/font_color.png) !important;
+}
+.font_delete {
+	background-image: url(icons/font_delete.png) !important;
+}
+.font_go {
+	background-image: url(icons/font_go.png) !important;
+}
+.font_larger {
+	background-image: url(icons/font_larger.png) !important;
+}
+.font_smaller {
+	background-image: url(icons/font_smaller.png) !important;
+}
+.forward_blue {
+	background-image: url(icons/forward_blue.png) !important;
+}
+.forward_green {
+	background-image: url(icons/forward_green.png) !important;
+}
+.group {
+	background-image: url(icons/group.png) !important;
+}
+.group_add {
+	background-image: url(icons/group_add.png) !important;
+}
+.group_delete {
+	background-image: url(icons/group_delete.png) !important;
+}
+.group_edit {
+	background-image: url(icons/group_edit.png) !important;
+}
+.group_error {
+	background-image: url(icons/group_error.png) !important;
+}
+.group_gear {
+	background-image: url(icons/group_gear.png) !important;
+}
+.group_go {
+	background-image: url(icons/group_go.png) !important;
+}
+.group_key {
+	background-image: url(icons/group_key.png) !important;
+}
+.group_link {
+	background-image: url(icons/group_link.png) !important;
+}
+.heart {
+	background-image: url(icons/heart.png) !important;
+}
+.heart_add {
+	background-image: url(icons/heart_add.png) !important;
+}
+.heart_broken {
+	background-image: url(icons/heart_broken.png) !important;
+}
+.heart_connect {
+	background-image: url(icons/heart_connect.png) !important;
+}
+.heart_delete {
+	background-image: url(icons/heart_delete.png) !important;
+}
+.help {
+	background-image: url(icons/help.png) !important;
+}
+.hourglass {
+	background-image: url(icons/hourglass.png) !important;
+}
+.hourglass_add {
+	background-image: url(icons/hourglass_add.png) !important;
+}
+.hourglass_delete {
+	background-image: url(icons/hourglass_delete.png) !important;
+}
+.hourglass_go {
+	background-image: url(icons/hourglass_go.png) !important;
+}
+.hourglass_link {
+	background-image: url(icons/hourglass_link.png) !important;
+}
+.house {
+	background-image: url(icons/house.png) !important;
+}
+.house_connect {
+	background-image: url(icons/house_connect.png) !important;
+}
+.house_go {
+	background-image: url(icons/house_go.png) !important;
+}
+.house_key {
+	background-image: url(icons/house_key.png) !important;
+}
+.house_link {
+	background-image: url(icons/house_link.png) !important;
+}
+.house_star {
+	background-image: url(icons/house_star.png) !important;
+}
+.html {
+	background-image: url(icons/html.png) !important;
+}
+.html_add {
+	background-image: url(icons/html_add.png) !important;
+}
+.html_delete {
+	background-image: url(icons/html_delete.png) !important;
+}
+.html_error {
+	background-image: url(icons/html_error.png) !important;
+}
+.html_go {
+	background-image: url(icons/html_go.png) !important;
+}
+.html_valid {
+	background-image: url(icons/html_valid.png) !important;
+}
+.image {
+	background-image: url(icons/image.png) !important;
+}
+.images {
+	background-image: url(icons/images.png) !important;
+}
+.image_add {
+	background-image: url(icons/image_add.png) !important;
+}
+.image_delete {
+	background-image: url(icons/image_delete.png) !important;
+}
+.image_edit {
+	background-image: url(icons/image_edit.png) !important;
+}
+.image_link {
+	background-image: url(icons/image_link.png) !important;
+}
+.image_magnify {
+	background-image: url(icons/image_magnify.png) !important;
+}
+.image_star {
+	background-image: url(icons/image_star.png) !important;
+}
+.information {
+	background-image: url(icons/information.png) !important;
+}
+.ipod {
+	background-image: url(icons/ipod.png) !important;
+}
+.ipod_cast {
+	background-image: url(icons/ipod_cast.png) !important;
+}
+.ipod_cast_add {
+	background-image: url(icons/ipod_cast_add.png) !important;
+}
+.ipod_cast_delete {
+	background-image: url(icons/ipod_cast_delete.png) !important;
+}
+.ipod_connect {
+	background-image: url(icons/ipod_connect.png) !important;
+}
+.ipod_nano {
+	background-image: url(icons/ipod_nano.png) !important;
+}
+.ipod_nano_connect {
+	background-image: url(icons/ipod_nano_connect.png) !important;
+}
+.ipod_sound {
+	background-image: url(icons/ipod_sound.png) !important;
+}
+.joystick {
+	background-image: url(icons/joystick.png) !important;
+}
+.joystick_add {
+	background-image: url(icons/joystick_add.png) !important;
+}
+.joystick_connect {
+	background-image: url(icons/joystick_connect.png) !important;
+}
+.joystick_delete {
+	background-image: url(icons/joystick_delete.png) !important;
+}
+.joystick_error {
+	background-image: url(icons/joystick_error.png) !important;
+}
+.key {
+	background-image: url(icons/key.png) !important;
+}
+.keyboard {
+	background-image: url(icons/keyboard.png) !important;
+}
+.keyboard_add {
+	background-image: url(icons/keyboard_add.png) !important;
+}
+.keyboard_connect {
+	background-image: url(icons/keyboard_connect.png) !important;
+}
+.keyboard_delete {
+	background-image: url(icons/keyboard_delete.png) !important;
+}
+.keyboard_magnify {
+	background-image: url(icons/keyboard_magnify.png) !important;
+}
+.key_add {
+	background-image: url(icons/key_add.png) !important;
+}
+.key_delete {
+	background-image: url(icons/key_delete.png) !important;
+}
+.key_go {
+	background-image: url(icons/key_go.png) !important;
+}
+.key_start {
+	background-image: url(icons/key_start.png) !important;
+}
+.key_stop {
+	background-image: url(icons/key_stop.png) !important;
+}
+.laptop {
+	background-image: url(icons/laptop.png) !important;
+}
+.laptop_add {
+	background-image: url(icons/laptop_add.png) !important;
+}
+.laptop_connect {
+	background-image: url(icons/laptop_connect.png) !important;
+}
+.laptop_delete {
+	background-image: url(icons/laptop_delete.png) !important;
+}
+.laptop_disk {
+	background-image: url(icons/laptop_disk.png) !important;
+}
+.laptop_edit {
+	background-image: url(icons/laptop_edit.png) !important;
+}
+.laptop_error {
+	background-image: url(icons/laptop_error.png) !important;
+}
+.laptop_go {
+	background-image: url(icons/laptop_go.png) !important;
+}
+.laptop_key {
+	background-image: url(icons/laptop_key.png) !important;
+}
+.laptop_link {
+	background-image: url(icons/laptop_link.png) !important;
+}
+.laptop_magnify {
+	background-image: url(icons/laptop_magnify.png) !important;
+}
+.laptop_start {
+	background-image: url(icons/laptop_start.png) !important;
+}
+.laptop_stop {
+	background-image: url(icons/laptop_stop.png) !important;
+}
+.laptop_wrench {
+	background-image: url(icons/laptop_wrench.png) !important;
+}
+.layers {
+	background-image: url(icons/layers.png) !important;
+}
+.layout {
+	background-image: url(icons/layout.png) !important;
+}
+.layout_add {
+	background-image: url(icons/layout_add.png) !important;
+}
+.layout_content {
+	background-image: url(icons/layout_content.png) !important;
+}
+.layout_delete {
+	background-image: url(icons/layout_delete.png) !important;
+}
+.layout_edit {
+	background-image: url(icons/layout_edit.png) !important;
+}
+.layout_error {
+	background-image: url(icons/layout_error.png) !important;
+}
+.layout_header {
+	background-image: url(icons/layout_header.png) !important;
+}
+.layout_key {
+	background-image: url(icons/layout_key.png) !important;
+}
+.layout_lightning {
+	background-image: url(icons/layout_lightning.png) !important;
+}
+.layout_link {
+	background-image: url(icons/layout_link.png) !important;
+}
+.layout_sidebar {
+	background-image: url(icons/layout_sidebar.png) !important;
+}
+.lightbulb {
+	background-image: url(icons/lightbulb.png) !important;
+}
+.lightbulb_add {
+	background-image: url(icons/lightbulb_add.png) !important;
+}
+.lightbulb_delete {
+	background-image: url(icons/lightbulb_delete.png) !important;
+}
+.lightbulb_off {
+	background-image: url(icons/lightbulb_off.png) !important;
+}
+.lightning {
+	background-image: url(icons/lightning.png) !important;
+}
+.lightning_add {
+	background-image: url(icons/lightning_add.png) !important;
+}
+.lightning_delete {
+	background-image: url(icons/lightning_delete.png) !important;
+}
+.lightning_go {
+	background-image: url(icons/lightning_go.png) !important;
+}
+.link {
+	background-image: url(icons/link.png) !important;
+}
+.link_add {
+	background-image: url(icons/link_add.png) !important;
+}
+.link_break {
+	background-image: url(icons/link_break.png) !important;
+}
+.link_delete {
+	background-image: url(icons/link_delete.png) !important;
+}
+.link_edit {
+	background-image: url(icons/link_edit.png) !important;
+}
+.link_error {
+	background-image: url(icons/link_error.png) !important;
+}
+.link_go {
+	background-image: url(icons/link_go.png) !important;
+}
+.lock {
+	background-image: url(icons/lock.png) !important;
+}
+.lock_add {
+	background-image: url(icons/lock_add.png) !important;
+}
+.lock_break {
+	background-image: url(icons/lock_break.png) !important;
+}
+.lock_delete {
+	background-image: url(icons/lock_delete.png) !important;
+}
+.lock_edit {
+	background-image: url(icons/lock_edit.png) !important;
+}
+.lock_go {
+	background-image: url(icons/lock_go.png) !important;
+}
+.lock_key {
+	background-image: url(icons/lock_key.png) !important;
+}
+.lock_open {
+	background-image: url(icons/lock_open.png) !important;
+}
+.lock_start {
+	background-image: url(icons/lock_start.png) !important;
+}
+.lock_stop {
+	background-image: url(icons/lock_stop.png) !important;
+}
+.lorry {
+	background-image: url(icons/lorry.png) !important;
+}
+.lorry_add {
+	background-image: url(icons/lorry_add.png) !important;
+}
+.lorry_delete {
+	background-image: url(icons/lorry_delete.png) !important;
+}
+.lorry_error {
+	background-image: url(icons/lorry_error.png) !important;
+}
+.lorry_flatbed {
+	background-image: url(icons/lorry_flatbed.png) !important;
+}
+.lorry_go {
+	background-image: url(icons/lorry_go.png) !important;
+}
+.lorry_link {
+	background-image: url(icons/lorry_link.png) !important;
+}
+.lorry_start {
+	background-image: url(icons/lorry_start.png) !important;
+}
+.lorry_stop {
+	background-image: url(icons/lorry_stop.png) !important;
+}
+.magifier_zoom_out {
+	background-image: url(icons/magifier_zoom_out.png) !important;
+}
+.magnifier {
+	background-image: url(icons/magnifier.png) !important;
+}
+.magnifier_zoom_in {
+	background-image: url(icons/magnifier_zoom_in.png) !important;
+}
+.mail {
+	background-image: url(icons/mail.png) !important;
+}
+.male {
+	background-image: url(icons/male.png) !important;
+}
+.map {
+	background-image: url(icons/map.png) !important;
+}
+.map_add {
+	background-image: url(icons/map_add.png) !important;
+}
+.map_clipboard {
+	background-image: url(icons/map_clipboard.png) !important;
+}
+.map_cursor {
+	background-image: url(icons/map_cursor.png) !important;
+}
+.map_delete {
+	background-image: url(icons/map_delete.png) !important;
+}
+.map_edit {
+	background-image: url(icons/map_edit.png) !important;
+}
+.map_error {
+	background-image: url(icons/map_error.png) !important;
+}
+.map_go {
+	background-image: url(icons/map_go.png) !important;
+}
+.map_link {
+	background-image: url(icons/map_link.png) !important;
+}
+.map_magnify {
+	background-image: url(icons/map_magnify.png) !important;
+}
+.map_start {
+	background-image: url(icons/map_start.png) !important;
+}
+.map_stop {
+	background-image: url(icons/map_stop.png) !important;
+}
+.medal_bronze_1 {
+	background-image: url(icons/medal_bronze_1.png) !important;
+}
+.medal_bronze_2 {
+	background-image: url(icons/medal_bronze_2.png) !important;
+}
+.medal_bronze_3 {
+	background-image: url(icons/medal_bronze_3.png) !important;
+}
+.medal_bronze_add {
+	background-image: url(icons/medal_bronze_add.png) !important;
+}
+.medal_bronze_delete {
+	background-image: url(icons/medal_bronze_delete.png) !important;
+}
+.medal_gold_1 {
+	background-image: url(icons/medal_gold_1.png) !important;
+}
+.medal_gold_2 {
+	background-image: url(icons/medal_gold_2.png) !important;
+}
+.medal_gold_3 {
+	background-image: url(icons/medal_gold_3.png) !important;
+}
+.medal_gold_add {
+	background-image: url(icons/medal_gold_add.png) !important;
+}
+.medal_gold_delete {
+	background-image: url(icons/medal_gold_delete.png) !important;
+}
+.medal_silver_1 {
+	background-image: url(icons/medal_silver_1.png) !important;
+}
+.medal_silver_2 {
+	background-image: url(icons/medal_silver_2.png) !important;
+}
+.medal_silver_3 {
+	background-image: url(icons/medal_silver_3.png) !important;
+}
+.medal_silver_add {
+	background-image: url(icons/medal_silver_add.png) !important;
+}
+.medal_silver_delete {
+	background-image: url(icons/medal_silver_delete.png) !important;
+}
+.money {
+	background-image: url(icons/money.png) !important;
+}
+.money_add {
+	background-image: url(icons/money_add.png) !important;
+}
+.money_delete {
+	background-image: url(icons/money_delete.png) !important;
+}
+.money_dollar {
+	background-image: url(icons/money_dollar.png) !important;
+}
+.money_euro {
+	background-image: url(icons/money_euro.png) !important;
+}
+.money_pound {
+	background-image: url(icons/money_pound.png) !important;
+}
+.money_yen {
+	background-image: url(icons/money_yen.png) !important;
+}
+.monitor {
+	background-image: url(icons/monitor.png) !important;
+}
+.monitor_add {
+	background-image: url(icons/monitor_add.png) !important;
+}
+.monitor_delete {
+	background-image: url(icons/monitor_delete.png) !important;
+}
+.monitor_edit {
+	background-image: url(icons/monitor_edit.png) !important;
+}
+.monitor_error {
+	background-image: url(icons/monitor_error.png) !important;
+}
+.monitor_go {
+	background-image: url(icons/monitor_go.png) !important;
+}
+.monitor_key {
+	background-image: url(icons/monitor_key.png) !important;
+}
+.monitor_lightning {
+	background-image: url(icons/monitor_lightning.png) !important;
+}
+.monitor_link {
+	background-image: url(icons/monitor_link.png) !important;
+}
+.moon_full {
+	background-image: url(icons/moon_full.png) !important;
+}
+.mouse {
+	background-image: url(icons/mouse.png) !important;
+}
+.mouse_add {
+	background-image: url(icons/mouse_add.png) !important;
+}
+.mouse_delete {
+	background-image: url(icons/mouse_delete.png) !important;
+}
+.mouse_error {
+	background-image: url(icons/mouse_error.png) !important;
+}
+.music {
+	background-image: url(icons/music.png) !important;
+}
+.music_note {
+	background-image: url(icons/music_note.png) !important;
+}
+.neighbourhood {
+	background-image: url(icons/neighbourhood.png) !important;
+}
+.new {
+	background-image: url(icons/new.png) !important;
+}
+.newspaper {
+	background-image: url(icons/newspaper.png) !important;
+}
+.newspaper_add {
+	background-image: url(icons/newspaper_add.png) !important;
+}
+.newspaper_delete {
+	background-image: url(icons/newspaper_delete.png) !important;
+}
+.newspaper_go {
+	background-image: url(icons/newspaper_go.png) !important;
+}
+.newspaper_link {
+	background-image: url(icons/newspaper_link.png) !important;
+}
+.new_blue {
+	background-image: url(icons/new_blue.png) !important;
+}
+.new_red {
+	background-image: url(icons/new_red.png) !important;
+}
+.next_blue {
+	background-image: url(icons/next_blue.png) !important;
+}
+.next_green {
+	background-image: url(icons/next_green.png) !important;
+}
+.note {
+	background-image: url(icons/note.png) !important;
+}
+.note_add {
+	background-image: url(icons/note_add.png) !important;
+}
+.note_delete {
+	background-image: url(icons/note_delete.png) !important;
+}
+.note_edit {
+	background-image: url(icons/note_edit.png) !important;
+}
+.note_error {
+	background-image: url(icons/note_error.png) !important;
+}
+.note_go {
+	background-image: url(icons/note_go.png) !important;
+}
+.outline {
+	background-image: url(icons/outline.png) !important;
+}
+.overlays {
+	background-image: url(icons/overlays.png) !important;
+}
+.package {
+	background-image: url(icons/package.png) !important;
+}
+.package_add {
+	background-image: url(icons/package_add.png) !important;
+}
+.package_delete {
+	background-image: url(icons/package_delete.png) !important;
+}
+.package_down {
+	background-image: url(icons/package_down.png) !important;
+}
+.package_go {
+	background-image: url(icons/package_go.png) !important;
+}
+.package_green {
+	background-image: url(icons/package_green.png) !important;
+}
+.package_in {
+	background-image: url(icons/package_in.png) !important;
+}
+.package_link {
+	background-image: url(icons/package_link.png) !important;
+}
+.package_se {
+	background-image: url(icons/package_se.png) !important;
+}
+.package_start {
+	background-image: url(icons/package_start.png) !important;
+}
+.package_stop {
+	background-image: url(icons/package_stop.png) !important;
+}
+.package_white {
+	background-image: url(icons/package_white.png) !important;
+}
+.page {
+	background-image: url(icons/page.png) !important;
+}
+.page_add {
+	background-image: url(icons/page_add.png) !important;
+}
+.page_attach {
+	background-image: url(icons/page_attach.png) !important;
+}
+.page_back {
+	background-image: url(icons/page_back.png) !important;
+}
+.page_break {
+	background-image: url(icons/page_break.png) !important;
+}
+.page_break_insert {
+	background-image: url(icons/page_break_insert.png) !important;
+}
+.page_cancel {
+	background-image: url(icons/page_cancel.png) !important;
+}
+.page_code {
+	background-image: url(icons/page_code.png) !important;
+}
+.page_copy {
+	background-image: url(icons/page_copy.png) !important;
+}
+.page_delete {
+	background-image: url(icons/page_delete.png) !important;
+}
+.edit {
+	background-image: url(icons/edit.png) !important;
+}
+.page_error {
+	background-image: url(icons/page_error.png) !important;
+}
+.page_excel {
+	background-image: url(icons/page_excel.png) !important;
+}
+.page_find {
+	background-image: url(icons/page_find.png) !important;
+}
+.page_forward {
+	background-image: url(icons/page_forward.png) !important;
+}
+.page_gear {
+	background-image: url(icons/page_gear.png) !important;
+}
+.page_go {
+	background-image: url(icons/page_go.png) !important;
+}
+.page_green {
+	background-image: url(icons/page_green.png) !important;
+}
+.page_header_footer {
+	background-image: url(icons/page_header_footer.png) !important;
+}
+.page_key {
+	background-image: url(icons/page_key.png) !important;
+}
+.page_landscape {
+	background-image: url(icons/page_landscape.png) !important;
+}
+.page_landscape_shot {
+	background-image: url(icons/page_landscape_shot.png) !important;
+}
+.page_lightning {
+	background-image: url(icons/page_lightning.png) !important;
+}
+.page_link {
+	background-image: url(icons/page_link.png) !important;
+}
+.page_magnify {
+	background-image: url(icons/page_magnify.png) !important;
+}
+.page_paintbrush {
+	background-image: url(icons/page_paintbrush.png) !important;
+}
+.page_paste {
+	background-image: url(icons/page_paste.png) !important;
+}
+.page_portrait {
+	background-image: url(icons/page_portrait.png) !important;
+}
+.page_portrait_shot {
+	background-image: url(icons/page_portrait_shot.png) !important;
+}
+.page_red {
+	background-image: url(icons/page_red.png) !important;
+}
+.page_refresh {
+	background-image: url(icons/page_refresh.png) !important;
+}
+.page_save {
+	background-image: url(icons/page_save.png) !important;
+}
+.page_white {
+	background-image: url(icons/page_white.png) !important;
+}
+.page_white_acrobat {
+	background-image: url(icons/page_white_acrobat.png) !important;
+}
+.page_white_actionscript {
+	background-image: url(icons/page_white_actionscript.png) !important;
+}
+.page_white_add {
+	background-image: url(icons/page_white_add.png) !important;
+}
+.page_white_break {
+	background-image: url(icons/page_white_break.png) !important;
+}
+.page_white_c {
+	background-image: url(icons/page_white_c.png) !important;
+}
+.page_white_camera {
+	background-image: url(icons/page_white_camera.png) !important;
+}
+.page_white_cd {
+	background-image: url(icons/page_white_cd.png) !important;
+}
+.page_white_cdr {
+	background-image: url(icons/page_white_cdr.png) !important;
+}
+.page_white_code {
+	background-image: url(icons/page_white_code.png) !important;
+}
+.page_white_code_red {
+	background-image: url(icons/page_white_code_red.png) !important;
+}
+.page_white_coldfusion {
+	background-image: url(icons/page_white_coldfusion.png) !important;
+}
+.page_white_compressed {
+	background-image: url(icons/page_white_compressed.png) !important;
+}
+.page_white_connect {
+	background-image: url(icons/page_white_connect.png) !important;
+}
+.page_white_copy {
+	background-image: url(icons/page_white_copy.png) !important;
+}
+.page_white_cplusplus {
+	background-image: url(icons/page_white_cplusplus.png) !important;
+}
+.page_white_csharp {
+	background-image: url(icons/page_white_csharp.png) !important;
+}
+.page_white_cup {
+	background-image: url(icons/page_white_cup.png) !important;
+}
+.page_white_database {
+	background-image: url(icons/page_white_database.png) !important;
+}
+.page_white_database_yellow {
+	background-image: url(icons/page_white_database_yellow.png) !important;
+}
+.page_white_delete {
+	background-image: url(icons/page_white_delete.png) !important;
+}
+.page_white_dvd {
+	background-image: url(icons/page_white_dvd.png) !important;
+}
+.page_white_edit {
+	background-image: url(icons/page_white_edit.png) !important;
+}
+.page_white_error {
+	background-image: url(icons/page_white_error.png) !important;
+}
+.excel {
+	background-image: url(icons/page_white_excel.png) !important;
+}
+.page_white_find {
+	background-image: url(icons/page_white_find.png) !important;
+}
+.page_white_flash {
+	background-image: url(icons/page_white_flash.png) !important;
+}
+.page_white_font {
+	background-image: url(icons/page_white_font.png) !important;
+}
+.page_white_freehand {
+	background-image: url(icons/page_white_freehand.png) !important;
+}
+.page_white_gear {
+	background-image: url(icons/page_white_gear.png) !important;
+}
+.page_white_get {
+	background-image: url(icons/page_white_get.png) !important;
+}
+.page_white_go {
+	background-image: url(icons/page_white_go.png) !important;
+}
+.page_white_h {
+	background-image: url(icons/page_white_h.png) !important;
+}
+.page_white_horizontal {
+	background-image: url(icons/page_white_horizontal.png) !important;
+}
+.page_white_key {
+	background-image: url(icons/page_white_key.png) !important;
+}
+.page_white_lightning {
+	background-image: url(icons/page_white_lightning.png) !important;
+}
+.page_white_link {
+	background-image: url(icons/page_white_link.png) !important;
+}
+.page_white_magnify {
+	background-image: url(icons/page_white_magnify.png) !important;
+}
+.page_white_medal {
+	background-image: url(icons/page_white_medal.png) !important;
+}
+.page_white_office {
+	background-image: url(icons/page_white_office.png) !important;
+}
+.page_white_paint {
+	background-image: url(icons/page_white_paint.png) !important;
+}
+.page_white_paintbrush {
+	background-image: url(icons/page_white_paintbrush.png) !important;
+}
+.page_white_paint_2 {
+	background-image: url(icons/page_white_paint_2.png) !important;
+}
+.page_white_paste {
+	background-image: url(icons/page_white_paste.png) !important;
+}
+.page_white_paste_table {
+	background-image: url(icons/page_white_paste_table.png) !important;
+}
+.page_white_php {
+	background-image: url(icons/page_white_php.png) !important;
+}
+.page_white_picture {
+	background-image: url(icons/page_white_picture.png) !important;
+}
+.page_white_powerpoint {
+	background-image: url(icons/page_white_powerpoint.png) !important;
+}
+.page_white_put {
+	background-image: url(icons/page_white_put.png) !important;
+}
+.page_white_refresh {
+	background-image: url(icons/page_white_refresh.png) !important;
+}
+.page_white_ruby {
+	background-image: url(icons/page_white_ruby.png) !important;
+}
+.page_white_side_by_side {
+	background-image: url(icons/page_white_side_by_side.png) !important;
+}
+.page_white_stack {
+	background-image: url(icons/page_white_stack.png) !important;
+}
+.page_white_star {
+	background-image: url(icons/page_white_star.png) !important;
+}
+.page_white_swoosh {
+	background-image: url(icons/page_white_swoosh.png) !important;
+}
+.page_white_text {
+	background-image: url(icons/page_white_text.png) !important;
+}
+.page_white_text_width {
+	background-image: url(icons/page_white_text_width.png) !important;
+}
+.page_white_tux {
+	background-image: url(icons/page_white_tux.png) !important;
+}
+.page_white_vector {
+	background-image: url(icons/page_white_vector.png) !important;
+}
+.page_white_visualstudio {
+	background-image: url(icons/page_white_visualstudio.png) !important;
+}
+.page_white_width {
+	background-image: url(icons/page_white_width.png) !important;
+}
+.page_white_word {
+	background-image: url(icons/page_white_word.png) !important;
+}
+.page_white_world {
+	background-image: url(icons/page_white_world.png) !important;
+}
+.page_white_wrench {
+	background-image: url(icons/page_white_wrench.png) !important;
+}
+.page_white_zip {
+	background-image: url(icons/page_white_zip.png) !important;
+}
+.page_word {
+	background-image: url(icons/page_word.png) !important;
+}
+.page_world {
+	background-image: url(icons/page_world.png) !important;
+}
+.paint {
+	background-image: url(icons/paint.png) !important;
+}
+.paintbrush {
+	background-image: url(icons/paintbrush.png) !important;
+}
+.paintbrush_color {
+	background-image: url(icons/paintbrush_color.png) !important;
+}
+.paintcan {
+	background-image: url(icons/paintcan.png) !important;
+}
+.paintcan_red {
+	background-image: url(icons/paintcan_red.png) !important;
+}
+.paint_can_brush {
+	background-image: url(icons/paint_can_brush.png) !important;
+}
+.palette {
+	background-image: url(icons/palette.png) !important;
+}
+.paste_plain {
+	background-image: url(icons/paste_plain.png) !important;
+}
+.paste_word {
+	background-image: url(icons/paste_word.png) !important;
+}
+.pause_blue {
+	background-image: url(icons/pause_blue.png) !important;
+}
+.pause_green {
+	background-image: url(icons/pause_green.png) !important;
+}
+.pause_record {
+	background-image: url(icons/pause_record.png) !important;
+}
+.pencil {
+	background-image: url(icons/pencil.png) !important;
+}
+.pencil_add {
+	background-image: url(icons/pencil_add.png) !important;
+}
+.pencil_delete {
+	background-image: url(icons/pencil_delete.png) !important;
+}
+.pencil_go {
+	background-image: url(icons/pencil_go.png) !important;
+}
+.phone {
+	background-image: url(icons/phone.png) !important;
+}
+.phone_add {
+	background-image: url(icons/phone_add.png) !important;
+}
+.phone_delete {
+	background-image: url(icons/phone_delete.png) !important;
+}
+.phone_edit {
+	background-image: url(icons/phone_edit.png) !important;
+}
+.phone_error {
+	background-image: url(icons/phone_error.png) !important;
+}
+.phone_go {
+	background-image: url(icons/phone_go.png) !important;
+}
+.phone_key {
+	background-image: url(icons/phone_key.png) !important;
+}
+.phone_link {
+	background-image: url(icons/phone_link.png) !important;
+}
+.phone_sound {
+	background-image: url(icons/phone_sound.png) !important;
+}
+.phone_start {
+	background-image: url(icons/phone_start.png) !important;
+}
+.phone_stop {
+	background-image: url(icons/phone_stop.png) !important;
+}
+.photo {
+	background-image: url(icons/photo.png) !important;
+}
+.photos {
+	background-image: url(icons/photos.png) !important;
+}
+.photo_add {
+	background-image: url(icons/photo_add.png) !important;
+}
+.photo_delete {
+	background-image: url(icons/photo_delete.png) !important;
+}
+.photo_edit {
+	background-image: url(icons/photo_edit.png) !important;
+}
+.photo_link {
+	background-image: url(icons/photo_link.png) !important;
+}
+.photo_paint {
+	background-image: url(icons/photo_paint.png) !important;
+}
+.picture {
+	background-image: url(icons/picture.png) !important;
+}
+.pictures {
+	background-image: url(icons/pictures.png) !important;
+}
+.pictures_thumbs {
+	background-image: url(icons/pictures_thumbs.png) !important;
+}
+.picture_add {
+	background-image: url(icons/picture_add.png) !important;
+}
+.picture_clipboard {
+	background-image: url(icons/picture_clipboard.png) !important;
+}
+.picture_delete {
+	background-image: url(icons/picture_delete.png) !important;
+}
+.picture_edit {
+	background-image: url(icons/picture_edit.png) !important;
+}
+.picture_empty {
+	background-image: url(icons/picture_empty.png) !important;
+}
+.picture_error {
+	background-image: url(icons/picture_error.png) !important;
+}
+.picture_go {
+	background-image: url(icons/picture_go.png) !important;
+}
+.picture_key {
+	background-image: url(icons/picture_key.png) !important;
+}
+.picture_link {
+	background-image: url(icons/picture_link.png) !important;
+}
+.picture_save {
+	background-image: url(icons/picture_save.png) !important;
+}
+.pilcrow {
+	background-image: url(icons/pilcrow.png) !important;
+}
+.pill {
+	background-image: url(icons/pill.png) !important;
+}
+.pill_add {
+	background-image: url(icons/pill_add.png) !important;
+}
+.pill_delete {
+	background-image: url(icons/pill_delete.png) !important;
+}
+.pill_error {
+	background-image: url(icons/pill_error.png) !important;
+}
+.pill_go {
+	background-image: url(icons/pill_go.png) !important;
+}
+.play_blue {
+	background-image: url(icons/play_blue.png) !important;
+}
+.play_green {
+	background-image: url(icons/play_green.png) !important;
+}
+.plugin {
+	background-image: url(icons/plugin.png) !important;
+}
+.plugin_add {
+	background-image: url(icons/plugin_add.png) !important;
+}
+.plugin_delete {
+	background-image: url(icons/plugin_delete.png) !important;
+}
+.plugin_disabled {
+	background-image: url(icons/plugin_disabled.png) !important;
+}
+.plugin_edit {
+	background-image: url(icons/plugin_edit.png) !important;
+}
+.plugin_error {
+	background-image: url(icons/plugin_error.png) !important;
+}
+.plugin_go {
+	background-image: url(icons/plugin_go.png) !important;
+}
+.plugin_key {
+	background-image: url(icons/plugin_key.png) !important;
+}
+.plugin_link {
+	background-image: url(icons/plugin_link.png) !important;
+}
+.previous_green {
+	background-image: url(icons/previous_green.png) !important;
+}
+.print {
+	background-image: url(icons/printer.png) !important;
+}
+.printer_add {
+	background-image: url(icons/printer_add.png) !important;
+}
+.printer_cancel {
+	background-image: url(icons/printer_cancel.png) !important;
+}
+.printer_color {
+	background-image: url(icons/printer_color.png) !important;
+}
+.printer_connect {
+	background-image: url(icons/printer_connect.png) !important;
+}
+.printer_delete {
+	background-image: url(icons/printer_delete.png) !important;
+}
+.printer_empty {
+	background-image: url(icons/printer_empty.png) !important;
+}
+.printer_error {
+	background-image: url(icons/printer_error.png) !important;
+}
+.printer_go {
+	background-image: url(icons/printer_go.png) !important;
+}
+.printer_key {
+	background-image: url(icons/printer_key.png) !important;
+}
+.printer_mono {
+	background-image: url(icons/printer_mono.png) !important;
+}
+.printer_start {
+	background-image: url(icons/printer_start.png) !important;
+}
+.printer_stop {
+	background-image: url(icons/printer_stop.png) !important;
+}
+.rainbow {
+	background-image: url(icons/rainbow.png) !important;
+}
+.rainbow_star {
+	background-image: url(icons/rainbow_star.png) !important;
+}
+.readme {
+	background-image: url(icons/readme.txt) !important;
+}
+.record_blue {
+	background-image: url(icons/record_blue.png) !important;
+}
+.record_green {
+	background-image: url(icons/record_green.png) !important;
+}
+.record_red {
+	background-image: url(icons/record_red.png) !important;
+}
+.reload {
+	background-image: url(icons/reload.png) !important;
+}
+.report {
+	background-image: url(icons/report.png) !important;
+}
+.report_add {
+	background-image: url(icons/report_add.png) !important;
+}
+.report_delete {
+	background-image: url(icons/report_delete.png) !important;
+}
+.report_disk {
+	background-image: url(icons/report_disk.png) !important;
+}
+.report_edit {
+	background-image: url(icons/report_edit.png) !important;
+}
+.report_go {
+	background-image: url(icons/report_go.png) !important;
+}
+.report_key {
+	background-image: url(icons/report_key.png) !important;
+}
+.report_link {
+	background-image: url(icons/report_link.png) !important;
+}
+.report_magnify {
+	background-image: url(icons/report_magnify.png) !important;
+}
+.report_picture {
+	background-image: url(icons/report_picture.png) !important;
+}
+.report_start {
+	background-image: url(icons/report_start.png) !important;
+}
+.report_stop {
+	background-image: url(icons/report_stop.png) !important;
+}
+.report_user {
+	background-image: url(icons/report_user.png) !important;
+}
+.report_word {
+	background-image: url(icons/report_word.png) !important;
+}
+.resultset_first {
+	background-image: url(icons/resultset_first.png) !important;
+}
+.resultset_last {
+	background-image: url(icons/resultset_last.png) !important;
+}
+.resultset_next {
+	background-image: url(icons/resultset_next.png) !important;
+}
+.resultset_previous {
+	background-image: url(icons/resultset_previous.png) !important;
+}
+.reverse_blue {
+	background-image: url(icons/reverse_blue.png) !important;
+}
+.reverse_green {
+	background-image: url(icons/reverse_green.png) !important;
+}
+.rewind_blue {
+	background-image: url(icons/rewind_blue.png) !important;
+}
+.rewind_green {
+	background-image: url(icons/rewind_green.png) !important;
+}
+.rgb {
+	background-image: url(icons/rgb.png) !important;
+}
+.rosette {
+	background-image: url(icons/rosette.png) !important;
+}
+.rosette_blue {
+	background-image: url(icons/rosette_blue.png) !important;
+}
+.rss {
+	background-image: url(icons/rss.png) !important;
+}
+.rss_add {
+	background-image: url(icons/rss_add.png) !important;
+}
+.rss_delete {
+	background-image: url(icons/rss_delete.png) !important;
+}
+.rss_error {
+	background-image: url(icons/rss_error.png) !important;
+}
+.rss_go {
+	background-image: url(icons/rss_go.png) !important;
+}
+.rss_valid {
+	background-image: url(icons/rss_valid.png) !important;
+}
+.ruby {
+	background-image: url(icons/ruby.png) !important;
+}
+.ruby_add {
+	background-image: url(icons/ruby_add.png) !important;
+}
+.ruby_delete {
+	background-image: url(icons/ruby_delete.png) !important;
+}
+.ruby_gear {
+	background-image: url(icons/ruby_gear.png) !important;
+}
+.ruby_get {
+	background-image: url(icons/ruby_get.png) !important;
+}
+.ruby_go {
+	background-image: url(icons/ruby_go.png) !important;
+}
+.ruby_key {
+	background-image: url(icons/ruby_key.png) !important;
+}
+.ruby_link {
+	background-image: url(icons/ruby_link.png) !important;
+}
+.ruby_put {
+	background-image: url(icons/ruby_put.png) !important;
+}
+.script {
+	background-image: url(icons/script.png) !important;
+}
+.script_add {
+	background-image: url(icons/script_add.png) !important;
+}
+.script_code {
+	background-image: url(icons/script_code.png) !important;
+}
+.script_code_red {
+	background-image: url(icons/script_code_red.png) !important;
+}
+.script_delete {
+	background-image: url(icons/script_delete.png) !important;
+}
+.script_edit {
+	background-image: url(icons/script_edit.png) !important;
+}
+.script_error {
+	background-image: url(icons/script_error.png) !important;
+}
+.script_gear {
+	background-image: url(icons/script_gear.png) !important;
+}
+.script_go {
+	background-image: url(icons/script_go.png) !important;
+}
+.script_key {
+	background-image: url(icons/script_key.png) !important;
+}
+.script_lightning {
+	background-image: url(icons/script_lightning.png) !important;
+}
+.script_link {
+	background-image: url(icons/script_link.png) !important;
+}
+.script_palette {
+	background-image: url(icons/script_palette.png) !important;
+}
+.script_save {
+	background-image: url(icons/script_save.png) !important;
+}
+.script_start {
+	background-image: url(icons/script_start.png) !important;
+}
+.script_stop {
+	background-image: url(icons/script_stop.png) !important;
+}
+.seasons {
+	background-image: url(icons/seasons.png) !important;
+}
+.section_collapsed {
+	background-image: url(icons/section_collapsed.png) !important;
+}
+.section_expanded {
+	background-image: url(icons/section_expanded.png) !important;
+}
+.server {
+	background-image: url(icons/server.png) !important;
+}
+.server_add {
+	background-image: url(icons/server_add.png) !important;
+}
+.server_chart {
+	background-image: url(icons/server_chart.png) !important;
+}
+.server_compressed {
+	background-image: url(icons/server_compressed.png) !important;
+}
+.server_connect {
+	background-image: url(icons/server_connect.png) !important;
+}
+.server_database {
+	background-image: url(icons/server_database.png) !important;
+}
+.server_delete {
+	background-image: url(icons/server_delete.png) !important;
+}
+.server_edit {
+	background-image: url(icons/server_edit.png) !important;
+}
+.server_error {
+	background-image: url(icons/server_error.png) !important;
+}
+.server_go {
+	background-image: url(icons/server_go.png) !important;
+}
+.server_key {
+	background-image: url(icons/server_key.png) !important;
+}
+.server_lightning {
+	background-image: url(icons/server_lightning.png) !important;
+}
+.server_link {
+	background-image: url(icons/server_link.png) !important;
+}
+.server_start {
+	background-image: url(icons/server_start.png) !important;
+}
+.server_stop {
+	background-image: url(icons/server_stop.png) !important;
+}
+.server_uncompressed {
+	background-image: url(icons/server_uncompressed.png) !important;
+}
+.server_wrench {
+	background-image: url(icons/server_wrench.png) !important;
+}
+.shading {
+	background-image: url(icons/shading.png) !important;
+}
+.shapes_many {
+	background-image: url(icons/shapes_many.png) !important;
+}
+.shapes_many_select {
+	background-image: url(icons/shapes_many_select.png) !important;
+}
+.shape_3d {
+	background-image: url(icons/shape_3d.png) !important;
+}
+.shape_align_bottom {
+	background-image: url(icons/shape_align_bottom.png) !important;
+}
+.shape_align_center {
+	background-image: url(icons/shape_align_center.png) !important;
+}
+.shape_align_left {
+	background-image: url(icons/shape_align_left.png) !important;
+}
+.shape_align_middle {
+	background-image: url(icons/shape_align_middle.png) !important;
+}
+.shape_align_right {
+	background-image: url(icons/shape_align_right.png) !important;
+}
+.shape_align_top {
+	background-image: url(icons/shape_align_top.png) !important;
+}
+.shape_flip_horizontal {
+	background-image: url(icons/shape_flip_horizontal.png) !important;
+}
+.shape_flip_vertical {
+	background-image: url(icons/shape_flip_vertical.png) !important;
+}
+.shape_group {
+	background-image: url(icons/shape_group.png) !important;
+}
+.shape_handles {
+	background-image: url(icons/shape_handles.png) !important;
+}
+.shape_move_back {
+	background-image: url(icons/shape_move_back.png) !important;
+}
+.shape_move_backwards {
+	background-image: url(icons/shape_move_backwards.png) !important;
+}
+.shape_move_forwards {
+	background-image: url(icons/shape_move_forwards.png) !important;
+}
+.shape_move_front {
+	background-image: url(icons/shape_move_front.png) !important;
+}
+.shape_rotate_anticlockwise {
+	background-image: url(icons/shape_rotate_anticlockwise.png) !important;
+}
+.shape_rotate_clockwise {
+	background-image: url(icons/shape_rotate_clockwise.png) !important;
+}
+.shape_shade_a {
+	background-image: url(icons/shape_shade_a.png) !important;
+}
+.shape_shade_b {
+	background-image: url(icons/shape_shade_b.png) !important;
+}
+.shape_shade_c {
+	background-image: url(icons/shape_shade_c.png) !important;
+}
+.shape_shadow {
+	background-image: url(icons/shape_shadow.png) !important;
+}
+.shape_shadow_toggle {
+	background-image: url(icons/shape_shadow_toggle.png) !important;
+}
+.shape_square {
+	background-image: url(icons/shape_square.png) !important;
+}
+.shape_square_add {
+	background-image: url(icons/shape_square_add.png) !important;
+}
+.shape_square_delete {
+	background-image: url(icons/shape_square_delete.png) !important;
+}
+.shape_square_edit {
+	background-image: url(icons/shape_square_edit.png) !important;
+}
+.shape_square_error {
+	background-image: url(icons/shape_square_error.png) !important;
+}
+.shape_square_go {
+	background-image: url(icons/shape_square_go.png) !important;
+}
+.shape_square_key {
+	background-image: url(icons/shape_square_key.png) !important;
+}
+.shape_square_link {
+	background-image: url(icons/shape_square_link.png) !important;
+}
+.shape_square_select {
+	background-image: url(icons/shape_square_select.png) !important;
+}
+.shape_ungroup {
+	background-image: url(icons/shape_ungroup.png) !important;
+}
+.share {
+	background-image: url(icons/share.png) !important;
+}
+.shield {
+	background-image: url(icons/shield.png) !important;
+}
+.shield_add {
+	background-image: url(icons/shield_add.png) !important;
+}
+.shield_delete {
+	background-image: url(icons/shield_delete.png) !important;
+}
+.shield_error {
+	background-image: url(icons/shield_error.png) !important;
+}
+.shield_go {
+	background-image: url(icons/shield_go.png) !important;
+}
+.shield_rainbow {
+	background-image: url(icons/shield_rainbow.png) !important;
+}
+.shield_silver {
+	background-image: url(icons/shield_silver.png) !important;
+}
+.shield_start {
+	background-image: url(icons/shield_start.png) !important;
+}
+.shield_stop {
+	background-image: url(icons/shield_stop.png) !important;
+}
+.sitemap {
+	background-image: url(icons/sitemap.png) !important;
+}
+.sitemap_color {
+	background-image: url(icons/sitemap_color.png) !important;
+}
+.smartphone {
+	background-image: url(icons/smartphone.png) !important;
+}
+.smartphone_add {
+	background-image: url(icons/smartphone_add.png) !important;
+}
+.smartphone_connect {
+	background-image: url(icons/smartphone_connect.png) !important;
+}
+.smartphone_delete {
+	background-image: url(icons/smartphone_delete.png) !important;
+}
+.smartphone_disk {
+	background-image: url(icons/smartphone_disk.png) !important;
+}
+.smartphone_edit {
+	background-image: url(icons/smartphone_edit.png) !important;
+}
+.smartphone_error {
+	background-image: url(icons/smartphone_error.png) !important;
+}
+.smartphone_go {
+	background-image: url(icons/smartphone_go.png) !important;
+}
+.smartphone_key {
+	background-image: url(icons/smartphone_key.png) !important;
+}
+.smartphone_wrench {
+	background-image: url(icons/smartphone_wrench.png) !important;
+}
+.sort_ascending {
+	background-image: url(icons/sort_ascending.png) !important;
+}
+.sort_descending {
+	background-image: url(icons/sort_descending.png) !important;
+}
+.sound {
+	background-image: url(icons/sound.png) !important;
+}
+.sound_add {
+	background-image: url(icons/sound_add.png) !important;
+}
+.sound_delete {
+	background-image: url(icons/sound_delete.png) !important;
+}
+.sound_high {
+	background-image: url(icons/sound_high.png) !important;
+}
+.sound_in {
+	background-image: url(icons/sound_in.png) !important;
+}
+.sound_low {
+	background-image: url(icons/sound_low.png) !important;
+}
+.sound_mute {
+	background-image: url(icons/sound_mute.png) !important;
+}
+.sound_none {
+	background-image: url(icons/sound_none.png) !important;
+}
+.sound_out {
+	background-image: url(icons/sound_out.png) !important;
+}
+.spellcheck {
+	background-image: url(icons/spellcheck.png) !important;
+}
+.sport_8ball {
+	background-image: url(icons/sport_8ball.png) !important;
+}
+.sport_basketball {
+	background-image: url(icons/sport_basketball.png) !important;
+}
+.sport_football {
+	background-image: url(icons/sport_football.png) !important;
+}
+.sport_golf {
+	background-image: url(icons/sport_golf.png) !important;
+}
+.sport_golf_practice {
+	background-image: url(icons/sport_golf_practice.png) !important;
+}
+.sport_raquet {
+	background-image: url(icons/sport_raquet.png) !important;
+}
+.sport_shuttlecock {
+	background-image: url(icons/sport_shuttlecock.png) !important;
+}
+.sport_soccer {
+	background-image: url(icons/sport_soccer.png) !important;
+}
+.sport_tennis {
+	background-image: url(icons/sport_tennis.png) !important;
+}
+.star {
+	background-image: url(icons/star.png) !important;
+}
+.star_bronze {
+	background-image: url(icons/star_bronze.png) !important;
+}
+.star_bronze_half_grey {
+	background-image: url(icons/star_bronze_half_grey.png) !important;
+}
+.star_gold {
+	background-image: url(icons/star_gold.png) !important;
+}
+.star_gold_half_grey {
+	background-image: url(icons/star_gold_half_grey.png) !important;
+}
+.star_gold_half_silver {
+	background-image: url(icons/star_gold_half_silver.png) !important;
+}
+.star_grey {
+	background-image: url(icons/star_grey.png) !important;
+}
+.star_half_grey {
+	background-image: url(icons/star_half_grey.png) !important;
+}
+.star_silver {
+	background-image: url(icons/star_silver.png) !important;
+}
+.status_away {
+	background-image: url(icons/status_away.png) !important;
+}
+.status_be_right_back {
+	background-image: url(icons/status_be_right_back.png) !important;
+}
+.status_busy {
+	background-image: url(icons/status_busy.png) !important;
+}
+.status_invisible {
+	background-image: url(icons/status_invisible.png) !important;
+}
+.status_offline {
+	background-image: url(icons/status_offline.png) !important;
+}
+.status_online {
+	background-image: url(icons/status_online.png) !important;
+}
+.stop {
+	background-image: url(icons/stop.png) !important;
+}
+.stop_blue {
+	background-image: url(icons/stop_blue.png) !important;
+}
+.stop_green {
+	background-image: url(icons/stop_green.png) !important;
+}
+.stop_red {
+	background-image: url(icons/stop_red.png) !important;
+}
+.style {
+	background-image: url(icons/style.png) !important;
+}
+.style_add {
+	background-image: url(icons/style_add.png) !important;
+}
+.style_delete {
+	background-image: url(icons/style_delete.png) !important;
+}
+.style_edit {
+	background-image: url(icons/style_edit.png) !important;
+}
+.style_go {
+	background-image: url(icons/style_go.png) !important;
+}
+.sum {
+	background-image: url(icons/sum.png) !important;
+}
+.tab {
+	background-image: url(icons/tab.png) !important;
+}
+.table {
+	background-image: url(icons/table.png) !important;
+}
+.table_add {
+	background-image: url(icons/table_add.png) !important;
+}
+.table_cell {
+	background-image: url(icons/table_cell.png) !important;
+}
+.table_column {
+	background-image: url(icons/table_column.png) !important;
+}
+.table_column_add {
+	background-image: url(icons/table_column_add.png) !important;
+}
+.table_column_delete {
+	background-image: url(icons/table_column_delete.png) !important;
+}
+.table_connect {
+	background-image: url(icons/table_connect.png) !important;
+}
+.table_delete {
+	background-image: url(icons/table_delete.png) !important;
+}
+.table_edit {
+	background-image: url(icons/table_edit.png) !important;
+}
+.table_error {
+	background-image: url(icons/table_error.png) !important;
+}
+.table_gear {
+	background-image: url(icons/table_gear.png) !important;
+}
+.table_go {
+	background-image: url(icons/table_go.png) !important;
+}
+.table_key {
+	background-image: url(icons/table_key.png) !important;
+}
+.table_lightning {
+	background-image: url(icons/table_lightning.png) !important;
+}
+.table_link {
+	background-image: url(icons/table_link.png) !important;
+}
+.table_multiple {
+	background-image: url(icons/table_multiple.png) !important;
+}
+.table_refresh {
+	background-image: url(icons/table_refresh.png) !important;
+}
+.table_relationship {
+	background-image: url(icons/table_relationship.png) !important;
+}
+.table_row {
+	background-image: url(icons/table_row.png) !important;
+}
+.table_row_delete {
+	background-image: url(icons/table_row_delete.png) !important;
+}
+.table_row_insert {
+	background-image: url(icons/table_row_insert.png) !important;
+}
+.table_save {
+	background-image: url(icons/table_save.png) !important;
+}
+.table_sort {
+	background-image: url(icons/table_sort.png) !important;
+}
+.tab_add {
+	background-image: url(icons/tab_add.png) !important;
+}
+.tab_blue {
+	background-image: url(icons/tab_blue.png) !important;
+}
+.tab_delete {
+	background-image: url(icons/tab_delete.png) !important;
+}
+.tab_edit {
+	background-image: url(icons/tab_edit.png) !important;
+}
+.tab_go {
+	background-image: url(icons/tab_go.png) !important;
+}
+.tab_green {
+	background-image: url(icons/tab_green.png) !important;
+}
+.tab_red {
+	background-image: url(icons/tab_red.png) !important;
+}
+.tag {
+	background-image: url(icons/tag.png) !important;
+}
+.tags_grey {
+	background-image: url(icons/tags_grey.png) !important;
+}
+.tags_red {
+	background-image: url(icons/tags_red.png) !important;
+}
+.tag_blue {
+	background-image: url(icons/tag_blue.png) !important;
+}
+.tag_blue_add {
+	background-image: url(icons/tag_blue_add.png) !important;
+}
+.tag_blue_delete {
+	background-image: url(icons/tag_blue_delete.png) !important;
+}
+.tag_blue_edit {
+	background-image: url(icons/tag_blue_edit.png) !important;
+}
+.tag_green {
+	background-image: url(icons/tag_green.png) !important;
+}
+.tag_orange {
+	background-image: url(icons/tag_orange.png) !important;
+}
+.tag_pink {
+	background-image: url(icons/tag_pink.png) !important;
+}
+.tag_purple {
+	background-image: url(icons/tag_purple.png) !important;
+}
+.tag_red {
+	background-image: url(icons/tag_red.png) !important;
+}
+.tag_yellow {
+	background-image: url(icons/tag_yellow.png) !important;
+}
+.telephone {
+	background-image: url(icons/telephone.png) !important;
+}
+.telephone_add {
+	background-image: url(icons/telephone_add.png) !important;
+}
+.telephone_delete {
+	background-image: url(icons/telephone_delete.png) !important;
+}
+.telephone_edit {
+	background-image: url(icons/telephone_edit.png) !important;
+}
+.telephone_error {
+	background-image: url(icons/telephone_error.png) !important;
+}
+.telephone_go {
+	background-image: url(icons/telephone_go.png) !important;
+}
+.telephone_key {
+	background-image: url(icons/telephone_key.png) !important;
+}
+.telephone_link {
+	background-image: url(icons/telephone_link.png) !important;
+}
+.telephone_red {
+	background-image: url(icons/telephone_red.png) !important;
+}
+.television {
+	background-image: url(icons/television.png) !important;
+}
+.television_add {
+	background-image: url(icons/television_add.png) !important;
+}
+.television_delete {
+	background-image: url(icons/television_delete.png) !important;
+}
+.television_in {
+	background-image: url(icons/television_in.png) !important;
+}
+.television_off {
+	background-image: url(icons/television_off.png) !important;
+}
+.television_out {
+	background-image: url(icons/television_out.png) !important;
+}
+.television_star {
+	background-image: url(icons/television_star.png) !important;
+}
+.textfield {
+	background-image: url(icons/textfield.png) !important;
+}
+.textfield_add {
+	background-image: url(icons/textfield_add.png) !important;
+}
+.textfield_delete {
+	background-image: url(icons/textfield_delete.png) !important;
+}
+.textfield_key {
+	background-image: url(icons/textfield_key.png) !important;
+}
+.textfield_rename {
+	background-image: url(icons/textfield_rename.png) !important;
+}
+.text_ab {
+	background-image: url(icons/text_ab.png) !important;
+}
+.text_align_center {
+	background-image: url(icons/text_align_center.png) !important;
+}
+.text_align_justify {
+	background-image: url(icons/text_align_justify.png) !important;
+}
+.text_align_left {
+	background-image: url(icons/text_align_left.png) !important;
+}
+.text_align_right {
+	background-image: url(icons/text_align_right.png) !important;
+}
+.text_allcaps {
+	background-image: url(icons/text_allcaps.png) !important;
+}
+.text_bold {
+	background-image: url(icons/text_bold.png) !important;
+}
+.text_columns {
+	background-image: url(icons/text_columns.png) !important;
+}
+.text_complete {
+	background-image: url(icons/text_complete.png) !important;
+}
+.text_direction {
+	background-image: url(icons/text_direction.png) !important;
+}
+.text_double_underline {
+	background-image: url(icons/text_double_underline.png) !important;
+}
+.text_dropcaps {
+	background-image: url(icons/text_dropcaps.png) !important;
+}
+.text_fit {
+	background-image: url(icons/text_fit.png) !important;
+}
+.text_flip {
+	background-image: url(icons/text_flip.png) !important;
+}
+.text_font_default {
+	background-image: url(icons/text_font_default.png) !important;
+}
+.text_heading_1 {
+	background-image: url(icons/text_heading_1.png) !important;
+}
+.text_heading_2 {
+	background-image: url(icons/text_heading_2.png) !important;
+}
+.text_heading_3 {
+	background-image: url(icons/text_heading_3.png) !important;
+}
+.text_heading_4 {
+	background-image: url(icons/text_heading_4.png) !important;
+}
+.text_heading_5 {
+	background-image: url(icons/text_heading_5.png) !important;
+}
+.text_heading_6 {
+	background-image: url(icons/text_heading_6.png) !important;
+}
+.text_horizontalrule {
+	background-image: url(icons/text_horizontalrule.png) !important;
+}
+.text_indent {
+	background-image: url(icons/text_indent.png) !important;
+}
+.text_indent_remove {
+	background-image: url(icons/text_indent_remove.png) !important;
+}
+.text_inverse {
+	background-image: url(icons/text_inverse.png) !important;
+}
+.text_italic {
+	background-image: url(icons/text_italic.png) !important;
+}
+.text_kerning {
+	background-image: url(icons/text_kerning.png) !important;
+}
+.text_left_to_right {
+	background-image: url(icons/text_left_to_right.png) !important;
+}
+.text_letterspacing {
+	background-image: url(icons/text_letterspacing.png) !important;
+}
+.text_letter_omega {
+	background-image: url(icons/text_letter_omega.png) !important;
+}
+.text_linespacing {
+	background-image: url(icons/text_linespacing.png) !important;
+}
+.text_list_bullets {
+	background-image: url(icons/text_list_bullets.png) !important;
+}
+.text_list_numbers {
+	background-image: url(icons/text_list_numbers.png) !important;
+}
+.text_lowercase {
+	background-image: url(icons/text_lowercase.png) !important;
+}
+.text_lowercase_a {
+	background-image: url(icons/text_lowercase_a.png) !important;
+}
+.text_mirror {
+	background-image: url(icons/text_mirror.png) !important;
+}
+.text_padding_bottom {
+	background-image: url(icons/text_padding_bottom.png) !important;
+}
+.text_padding_left {
+	background-image: url(icons/text_padding_left.png) !important;
+}
+.text_padding_right {
+	background-image: url(icons/text_padding_right.png) !important;
+}
+.text_padding_top {
+	background-image: url(icons/text_padding_top.png) !important;
+}
+.text_replace {
+	background-image: url(icons/text_replace.png) !important;
+}
+.text_right_to_left {
+	background-image: url(icons/text_right_to_left.png) !important;
+}
+.text_rotate_0 {
+	background-image: url(icons/text_rotate_0.png) !important;
+}
+.text_rotate_180 {
+	background-image: url(icons/text_rotate_180.png) !important;
+}
+.text_rotate_270 {
+	background-image: url(icons/text_rotate_270.png) !important;
+}
+.text_rotate_90 {
+	background-image: url(icons/text_rotate_90.png) !important;
+}
+.text_ruler {
+	background-image: url(icons/text_ruler.png) !important;
+}
+.text_shading {
+	background-image: url(icons/text_shading.png) !important;
+}
+.text_signature {
+	background-image: url(icons/text_signature.png) !important;
+}
+.text_smallcaps {
+	background-image: url(icons/text_smallcaps.png) !important;
+}
+.text_spelling {
+	background-image: url(icons/text_spelling.png) !important;
+}
+.text_strikethrough {
+	background-image: url(icons/text_strikethrough.png) !important;
+}
+.text_subscript {
+	background-image: url(icons/text_subscript.png) !important;
+}
+.text_superscript {
+	background-image: url(icons/text_superscript.png) !important;
+}
+.text_tab {
+	background-image: url(icons/text_tab.png) !important;
+}
+.text_underline {
+	background-image: url(icons/text_underline.png) !important;
+}
+.text_uppercase {
+	background-image: url(icons/text_uppercase.png) !important;
+}
+.theme {
+	background-image: url(icons/theme.png) !important;
+}
+.thumb_down {
+	background-image: url(icons/thumb_down.png) !important;
+}
+.thumb_up {
+	background-image: url(icons/thumb_up.png) !important;
+}
+.tick {
+	background-image: url(icons/tick.png) !important;
+}
+.time {
+	background-image: url(icons/time.png) !important;
+}
+.timeline_marker {
+	background-image: url(icons/timeline_marker.png) !important;
+}
+.time_add {
+	background-image: url(icons/time_add.png) !important;
+}
+.time_delete {
+	background-image: url(icons/time_delete.png) !important;
+}
+.time_go {
+	background-image: url(icons/time_go.png) !important;
+}
+.time_green {
+	background-image: url(icons/time_green.png) !important;
+}
+.time_red {
+	background-image: url(icons/time_red.png) !important;
+}
+.transmit {
+	background-image: url(icons/transmit.png) !important;
+}
+.transmit_add {
+	background-image: url(icons/transmit_add.png) !important;
+}
+.transmit_blue {
+	background-image: url(icons/transmit_blue.png) !important;
+}
+.transmit_delete {
+	background-image: url(icons/transmit_delete.png) !important;
+}
+.transmit_edit {
+	background-image: url(icons/transmit_edit.png) !important;
+}
+.transmit_error {
+	background-image: url(icons/transmit_error.png) !important;
+}
+.transmit_go {
+	background-image: url(icons/transmit_go.png) !important;
+}
+.transmit_red {
+	background-image: url(icons/transmit_red.png) !important;
+}
+.tux {
+	background-image: url(icons/tux.png) !important;
+}
+.user {
+	background-image: url(icons/user.png) !important;
+}
+.user_add {
+	background-image: url(icons/user_add.png) !important;
+}
+.user_alert {
+	background-image: url(icons/user_alert.png) !important;
+}
+.user_b {
+	background-image: url(icons/user_b.png) !important;
+}
+.user_brown {
+	background-image: url(icons/user_brown.png) !important;
+}
+.user_comment {
+	background-image: url(icons/user_comment.png) !important;
+}
+.user_comment_2 {
+	background-image: url(icons/user_comment_2.png) !important;
+}
+.user_cross {
+	background-image: url(icons/user_cross.png) !important;
+}
+.user_delete {
+	background-image: url(icons/user_delete.png) !important;
+}
+.user_earth {
+	background-image: url(icons/user_earth.png) !important;
+}
+.user_edit {
+	background-image: url(icons/user_edit.png) !important;
+}
+.user_female {
+	background-image: url(icons/user_female.png) !important;
+}
+.user_go {
+	background-image: url(icons/user_go.png) !important;
+}
+.user_gray {
+	background-image: url(icons/user_gray.png) !important;
+}
+.user_gray_cool {
+	background-image: url(icons/user_gray_cool.png) !important;
+}
+.user_green {
+	background-image: url(icons/user_green.png) !important;
+}
+.user_home {
+	background-image: url(icons/user_home.png) !important;
+}
+.user_key {
+	background-image: url(icons/user_key.png) !important;
+}
+.user_magnify {
+	background-image: url(icons/user_magnify.png) !important;
+}
+.user_mature {
+	background-image: url(icons/user_mature.png) !important;
+}
+.user_orange {
+	background-image: url(icons/user_orange.png) !important;
+}
+.user_red {
+	background-image: url(icons/user_red.png) !important;
+}
+.user_star {
+	background-image: url(icons/user_star.png) !important;
+}
+.user_suit {
+	background-image: url(icons/user_suit.png) !important;
+}
+.user_suit_black {
+	background-image: url(icons/user_suit_black.png) !important;
+}
+.user_tick {
+	background-image: url(icons/user_tick.png) !important;
+}
+.vcard {
+	background-image: url(icons/vcard.png) !important;
+}
+.vcard_add {
+	background-image: url(icons/vcard_add.png) !important;
+}
+.vcard_delete {
+	background-image: url(icons/vcard_delete.png) !important;
+}
+.vcard_edit {
+	background-image: url(icons/vcard_edit.png) !important;
+}
+.vcard_key {
+	background-image: url(icons/vcard_key.png) !important;
+}
+.vector {
+	background-image: url(icons/vector.png) !important;
+}
+.vector_add {
+	background-image: url(icons/vector_add.png) !important;
+}
+.vector_delete {
+	background-image: url(icons/vector_delete.png) !important;
+}
+.vector_key {
+	background-image: url(icons/vector_key.png) !important;
+}
+.wand {
+	background-image: url(icons/wand.png) !important;
+}
+.weather_cloud {
+	background-image: url(icons/weather_cloud.png) !important;
+}
+.weather_clouds {
+	background-image: url(icons/weather_clouds.png) !important;
+}
+.weather_cloudy {
+	background-image: url(icons/weather_cloudy.png) !important;
+}
+.weather_cloudy_rain {
+	background-image: url(icons/weather_cloudy_rain.png) !important;
+}
+.weather_lightning {
+	background-image: url(icons/weather_lightning.png) !important;
+}
+.weather_rain {
+	background-image: url(icons/weather_rain.png) !important;
+}
+.weather_snow {
+	background-image: url(icons/weather_snow.png) !important;
+}
+.weather_sun {
+	background-image: url(icons/weather_sun.png) !important;
+}
+.webcam {
+	background-image: url(icons/webcam.png) !important;
+}
+.webcam_add {
+	background-image: url(icons/webcam_add.png) !important;
+}
+.webcam_connect {
+	background-image: url(icons/webcam_connect.png) !important;
+}
+.webcam_delete {
+	background-image: url(icons/webcam_delete.png) !important;
+}
+.webcam_error {
+	background-image: url(icons/webcam_error.png) !important;
+}
+.webcam_start {
+	background-image: url(icons/webcam_start.png) !important;
+}
+.webcam_stop {
+	background-image: url(icons/webcam_stop.png) !important;
+}
+.world {
+	background-image: url(icons/world.png) !important;
+}
+.world_add {
+	background-image: url(icons/world_add.png) !important;
+}
+.world_connect {
+	background-image: url(icons/world_connect.png) !important;
+}
+.world_dawn {
+	background-image: url(icons/world_dawn.png) !important;
+}
+.world_delete {
+	background-image: url(icons/world_delete.png) !important;
+}
+.world_edit {
+	background-image: url(icons/world_edit.png) !important;
+}
+.world_go {
+	background-image: url(icons/world_go.png) !important;
+}
+.world_key {
+	background-image: url(icons/world_key.png) !important;
+}
+.world_link {
+	background-image: url(icons/world_link.png) !important;
+}
+.world_night {
+	background-image: url(icons/world_night.png) !important;
+}
+.world_orbit {
+	background-image: url(icons/world_orbit.png) !important;
+}
+.wrench {
+	background-image: url(icons/wrench.png) !important;
+}
+.wrench_orange {
+	background-image: url(icons/wrench_orange.png) !important;
+}
+.xhtml {
+	background-image: url(icons/xhtml.png) !important;
+}
+.xhtml_add {
+	background-image: url(icons/xhtml_add.png) !important;
+}
+.xhtml_delete {
+	background-image: url(icons/xhtml_delete.png) !important;
+}
+.xhtml_error {
+	background-image: url(icons/xhtml_error.png) !important;
+}
+.xhtml_go {
+	background-image: url(icons/xhtml_go.png) !important;
+}
+.xhtml_valid {
+	background-image: url(icons/xhtml_valid.png) !important;
+}
+.zoom {
+	background-image: url(icons/zoom.png) !important;
+}
+.zoom_in {
+	background-image: url(icons/zoom_in.png) !important;
+}
+.zoom_out {
+	background-image: url(icons/zoom_out.png) !important;
+}
+.x-button-expandall { 
+	background-image: url(icons/expandall.png) !important; 
+	background-repeat: no-repeat; 
+}
+.x-button-collapseall { 
+	background-image: url(icons/collapseall.png) !important; 
+	background-repeat: no-repeat; 
+}
+

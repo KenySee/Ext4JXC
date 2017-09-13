@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!--个人发现   2.3.4.1 注解必须配置 否则 会报错 default package 有
+    http://localhost:8080/RZWeb/config-browser/actionNames.action
+    <interceptor-ref name="secureInterceptor"/>
+    -->
+	<constant name="struts.devMode" value="true"/> 
+	<constant name="struts.convention.default.parent.package" value="default-package" />  
+	<!-- constant name="struts.multipart.saveDir" value="/tmp"/ -->
+	<constant name="struts.action.excludePattern" value="/ueditor/.*" />
+	<package name="default-package" extends="convention-default">
+		<interceptors>
+			<interceptor name="secureInterceptor" class="com.keer.core.web.interceptor.SecureInterceptor"/>
+			<interceptor name="authorityInterceptor" class="com.keer.core.web.interceptor.AuthorityInterceptor"/>
+			<interceptor-stack name="KeerStack">
+	           	<interceptor-ref name="exception">  
+                    <param name="logEnabled">false</param>  
+                    <param name="logLevel">warn</param>  
+                </interceptor-ref>   			
+				<interceptor-ref name="authorityInterceptor"/>
+				<interceptor-ref name="secureInterceptor"/>
+	            <interceptor-ref name="defaultStack"/>
+			</interceptor-stack>								
+		</interceptors>		
+		<default-interceptor-ref name="KeerStack"></default-interceptor-ref>		
+		<global-results>
+			<result name="login">login.jsp</result>
+			<result name="error" type="chain">
+				<param name="actionName">error</param>
+				<param name="method">handler</param>
+			</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+		<action name="LoginAction" class="com.keertech.demo.web.UserLoginAction">
+			<result name="main">main.jsp</result>
+			<result name="login">login.jsp</result>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+	
+		<action name="error" method="handler" class="com.core.core.web.ExceptionAction">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action> 		
+	</package> 	
+    <constant name="struts.convention.action.disableJarScanning" value="false" />
+    <constant name="struts.convention.action.fileProtocols" value="jar,wsjar" />
+    <constant name="struts.convention.action.includeJars" value=".*?/keercore.*?jar(!/)?" />
+    <constant name="log4j.logger.org.apache.struts2.convention" value="DEBUG" />
+    <constant name="struts.convention.action.name.lowercase" value="false" />
+	<constant name="struts.convention.action.name.separator" value="" />
+	<constant name="struts.convention.result.path" value="/" />
+	<constant name="struts.action.extension" value="action," /> 
+	<constant name="struts.i18n.reload" value="false"/>
+	<constant name="struts.configuration.xml.reload" value="false"/>
+	<constant name="struts.convention.classes.reload" value="false" /> 
+	<constant name="struts.multipart.maxSize" value="9000000"/>
+</struts>
