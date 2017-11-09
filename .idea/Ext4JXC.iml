@@ -9,6 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
       <facet type="Struts2" name="Struts 2">
         <configuration>
@@ -16,10 +17,24 @@
         </configuration>
       </facet>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/classes/resources/applicationContext-activemq.xml</file>
+          <file>file://$MODULE_DIR$/src/resources/applicationContext-webservice.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/classes/resources/applicationContext-webservice.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/classes/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/resources/applicationContext-activemq.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
