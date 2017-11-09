@@ -4,7 +4,9 @@ import com.keer.core.annotation.Description;
 import com.keer.core.bean.base.BaseBean;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.Set;
 
 /**
  * Created by hadoop on 2017/11/9.
@@ -25,6 +27,18 @@ public class BsArtist extends BaseBean {
 
     @Description(Name="匠人介绍")
     private String description;
+
+    @Description(Name="作品集")
+    @OneToMany(mappedBy="work")
+    private Set<BsWork> works;
+
+    public Set<BsWork> getWorks() {
+        return works;
+    }
+
+    public void setWorks(Set<BsWork> works) {
+        this.works = works;
+    }
 
     public String getNickname() {
         return nickname;
