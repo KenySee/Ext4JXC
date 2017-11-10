@@ -1,7 +1,7 @@
-package com.keertech.demo.bean.extend;
+package com.keertech.demo.bean;
 
 import com.keer.core.annotation.Description;
-import com.keer.core.bean.base.EntityBean;
+import com.keer.core.bean.base.GenericBean;
 import com.keertech.demo.bean.enums.entity.ContentType;
 
 import javax.persistence.*;
@@ -10,13 +10,13 @@ import javax.persistence.*;
  * Created by hadoop on 2017/11/9.
  */
 @Entity
-@Table(name="bs_article")
+@Table(name="part_article_content")
 @Description(Name="文章内容")
-public class BsArticleContent extends EntityBean {
+public class PartArticleContent extends GenericBean {
 
     @Description(Name="文章")
     @ManyToOne
-    private BsArticle article;
+    private PartArticle article;
 
     @Enumerated(EnumType.STRING)
     @Column(length=10)
@@ -26,11 +26,15 @@ public class BsArticleContent extends EntityBean {
     @Description(Name="类型值")
     private String contentValue;
 
-    public BsArticle getArticle() {
+    @Description(Name="内容序号")
+    private Integer contentIndex;
+
+
+    public PartArticle getArticle() {
         return article;
     }
 
-    public void setArticle(BsArticle article) {
+    public void setArticle(PartArticle article) {
         this.article = article;
     }
 
@@ -48,6 +52,14 @@ public class BsArticleContent extends EntityBean {
 
     public void setContentValue(String contentValue) {
         this.contentValue = contentValue;
+    }
+
+    public Integer getContentIndex() {
+        return contentIndex;
+    }
+
+    public void setContentIndex(Integer contentIndex) {
+        this.contentIndex = contentIndex;
     }
 
     @Override

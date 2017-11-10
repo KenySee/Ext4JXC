@@ -11,7 +11,7 @@ Ext.define('Keer.ui.${upfolder}.${appfolder}.MainController',{
 	},
 	//【成员变量】
 	config: {
-		actionUrl: '${appfolder}',
+		actionUrl: null,
 		controllerType: 'main',
 		editing: null,
 		ready: null,

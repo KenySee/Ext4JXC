@@ -1,7 +1,7 @@
-package com.keertech.demo.bean.extend;
+package com.keertech.demo.bean;
 
 import com.keer.core.annotation.Description;
-import com.keer.core.bean.base.BaseBean;
+import com.keer.core.bean.base.GenericBean;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -12,9 +12,9 @@ import java.util.Set;
  * Created by hadoop on 2017/11/9.
  */
 @Entity
-@Table(name="bs_artist")
+@Table(name="part_artist")
 @Description(Name="匠人")
-public class BsArtist extends BaseBean {
+public class PartArtist extends GenericBean {
 
     @Description(Name="匠人名称")
     private String nickname;
@@ -29,15 +29,27 @@ public class BsArtist extends BaseBean {
     private String description;
 
     @Description(Name="作品集")
-    @OneToMany(mappedBy="work")
-    private Set<BsWork> works;
+    @OneToMany(mappedBy="artist")
+    private Set<PartWork> works;
 
-    public Set<BsWork> getWorks() {
+    @Description(Name="文章集")
+    @OneToMany(mappedBy="artist")
+    private Set<PartArticle> articles;
+
+    public Set<PartWork> getWorks() {
         return works;
     }
 
-    public void setWorks(Set<BsWork> works) {
+    public void setWorks(Set<PartWork> works) {
         this.works = works;
+    }
+
+    public Set<PartArticle> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(Set<PartArticle> articles) {
+        this.articles = articles;
     }
 
     public String getNickname() {

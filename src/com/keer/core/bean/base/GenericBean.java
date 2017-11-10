@@ -12,6 +12,7 @@ import javax.persistence.Version;
 import com.keer.core.annotation.Description;
 import com.keer.core.bean.comm.SystemVar;
 import com.keer.core.dao.keygenerator.SingleKeyFactory;
+import com.keer.core.util.IdGen;
 
 /**
  * 通用实体抽象类(手动维护主键)
@@ -40,13 +41,14 @@ public abstract class GenericBean extends JSONBean<String> {
 				this.id = UUID.randomUUID().toString();
 			}
 			else {
-				for (Class<?> sc = this.getClass(); (sc != null); sc = sc.getSuperclass()){
-					Table table = sc.getAnnotation(Table.class);
-					if (table != null){
-						this.id = String.format("%d", SingleKeyFactory.getInstance().getNextKey(table.name()));
-						break;
-					}
-				}
+				this.id = IdGen.nextS();
+//				for (Class<?> sc = this.getClass(); (sc != null); sc = sc.getSuperclass()){
+//					Table table = sc.getAnnotation(Table.class);
+//					if (table != null){
+//						this.id = String.format("%d", SingleKeyFactory.getInstance().getNextKey(table.name()));
+//						break;
+//					}
+//				}
 			}
 			this.setValid(true);
 		}

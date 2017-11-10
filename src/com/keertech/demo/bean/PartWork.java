@@ -1,10 +1,10 @@
-package com.keertech.demo.bean.extend;
+package com.keertech.demo.bean;
 
 import com.keer.core.annotation.Description;
-import com.keer.core.bean.base.BaseBean;
-import com.singularsys.jep.functions.Str;
+import com.keer.core.bean.base.GenericBean;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.Set;
@@ -13,15 +13,16 @@ import java.util.Set;
  * Created by hadoop on 2017/11/9.
  */
 @Entity
-@Table(name="bs_work")
+@Table(name="part_work")
 @Description(Name="作品")
-public class BsWork extends BaseBean{
+public class PartWork extends GenericBean {
 
     @Description(Name="匠人")
-    private BsArtist artist;
+    @ManyToOne
+    private PartArtist artist;
 
     @Description(Name="作品名称")
-    private String name;
+    private String workName;
 
     @Description(Name="作品主图")
     private String coverImg;
@@ -29,26 +30,27 @@ public class BsWork extends BaseBean{
     @Description(Name="点击率")
     private Integer hotCount;
 
+    @Description(Name="作品介绍")
+    private String description;
+
     @Description(Name="作品规格")
     @OneToMany(mappedBy="work")
-    private Set<BsWorkSpecification> specifications;
+    private Set<PartWorkSpecification> specifications;
 
-    public BsArtist getArtist() {
+    public PartArtist getArtist() {
         return artist;
     }
 
-    public void setArtist(BsArtist artist) {
+    public void setArtist(PartArtist artist) {
         this.artist = artist;
     }
 
-    @Override
-    public String getName() {
-        return name;
+    public String getWorkName() {
+        return workName;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public void setWorkName(String workName) {
+        this.workName = workName;
     }
 
     public String getCoverImg() {
@@ -63,15 +65,23 @@ public class BsWork extends BaseBean{
         return hotCount;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public void setHotCount(Integer hotCount) {
         this.hotCount = hotCount;
     }
 
-    public Set<BsWorkSpecification> getSpecifications() {
+    public Set<PartWorkSpecification> getSpecifications() {
         return specifications;
     }
 
-    public void setSpecifications(Set<BsWorkSpecification> specifications) {
+    public void setSpecifications(Set<PartWorkSpecification> specifications) {
         this.specifications = specifications;
     }
 }

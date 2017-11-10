@@ -1,8 +1,7 @@
-package com.keertech.demo.bean.extend;
+package com.keertech.demo.bean;
 
 import com.keer.core.annotation.Description;
-import com.keer.core.bean.base.EntityBean;
-import com.keer.core.bean.menu.Menu;
+import com.keer.core.bean.base.GenericBean;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -12,13 +11,13 @@ import javax.persistence.Table;
  * Created by hadoop on 2017/11/9.
  */
 @Entity
-@Table(name="bs_work_specification")
+@Table(name="part_work_specification")
 @Description(Name="作品属性")
-public class BsWorkSpecification extends EntityBean {
+public class PartWorkSpecification extends GenericBean {
 
     @Description(Name="作品")
     @ManyToOne
-    private BsWork work;
+    private PartWork work;
 
     @Description(Name="属性名")
     private String labelName;
@@ -26,11 +25,11 @@ public class BsWorkSpecification extends EntityBean {
     @Description(Name="属性值")
     private String valueName;
 
-    public BsWork getWork() {
+    public PartWork getWork() {
         return work;
     }
 
-    public void setWork(BsWork work) {
+    public void setWork(PartWork work) {
         this.work = work;
     }
 
