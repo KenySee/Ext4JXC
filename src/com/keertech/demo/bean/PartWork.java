@@ -3,10 +3,7 @@ package com.keertech.demo.bean;
 import com.keer.core.annotation.Description;
 import com.keer.core.bean.base.GenericBean;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Set;
 
 /**

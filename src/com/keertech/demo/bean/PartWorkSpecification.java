@@ -48,9 +48,4 @@ public class PartWorkSpecification extends GenericBean {
     public void setValueName(String valueName) {
         this.valueName = valueName;
     }
-
-    public Integer getVersion() {
-        return null;
-    }
-    public void setVersion(Integer version) {  }
 }

@@ -61,14 +61,4 @@ public class PartArticleContent extends GenericBean {
     public void setContentIndex(Integer contentIndex) {
         this.contentIndex = contentIndex;
     }
-
-    @Override
-    public Integer getVersion() {
-        return null;
-    }
-
-    @Override
-    public void setVersion(Integer version) {
-
-    }
 }
