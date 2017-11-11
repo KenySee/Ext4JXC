@@ -77,10 +77,10 @@ Ext.define('Keer.ui.core.PartArtist.PartArticle.ChildContainer',{
 		var mainPanel = {
 			title: this.mainTitle,
 			tbar:{
-				xtype: 'toolbar',
-				itemId: 'cmdToolBar',
-				items: this.cmdToolbar
-			},
+            	xtype: 'toolbar',
+            	itemId: 'cmdToolBar',
+                items: []//this.cmdToolbar
+            },
 			layout: 'fit',
 			itemId: 'mainPanel',
 			region: 'center',

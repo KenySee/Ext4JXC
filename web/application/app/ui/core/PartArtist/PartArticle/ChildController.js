@@ -26,9 +26,9 @@ Ext.define('Keer.ui.core.PartArtist.PartArticle.ChildController',{
 				selectionchange: 'onGridItemSelection'
 			}
 		},
-		toolbar_add: 	{	listeners: { click: 'doCreate'	} },
-		toolbar_remove: {	listeners: { click: 'doRemove'	} },
-		toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
+		// toolbar_add: 	{	listeners: { click: 'doCreate'	} },
+		// toolbar_remove: {	listeners: { click: 'doRemove'	} },
+		// toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
 	},
 	//【监听Store事件】
 	observe: {
@@ -167,8 +167,8 @@ Ext.define('Keer.ui.core.PartArtist.PartArticle.ChildController',{
 		this.doResetToolBar(toolbar);	
 	},
 	onGridItemDbClick: function(grid, record, item, index){
-		this.setGridModel(record);
-		this.doEdit();
+		// this.setGridModel(record);
+		// this.doEdit();
 	},
 	onResetToolBar: function(toolbar){
 		var model = this.getGridModel();

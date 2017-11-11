@@ -9,6 +9,7 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 		'Keer.ui.core.PartArtist.PartWork.ChildContainer',
 		'Keer.store.PartWork.Store',
 		'Keer.store.PartArtist.Store',
+        'Keer.widget.field.FileTrigger',
 		'Keer.ui.core.PartArtist.MainController'
 	],	
 	config:{
@@ -63,7 +64,7 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 			],
 			formFields:[
 				{fieldLabel:'匠人名称',name:'nickname',itemId:'nickname',dataIndex:'nickname',xtype:'textfield',addFocus:'adding'},
-				{fieldLabel:'个人图像',name:'headUrl',itemId:'headUrl',dataIndex:'headUrl',xtype:'textfield'},
+				{fieldLabel:'个人图像',name:'headUrl',itemId:'headUrl',dataIndex:'headUrl',xtype:'widget-field-filetrigger'},
 				{fieldLabel:'个性签名',name:'signature',itemId:'signature',dataIndex:'signature',xtype:'textfield'},
 				{fieldLabel:'匠人介绍',name:'description',itemId:'description',dataIndex:'description',xtype:'textarea',fullLine:true,growMin:3},
 				{fieldLabel:'文章集',name:'articles',itemId:'articles',dataIndex:'articles',loadSync:true,writeSync:true,store:this.articlesStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartArticle-childcontainer'},

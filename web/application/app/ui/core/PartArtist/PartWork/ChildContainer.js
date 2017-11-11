@@ -83,7 +83,7 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildContainer',{
 			tbar:{
 				xtype: 'toolbar',
 				itemId: 'cmdToolBar',
-				items: this.cmdToolbar
+				items: []//this.cmdToolbar
 			},
 			layout: 'fit',
 			itemId: 'mainPanel',

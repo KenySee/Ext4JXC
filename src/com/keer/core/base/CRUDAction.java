@@ -210,7 +210,7 @@ public abstract class CRUDAction<T extends JSONBean> extends JSONAction {
 		}
 		JSONResponse(beanList,true);
 	}
-	
+
 	@Permission(action="EDIT",desc="编辑")
 	public String saveReturn() throws Exception {
 		this.save();
