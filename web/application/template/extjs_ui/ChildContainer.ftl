@@ -162,7 +162,7 @@ Ext.define('Keer.ui.${upfolder}.${appfolder}.ChildContainer',{
 			dragDrop: this.dragDrop,
 			canMulti: this.canMulti,
 			tbar: this.queryToolbar,
-			bbar: this.pagingtoolbar,
+			<#--bbar: this.pagingtoolbar,-->
 			store: this.gridStore,
 			columns: this.gridColumns
 		};

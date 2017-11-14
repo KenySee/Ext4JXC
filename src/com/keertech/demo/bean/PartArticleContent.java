@@ -19,7 +19,7 @@ public class PartArticleContent extends GenericBean {
     private PartArticle article;
 
     @Enumerated(EnumType.STRING)
-    @Column(length=10)
+    @Column(length=50)
     @Description(Name="内容类型")
     private ContentType contentType;
 
@@ -28,7 +28,6 @@ public class PartArticleContent extends GenericBean {
 
     @Description(Name="内容序号")
     private Integer contentIndex;
-
 
     public PartArticle getArticle() {
         return article;

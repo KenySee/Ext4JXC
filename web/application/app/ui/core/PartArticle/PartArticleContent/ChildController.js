@@ -2,6 +2,10 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildController',{
 	extend: 'Keer.widget.mvc.Controller',
 	//【加载依赖】
 	requires: [
+        'Keer.ui.core.PartArticle.PartArticleContent.tpl.JustifyTextView',
+        'Keer.ui.core.PartArticle.PartArticleContent.tpl.BigImageView',
+        'Keer.ui.core.PartArticle.PartArticleContent.tpl.ImageProductView',
+        'Keer.ui.core.PartArticle.PartArticleContent.tpl.CenterTextView',
 		'Keer.ui.core.PartArticle.PartArticleContent.EditWindow'
 	],
 	//【混入功能】
@@ -26,7 +30,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildController',{
 				selectionchange: 'onGridItemSelection'
 			}
 		},
-		toolbar_add: 	{	listeners: { click: 'doCreate'	} },
+		// toolbar_add: 	{	listeners: { click: 'doCreate'	} },
 		toolbar_remove: {	listeners: { click: 'doRemove'	} },
 		toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
 	},
@@ -39,6 +43,54 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildController',{
 			onLoadDataComplete: 'onLoadDataComplete'
 		}
 	},
+    doOpenTemplate:function (contentType,record) {
+        console.log(contentType)
+        var me = this;
+        var win = Ext.create('Ext.window.Window', {
+            title:'添加图片',
+            height: 600,
+            width: 750,
+            layout:'fit',
+            items:{
+            	xtype: 'ui-core-PartArticle-tpl-'+contentType+'View',
+				listeners:{
+            		'boxready': function () {
+						if(record){
+							var data = record.get('contentValue');
+							if(data){
+								this.loadData(Ext.isObject(data) ? data : JSON.parse(data));
+							}
+						}
+                    }
+				}
+			},
+            buttons:[
+                {text: "保存",handler: function () {
+                    var form = this.up('window').down('form');
+                    var data = form.fetchData();
+                    if(record){
+                        record.set('contentValue',JSON.stringify(data));
+					}
+					else {
+                        var grid = me.getGridView();
+                        var store = me.getGridStore();
+                        var model = store.createModel({
+                            contentIndex: store.getCount() + 1,
+                            contentType: contentType,
+                            contentValue: JSON.stringify(data)
+                        });
+                        me.doCreateRecord(grid, model);
+                        store.add(model);
+                    }
+                    win.close();
+                }},
+                {text: "取消",handler: function () {
+                    win.close();
+                }}
+            ]
+        });
+        win.show();
+    },
 	//【调用者控制器加载数据完成时执行 】
 	onLoadDataComplete: function(parent){
 		this.set('parent',parent);
@@ -167,8 +219,11 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildController',{
 		this.doResetToolBar(toolbar);	
 	},
 	onGridItemDbClick: function(grid, record, item, index){
-		this.setGridModel(record);
-		this.doEdit();
+		var contentType = record.get('contentType');
+        this.setGridModel(record);
+		this.doOpenTemplate(contentType,record);
+		// this.setGridModel(record);
+		// this.doEdit();
 	},
 	onResetToolBar: function(toolbar){
 		var model = this.getGridModel();

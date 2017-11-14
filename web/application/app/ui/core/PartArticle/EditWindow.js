@@ -4,6 +4,7 @@ Ext.define('Keer.ui.core.PartArticle.EditWindow',{
 	controller: 'Keer.ui.core.PartArticle.EditController',
 	//【加载依赖】
 	requires: [
+        'Keer.widget.field.FileTrigger',
 		'Keer.widget.field.CollectionHidden',
 		'Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',
 		'Keer.store.PartArticleContent.Store',
@@ -13,9 +14,9 @@ Ext.define('Keer.ui.core.PartArticle.EditWindow',{
 	mixins: {
 	},	
 	config:{
-		column: 2,
-		addWidth: 0,
-		addHeight: 0,
+		column: 1,
+		addWidth: 400,
+		addHeight: 200,
 		labelWidth: 60,
 		labelAlign: 'left',
 		autoLayout: true,
@@ -45,7 +46,7 @@ Ext.define('Keer.ui.core.PartArticle.EditWindow',{
 			],
 			formFields : [
 				{fieldLabel:'标题',name:'title',itemId:'title',dataIndex:'title',xtype:'textfield',addFocus:'adding'},
-				{fieldLabel:'主图',name:'coverImage',itemId:'coverImage',dataIndex:'coverImage',xtype:'textfield'},
+				{fieldLabel:'主图',name:'coverImage',itemId:'coverImage',emptyText:'尺寸【750*500】',dataIndex:'coverImage',xtype:'widget-field-filetrigger'},
 				{fieldLabel:'描述',name:'description',itemId:'description',dataIndex:'description',xtype:'textarea',fullLine:true,growMin:2},
 				{fieldLabel:'文章内容',name:'contents',itemId:'contents',dataIndex:'contents',loadSync:true,writeSync:true,store:this.contentsStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArticle-PartArticleContent-childcontainer'}
 			]

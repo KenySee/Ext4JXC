@@ -168,6 +168,7 @@ Ext.define('Keer.ui.${upfolder}.${appfolder}.EditController',{
 			this.setEditing(false);
 		}
 		this.doSwitchComponent(ready,'editReady','ready','enable','disable');
+		this.doSwitchComponent(ready,'childReady','ready','enable','disable');
 		var form = this.getWinform();
   		var fields = form.query('[name]');
   		Ext.each(fields,function(field){

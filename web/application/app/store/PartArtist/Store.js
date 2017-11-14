@@ -16,6 +16,7 @@ Ext.define('Keer.store.PartArtist.Store',{
 		this.callParent(arguments);
 		this.setExclude({
 			works:null,
+			storys:null,
 			articles:null
 		});
 	}

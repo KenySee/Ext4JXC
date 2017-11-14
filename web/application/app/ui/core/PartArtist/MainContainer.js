@@ -10,6 +10,8 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 		'Keer.store.PartWork.Store',
 		'Keer.store.PartArtist.Store',
         'Keer.widget.field.FileTrigger',
+        'Keer.ui.core.PartArtist.PartStory.ChildContainer',
+        'Keer.store.PartStory.Store',
 		'Keer.ui.core.PartArtist.MainController'
 	],	
 	config:{
@@ -36,6 +38,9 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 			worksStore: Ext.widget('PartWork-store',{
 				controller:this.getController()
 			}),
+            storysStore: Ext.widget('PartStory-store',{
+                controller:this.getController()
+            }),
 			gridStore: config.store || Ext.widget('PartArtist-store',{
 				controller:this.getController()
 			})
@@ -64,11 +69,12 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 			],
 			formFields:[
 				{fieldLabel:'匠人名称',name:'nickname',itemId:'nickname',dataIndex:'nickname',xtype:'textfield',addFocus:'adding'},
-				{fieldLabel:'个人图像',name:'headUrl',itemId:'headUrl',dataIndex:'headUrl',xtype:'widget-field-filetrigger'},
-				{fieldLabel:'个性签名',name:'signature',itemId:'signature',dataIndex:'signature',xtype:'textfield'},
+				{fieldLabel:'个人图像',name:'headUrl',itemId:'headUrl',dataIndex:'headUrl',emptyText:'尺寸【85*85】',xtype:'widget-field-filetrigger'},
+				{fieldLabel:'匠人头衔',name:'signature',itemId:'signature',dataIndex:'signature',xtype:'textfield'},
 				{fieldLabel:'匠人介绍',name:'description',itemId:'description',dataIndex:'description',xtype:'textarea',fullLine:true,growMin:3},
 				{fieldLabel:'文章集',name:'articles',itemId:'articles',dataIndex:'articles',loadSync:true,writeSync:true,store:this.articlesStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartArticle-childcontainer'},
-				{fieldLabel:'作品集',name:'works',itemId:'works',dataIndex:'works',loadSync:true,writeSync:true,store:this.worksStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartWork-childcontainer'}
+				{fieldLabel:'作品集',name:'works',itemId:'works',dataIndex:'works',loadSync:true,writeSync:true,store:this.worksStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartWork-childcontainer'},
+                {fieldLabel:'故事集',name:'storys',itemId:'storys',dataIndex:'storys',loadSync:true,writeSync:true,store:this.storysStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartStory-childcontainer'}
 			],
 			pagingtoolbar : {
 				xtype: 'pagingtoolbar',

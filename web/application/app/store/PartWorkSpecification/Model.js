@@ -4,23 +4,23 @@ Ext.define('Keer.store.PartWorkSpecification.Model',{
 		actionUrl: 'PartWorkSpecification',
 		actionBean: 'PartWorkSpecification',
 		actionMethod: 'findAll',
-		parentProp: 'parent',
+		parentProp: 'work',
 		categoryProp: 'work'
 	},	
 	inheritableStatics: {
 		clazzname: 'com.keertech.demo.bean.PartWorkSpecification'
 	},
 	fields : [
-		{name:'privilegeMap'},
-		{name:'valueName',type:'string'},
-		{name:'modifyFlag',type:'string'},
-		{name:'clazzname',type:'string'},
-		{name:'createDate',type:'date',dateFormat:'Y-m-d H:i:s'},
-		{name:'id',type:'auto'},
-		{name:'work',configMap:{privilegeMap:null,coverImg:null,hotCount:null,modifyFlag:null,workName:null,indexCls:null,version:null,clazzname:null,id:null,createDate:null},defaultValue:null},
 		{name:'indexCls',type:'string'},
+		{name:'createDate',type:'date',dateFormat:'Y-m-d H:i:s'},
+		{name:'valueName',type:'string'},
+		{name:'id',type:'auto'},
+		{name:'work',configMap:{privilegeMap:null,coverImg:null,hotCount:null,orderCount:null,description:null,modifyFlag:null,workName:null,indexCls:null,version:null,clazzname:null,id:null,createDate:null},defaultValue:null},
+		{name:'modifyFlag',type:'string'},
+		{name:'privilegeMap'},
 		{name:'version',type:'int'},
-		{name:'labelName',type:'string'}
+		{name:'labelName',type:'string'},
+		{name:'clazzname',type:'string'}
 	],
 	//◎【是否可以增加明细】
 	canAddDetail: function(field){

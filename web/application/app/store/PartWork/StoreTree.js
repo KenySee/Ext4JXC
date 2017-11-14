@@ -15,7 +15,8 @@ Ext.define('Keer.store.PartWork.StoreTree',{
 	constructor: function(cfg){
 		this.callParent(arguments);
 		this.setExclude({
-			specifications:null
+			specifications:null,
+			contents:null
 		});
 	}
 });

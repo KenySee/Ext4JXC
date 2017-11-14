@@ -119,7 +119,6 @@ Ext.define('Keer.ui.core.PartWork.PartWorkSpecification.ChildController',{
 	},
 	doSave: function(){
 		var store = this.getGridStore();
-		debugger;
 		var writeSync = this.get('writeSync');
 		if (writeSync){
 			var callController = this.get('callController');

@@ -2,10 +2,10 @@ package com.keertech.demo.bean;
 
 import com.keer.core.annotation.Description;
 import com.keer.core.bean.base.GenericBean;
+import com.keer.core.bean.enums.Status;
+import com.keertech.demo.bean.enums.entity.ArtistTypeEnum;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Set;
 
 /**
@@ -19,8 +19,16 @@ public class PartArtist extends GenericBean {
     @Description(Name="匠人名称")
     private String nickname;
 
+    @Description(Name="匠人类型")
+    @Enumerated(EnumType.STRING)
+    @Column(length=20)
+    private ArtistTypeEnum artistType;
+
     @Description(Name="个人图像")
     private String headUrl;
+
+    @Description(Name="个人封面")
+    private String coverImage;
 
     @Description(Name="个性签名")
     private String signature;
@@ -35,6 +43,34 @@ public class PartArtist extends GenericBean {
     @Description(Name="文章集")
     @OneToMany(mappedBy="artist")
     private Set<PartArticle> articles;
+
+    @Description(Name="匠人故事")
+    @OneToMany(mappedBy="artist")
+    private Set<PartStory> storys;
+
+    public String getCoverImage() {
+        return coverImage;
+    }
+
+    public ArtistTypeEnum getArtistType() {
+        return artistType;
+    }
+
+    public void setArtistType(ArtistTypeEnum artistType) {
+        this.artistType = artistType;
+    }
+
+    public void setCoverImage(String coverImage) {
+        this.coverImage = coverImage;
+    }
+
+    public Set<PartStory> getStorys() {
+        return storys;
+    }
+
+    public void setStorys(Set<PartStory> storys) {
+        this.storys = storys;
+    }
 
     public Set<PartWork> getWorks() {
         return works;

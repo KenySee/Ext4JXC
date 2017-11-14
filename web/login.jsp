@@ -8,7 +8,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>科尔创新协同管理平台-用户登录</title>
+	<%--<title>科尔创新协同管理平台-用户登录</title>--%>
+    <title>玩艺汇管理端-用户登录</title>
 	<link href="css/all.css" rel="stylesheet" type="text/css" />
 	<link href="css/load.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -59,7 +60,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</script>
 </head>
   <div class="bg1024">
-     <div class="name"><img src="images/name_03.png"/></div>
+     <div class="name">
+         <img src="images/name_03.png" style="display: none"/>
+     </div>
      <div class="cont">
         <div class="left_img"><img src="images/limg_03.png"/></div>
         <div class="right_form">

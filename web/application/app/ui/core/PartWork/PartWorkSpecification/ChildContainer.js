@@ -71,7 +71,6 @@ Ext.define('Keer.ui.core.PartWork.PartWorkSpecification.ChildContainer',{
 			dragDrop: this.dragDrop,
 			canMulti: this.canMulti,
 			tbar: this.queryToolbar,
-			bbar: this.pagingtoolbar,
 			store: this.gridStore,
 			columns: this.gridColumns
 		};

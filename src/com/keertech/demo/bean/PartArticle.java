@@ -2,11 +2,10 @@ package com.keertech.demo.bean;
 
 import com.keer.core.annotation.Description;
 import com.keer.core.bean.base.GenericBean;
+import com.keertech.demo.bean.enums.entity.ArticleType;
+import com.keertech.demo.bean.enums.entity.ContentType;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Set;
 
 /**
@@ -24,6 +23,14 @@ public class PartArticle extends GenericBean {
     @Description(Name="标题")
     private String title;
 
+    @Enumerated(EnumType.STRING)
+    @Column(length=50)
+    @Description(Name="文章类型")
+    private ArticleType articleType;
+
+    @Description(Name="阅读数")
+    private Integer readCount;
+
     @Description(Name="描述")
     private String description;
 
@@ -33,6 +40,22 @@ public class PartArticle extends GenericBean {
     @Description(Name="文章内容")
     @OneToMany(mappedBy="article")
     private Set<PartArticleContent> contents;
+
+    public ArticleType getArticleType() {
+        return articleType;
+    }
+
+    public void setArticleType(ArticleType articleType) {
+        this.articleType = articleType;
+    }
+
+    public Integer getReadCount() {
+        return readCount;
+    }
+
+    public void setReadCount(Integer readCount) {
+        this.readCount = readCount;
+    }
 
     public String getCoverImage() {
         return coverImage;

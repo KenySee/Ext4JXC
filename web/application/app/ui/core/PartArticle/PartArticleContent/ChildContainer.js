@@ -3,6 +3,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',{
 	alias: 'widget.ui-core-PartArticle-PartArticleContent-childcontainer',
 	controller: 'Keer.ui.core.PartArticle.PartArticleContent.ChildController',
 	requires:[
+        'Keer.widget.field.EnumCombo',
 		'Keer.store.PartArticleContent.Store',
 		'Keer.ui.core.PartArticle.PartArticleContent.ChildController'
 	],	
@@ -35,6 +36,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',{
 		this.callParent(arguments);
 	},
 	initComponent: function(){
+		var controller = this.getController();
 		Ext.apply(this,{
 			queryToolbar:{
 				xtype: 'querybar',
@@ -43,15 +45,34 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',{
 				]
 			},
 			cmdToolbar:[
-				{text:'新增',itemId:'toolbar_add',iconCls:'add',iconAlign: this.iconAlign, privilege: 'ADD',childEdit:'!editing',childReady:'ready'},
+				{text:'新增',itemId:'toolbar_add',iconCls:'add',iconAlign: this.iconAlign,xtype:'splitbutton',
+                    	menu: new Ext.menu.Menu({
+                			items:[
+                				{text: '段落大图',iconCls:'photo_add', handler:Ext.bind(controller.doOpenTemplate,controller,['BigImage'])},
+                            	{text: '段落文本',iconCls:'text_allcaps',handler:Ext.bind(controller.doOpenTemplate,controller,['JustifyText'])},
+                                {text: '居中文本',iconCls:'text_double_underline',handler:Ext.bind(controller.doOpenTemplate,controller,['CenterText'])},
+                                {text: '作品预订',iconCls:'text_letter_omega',handler:Ext.bind(controller.doOpenTemplate,controller,['ImageProduct'])}
+                            ]}
+						)
+					, privilege: 'ADD',childReady:'ready'},
 				{text:'删除',itemId:'toolbar_remove',iconCls:'remove',iconAlign: this.iconAlign, disabled:true, privilege: 'DEL',childRemove:'canRemove'},
 				{text:'查看',itemId:'toolbar_edit',iconCls:'application_form_magnify',iconAlign: this.iconAlign, disabled:true, hidden:true, privilege: 'VIEW',childView:'canView'}
 			],
 			gridColumns:[
 				{text:'No.',xtype: 'rownumberer',width:32}
-				,{text:'内容序号',dataIndex:'contentIndex',width:120,editor:{xtype:'textfield'}}
-				,{text:'内容类型',dataIndex:'contentType',width:120,editor:{xtype:'textfield'}}
-				,{text:'类型值',dataIndex:'contentValue',width:120,editor:{xtype:'textfield'}}
+				,{text:'序号',dataIndex:'contentIndex',width:60}
+                ,{text:'类型',dataIndex:'contentType',width:120,renderer:function (v) {
+					var data ={
+						"BigImage":"段落大图",
+                        "JustifyText":"段落文本",
+                        "CenterText":"居中文本",
+                        "ImageProduct":"作品预订"
+					}
+					return data[v];
+                }}
+				,{text:'内容',dataIndex:'contentValue',flex:1,renderer:function (data) {
+					return data && JSON.stringify(data)
+                }}
 			],
 			pagingtoolbar : {
 				xtype: 'pagingtoolbar',
@@ -71,7 +92,6 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',{
 			dragDrop: this.dragDrop,
 			canMulti: this.canMulti,
 			tbar: this.queryToolbar,
-			bbar: this.pagingtoolbar,
 			store: this.gridStore,
 			columns: this.gridColumns
 		};

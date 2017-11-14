@@ -8,13 +8,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>科尔创新平台演示</title>
-    <!--<link rel="stylesheet" type="text/css" href="application/ext/packages/ext-theme-neptune/build/resources/ext-theme-neptune-all-debug.css"/> 
+    <%--<title>科尔创新平台演示</title>--%>
+	  <title>玩艺汇管理端</title>
+    <%--<link rel="stylesheet" type="text/css" href="application/ext/packages/ext-theme-neptune/build/resources/ext-theme-neptune-all-debug.css"/>--%>
  	<link rel="stylesheet" type="text/css" href="resources/css/TabScrollerMenu.css" />
 	<link rel="stylesheet" type="text/css" href="resources/css/ext-icon.css"/>
 	<link rel="stylesheet" type="text/css" href="resources/css/ext-patch.css"/> 
 	  
-    -->
     <link rel="stylesheet" type="text/css" href="application/ext/packages/ext-theme-classic/build/resources/ext-theme-classic-all-debug.css"/>
 	<link rel="stylesheet" type="text/css" href="resources/css/TabScrollerMenu.css" />
 	<link href="css/all.css" rel="stylesheet" type="text/css" />

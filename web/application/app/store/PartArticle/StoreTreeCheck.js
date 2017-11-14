@@ -4,5 +4,8 @@ Ext.define('Keer.store.PartArticle.StoreTreeCheck',{
 	model: 'Keer.store.PartArticle.ModelCheck',
 	constructor: function(){
 		this.callParent(arguments);
+		this.setExclude({
+			contents:null
+		});
 	}
 });

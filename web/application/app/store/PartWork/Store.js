@@ -15,7 +15,8 @@ Ext.define('Keer.store.PartWork.Store',{
 	constructor: function(cfg){
 		this.callParent(arguments);
 		this.setExclude({
-			specifications:null
+			specifications:null,
+			contents:null
 		});
 	}
 });

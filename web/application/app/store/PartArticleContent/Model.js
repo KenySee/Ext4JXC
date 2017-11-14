@@ -4,24 +4,24 @@ Ext.define('Keer.store.PartArticleContent.Model',{
 		actionUrl: 'PartArticleContent',
 		actionBean: 'PartArticleContent',
 		actionMethod: 'findAll',
-		parentProp: 'parent',
+		parentProp: 'article',
 		categoryProp: 'article'
 	},	
 	inheritableStatics: {
 		clazzname: 'com.keertech.demo.bean.PartArticleContent'
 	},
 	fields : [
-		{name:'modifyFlag',type:'string'},
 		{name:'clazzname',type:'string'},
-		{name:'indexCls',type:'string'},
-		{name:'id',type:'auto'},
-		{name:'version',type:'int'},
-		{name:'contentValue',type:'string'},
-		{name:'createDate',type:'date',dateFormat:'Y-m-d H:i:s'},
-		{name:'article',configMap:{privilegeMap:null,description:null,modifyFlag:null,title:null,indexCls:null,version:null,clazzname:null,coverImage:null,id:null,createDate:null},defaultValue:null},
+		{name:'modifyFlag',type:'string'},
 		{name:'contentIndex',type:'int'},
+		{name:'contentType',type:'auto'},
+		{name:'createDate',type:'date',dateFormat:'Y-m-d H:i:s'},
+		{name:'id',type:'auto'},
+		{name:'article',configMap:{privilegeMap:null,description:null,modifyFlag:null,title:null,readCount:null,indexCls:null,version:null,clazzname:null,articleType:null,coverImage:null,id:null,createDate:null},defaultValue:null},
+		{name:'version',type:'int'},
+		{name:'contentValue',type:'auto'},
 		{name:'privilegeMap'},
-		{name:'contentType',type:'auto'}
+		{name:'indexCls',type:'string'}
 	],
 	//◎【是否可以增加明细】
 	canAddDetail: function(field){

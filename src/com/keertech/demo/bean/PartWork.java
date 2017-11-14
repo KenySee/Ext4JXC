@@ -27,12 +27,27 @@ public class PartWork extends GenericBean {
     @Description(Name="点击率")
     private Integer hotCount;
 
+    @Description(Name="预定量")
+    private Integer orderCount;
+
     @Description(Name="作品介绍")
     private String description;
 
     @Description(Name="作品规格")
     @OneToMany(mappedBy="work")
     private Set<PartWorkSpecification> specifications;
+
+    @Description(Name="作品详情")
+    @OneToMany(mappedBy="work")
+    private Set<PartWorkContent> contents;
+
+    public Integer getOrderCount() {
+        return orderCount;
+    }
+
+    public void setOrderCount(Integer orderCount) {
+        this.orderCount = orderCount;
+    }
 
     public PartArtist getArtist() {
         return artist;
@@ -80,5 +95,13 @@ public class PartWork extends GenericBean {
 
     public void setSpecifications(Set<PartWorkSpecification> specifications) {
         this.specifications = specifications;
+    }
+
+    public Set<PartWorkContent> getContents() {
+        return contents;
+    }
+
+    public void setContents(Set<PartWorkContent> contents) {
+        this.contents = contents;
     }
 }

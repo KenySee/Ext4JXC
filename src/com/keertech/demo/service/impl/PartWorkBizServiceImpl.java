@@ -1,6 +1,7 @@
 package com.keertech.demo.service.impl;
 
 import com.keer.core.dao.SQLBuilder;
+import com.keertech.demo.service.IPartWorkContentBizService;
 import com.keertech.demo.service.IPartWorkSpecificationBizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,9 @@ public class PartWorkBizServiceImpl extends GenericBizServiceImpl<PartWork> impl
 
 	@Autowired
 	private IPartWorkSpecificationBizService partWorkSpecificationBizService;
+
+	@Autowired
+	private IPartWorkContentBizService partWorkContentBizService;
 
 	@Override
 	@Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)

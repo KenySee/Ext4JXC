@@ -11,19 +11,22 @@ Ext.define('Keer.store.PartArtist.Model',{
 		clazzname: 'com.keertech.demo.bean.PartArtist'
 	},
 	fields : [
-		{name:'privilegeMap'},
-		{name:'nickname',type:'string'},
-		{name:'articles',configMap:{privilegeMap:null,artist:{privilegeMap:null,signature:null,headUrl:null,description:null,modifyFlag:null,indexCls:null,version:null,clazzname:null,nickname:null,id:null,createDate:null},description:null,modifyFlag:null,title:null,indexCls:null,version:null,clazzname:null,coverImage:null,id:null,createDate:null},defaultValue:[]},
-		{name:'headUrl',type:'string'},
+		{name:'articles',configMap:{privilegeMap:null,artist:{privilegeMap:null,signature:null,headUrl:null,description:null,modifyFlag:null,indexCls:null,version:null,clazzname:null,coverImage:null,nickname:null,id:null,createDate:null},description:null,modifyFlag:null,title:null,readCount:null,indexCls:null,version:null,clazzname:null,articleType:null,coverImage:null,id:null,createDate:null},defaultValue:[]},
 		{name:'createDate',type:'date',dateFormat:'Y-m-d H:i:s'},
-		{name:'clazzname',type:'string'},
-		{name:'indexCls',type:'string'},
-		{name:'works',configMap:{privilegeMap:null,coverImg:null,artist:{privilegeMap:null,signature:null,headUrl:null,description:null,modifyFlag:null,indexCls:null,version:null,clazzname:null,nickname:null,id:null,createDate:null},hotCount:null,modifyFlag:null,workName:null,indexCls:null,version:null,clazzname:null,id:null,createDate:null},defaultValue:[]},
-		{name:'description',type:'string'},
-		{name:'id',type:'auto'},
-		{name:'signature',type:'string'},
 		{name:'modifyFlag',type:'string'},
-		{name:'version',type:'int'}
+		{name:'nickname',type:'string'},
+		{name:'artistType',configMap:{privilegeMap:null,code:null,remark:null,modifyFlag:null,type:null,indexCls:null,version:null,clazzname:null,sortno:null,name:null,createdTime:null,id:null,status:null,createDate:null},defaultValue:null},
+		{name:'clazzname',type:'string'},
+		{name:'signature',type:'string'},
+		{name:'privilegeMap'},
+		{name:'storys',configMap:{privilegeMap:null,artist:{privilegeMap:null,signature:null,headUrl:null,description:null,modifyFlag:null,indexCls:null,version:null,clazzname:null,coverImage:null,nickname:null,id:null,createDate:null},description:null,modifyFlag:null,title:null,readCount:null,indexCls:null,version:null,clazzname:null,articleType:null,coverImage:null,id:null,createDate:null},defaultValue:[]},
+		{name:'works',configMap:{privilegeMap:null,coverImg:null,artist:{privilegeMap:null,signature:null,headUrl:null,description:null,modifyFlag:null,indexCls:null,version:null,clazzname:null,coverImage:null,nickname:null,id:null,createDate:null},hotCount:null,orderCount:null,description:null,modifyFlag:null,workName:null,indexCls:null,version:null,clazzname:null,id:null,createDate:null},defaultValue:[]},
+		{name:'description',type:'string'},
+		{name:'version',type:'int'},
+		{name:'headUrl',type:'string'},
+		{name:'id',type:'auto'},
+		{name:'indexCls',type:'string'},
+		{name:'coverImage',type:'string'}
 	],
 	//◎【是否可以增加明细】
 	canAddDetail: function(field){

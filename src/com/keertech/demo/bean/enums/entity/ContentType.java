@@ -7,8 +7,10 @@ import com.keer.core.bean.enums.IEnums;
 
 @Description(Name="内容类型")
 public enum ContentType implements IEnums{
-	Text("Text", "文本"),
-	Image("Image", "图片");
+    JustifyText("JustifyText", "段落"),
+    CenterText("CenterText","文本"),
+    ImageProduct("ImageProduct","产品"),
+    BigImage("BigImage", "图片");
 
     private final String value;
 
