@@ -62,7 +62,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',{
 				{text:'No.',xtype: 'rownumberer',width:32}
 				,{text:'序号',dataIndex:'contentIndex',width:60}
                 ,{text:'类型',dataIndex:'contentType',width:120,renderer:function (v) {
-					var data ={
+					var data = {
 						"BigImage":"段落大图",
                         "JustifyText":"段落文本",
                         "CenterText":"居中文本",

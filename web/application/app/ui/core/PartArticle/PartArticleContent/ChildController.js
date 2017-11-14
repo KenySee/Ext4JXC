@@ -55,12 +55,11 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildController',{
             	xtype: 'ui-core-PartArticle-tpl-'+contentType+'View',
 				listeners:{
             		'boxready': function () {
-						if(record){
-							var data = record.get('contentValue');
-							if(data){
-								this.loadData(Ext.isObject(data) ? data : JSON.parse(data));
-							}
+                        var data = {};
+            			if(record){
+							data = record.get('contentValue');
 						}
+                        this.loadData(data);
                     }
 				}
 			},

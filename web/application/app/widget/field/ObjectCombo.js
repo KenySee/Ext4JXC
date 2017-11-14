@@ -76,8 +76,8 @@ Ext.define('Keer.widget.field.ObjectCombo',{
 			queryMode:'remote',
 			triggerAction:'all'
     	});
+        var editor = this;
 		if (this.store != null && Ext.isString(this.store)){
-			var editor = this;
 			this.store = Ext.widget(this.store,{
 				listeners: {
 					beforeload: function(store, operation, eOpts){
@@ -95,6 +95,7 @@ Ext.define('Keer.widget.field.ObjectCombo',{
 		Ext.apply(this,{
 			listeners: {
 				beforeselect: function(combox,record,index){
+                    debugger;
 					editor.setSelValue(record.data);
 				}
 			}

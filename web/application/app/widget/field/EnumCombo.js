@@ -5,7 +5,7 @@ Ext.define('Keer.widget.field.EnumCombo',{
 	displayField: 'name',
 	queryMode: 'remote',
 	queryCaching: false,
-	editable: false,
+    editable: false,
 	config: {
     	controller: null
 	},
