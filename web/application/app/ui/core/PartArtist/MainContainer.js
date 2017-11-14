@@ -3,6 +3,7 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 	alias: 'widget.ui-core-PartArtist-maincontainer',
 	controller: 'Keer.ui.core.PartArtist.MainController',
 	requires:[
+        'Keer.widget.field.EnumCombo',
 		'Keer.widget.field.CollectionHidden',
 		'Keer.ui.core.PartArtist.PartArticle.ChildContainer',
 		'Keer.store.PartArticle.Store',
@@ -19,7 +20,7 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 		innerEdit: true,
 		dragDrop: false,
 		mainWidth: 220,
-		mainHeight: 320,
+		mainHeight: 480,
 		mainTitle: '匠人',
 		addWidth: 0,
 		addHeight: 0,
@@ -27,7 +28,7 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 		autoLayout: true,
 		iconAlign: 'top',
 		childAlign: 'right',
-		formConfig:{itemId:'winform'},
+		formConfig:{itemId:'winform',height:220},
 		appParams:{}									
 	},
 	initConfig: function (config) {
@@ -69,9 +70,10 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 			],
 			formFields:[
 				{fieldLabel:'匠人名称',name:'nickname',itemId:'nickname',dataIndex:'nickname',xtype:'textfield',addFocus:'adding'},
-				{fieldLabel:'个人图像',name:'headUrl',itemId:'headUrl',dataIndex:'headUrl',emptyText:'尺寸【85*85】',xtype:'widget-field-filetrigger'},
+				{fieldLabel:'个人图像',name:'headUrl',itemId:'headUrl',dataIndex:'headUrl',emptyText:'尺寸【85*85】',triggerCtrl:true,xtype:'widget-field-filetrigger'},
+                {fieldLabel:'匠人类型',name:'artistType',itemId:'artistType',dataIndex:'artistType',triggerCtrl:true,xtype:'widget-field-enumcombo',store:Keer.enumstore['artistTypeEnum'],displayField:'name'},
 				{fieldLabel:'匠人头衔',name:'signature',itemId:'signature',dataIndex:'signature',xtype:'textfield'},
-				{fieldLabel:'匠人介绍',name:'description',itemId:'description',dataIndex:'description',xtype:'textarea',fullLine:true,growMin:3},
+				{fieldLabel:'匠人介绍',name:'description',itemId:'description',dataIndex:'description',xtype:'textarea',fullLine:true,rows:8},
 				{fieldLabel:'文章集',name:'articles',itemId:'articles',dataIndex:'articles',loadSync:true,writeSync:true,store:this.articlesStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartArticle-childcontainer'},
 				{fieldLabel:'作品集',name:'works',itemId:'works',dataIndex:'works',loadSync:true,writeSync:true,store:this.worksStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartWork-childcontainer'},
                 {fieldLabel:'故事集',name:'storys',itemId:'storys',dataIndex:'storys',loadSync:true,writeSync:true,store:this.storysStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartStory-childcontainer'}
@@ -128,7 +130,7 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 			region: 'center',
 			border: 1,
 			margin : '-1 -1 2 -1',
-			column: 3,
+			column: 4,
 			addWidth: this.addWidth,
 			addHeight: this.addHeight,
 			labelWidth: 60,

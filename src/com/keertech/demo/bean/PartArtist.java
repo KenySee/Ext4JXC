@@ -20,9 +20,8 @@ public class PartArtist extends GenericBean {
     private String nickname;
 
     @Description(Name="匠人类型")
-    @Enumerated(EnumType.STRING)
     @Column(length=20)
-    private ArtistTypeEnum artistType;
+    private String artistType;
 
     @Description(Name="个人图像")
     private String headUrl;
@@ -52,11 +51,11 @@ public class PartArtist extends GenericBean {
         return coverImage;
     }
 
-    public ArtistTypeEnum getArtistType() {
+    public String getArtistType() {
         return artistType;
     }
 
-    public void setArtistType(ArtistTypeEnum artistType) {
+    public void setArtistType(String artistType) {
         this.artistType = artistType;
     }
 

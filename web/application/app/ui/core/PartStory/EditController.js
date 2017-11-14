@@ -172,7 +172,9 @@ Ext.define('Keer.ui.core.PartStory.EditController',{
 		var form = this.getWinform();
   		var fields = form.query('[name]');
   		Ext.each(fields,function(field){
-			field.setReadOnly(!ready);
+            if(!field.triggerCtrl){
+                field.setReadOnly(!ready);
+            }
 		});
 		if (!ready){
 			form.reset();
