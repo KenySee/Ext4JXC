@@ -6,6 +6,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildController',{
         'Keer.ui.core.PartArticle.PartArticleContent.tpl.BigImageView',
         'Keer.ui.core.PartArticle.PartArticleContent.tpl.ImageProductView',
         'Keer.ui.core.PartArticle.PartArticleContent.tpl.CenterTextView',
+        'Keer.ui.core.PartArticle.PartArticleContent.tpl.CImageTextView',
 		'Keer.ui.core.PartArticle.PartArticleContent.EditWindow'
 	],
 	//【混入功能】

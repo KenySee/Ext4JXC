@@ -51,7 +51,8 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',{
                 				{text: '段落大图',iconCls:'photo_add', handler:Ext.bind(controller.doOpenTemplate,controller,['BigImage'])},
                             	{text: '段落文本',iconCls:'text_allcaps',handler:Ext.bind(controller.doOpenTemplate,controller,['JustifyText'])},
                                 {text: '居中文本',iconCls:'text_double_underline',handler:Ext.bind(controller.doOpenTemplate,controller,['CenterText'])},
-                                {text: '作品预订',iconCls:'text_letter_omega',handler:Ext.bind(controller.doOpenTemplate,controller,['ImageProduct'])}
+                                {text: '作品预订',iconCls:'text_letter_omega',handler:Ext.bind(controller.doOpenTemplate,controller,['ImageProduct'])},
+                                {text: '作品匠人',iconCls:'text_letter_omega',handler:Ext.bind(controller.doOpenTemplate,controller,['CImageText'])}
                             ]}
 						)
 					, privilege: 'ADD',childReady:'ready'},
@@ -66,7 +67,8 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer',{
 						"BigImage":"段落大图",
                         "JustifyText":"段落文本",
                         "CenterText":"居中文本",
-                        "ImageProduct":"作品预订"
+                        "ImageProduct":"作品预订",
+                        "CImageText":"作品匠人",
 					}
 					return data[v];
                 }}
