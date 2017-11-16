@@ -14,9 +14,9 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
     bodyBorder: false,
     defaults: {
         collapsible: false,
-        border: 0,
         split: true
     },
+    bodyPadding: 5,
     contentType:"",
     loadData: function (contentType, data) {
         //根据类型加载数据
@@ -31,13 +31,18 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
         }
         // this.getForm().setValues(data);
     },
-    fetchData: function () {
+    fetchData: function (callBack) {
+        var contentType = this.contentType;
+        function tempCallBack(data){
+            var tempData = {contentType:contentType,data:data};
+            callBack(tempData);
+        }
         var formItem = this.queryById('formItem');
         if(formItem){
-            return {contentType:this.contentType,data:formItem.fetchData()};
+            formItem.fetchData(tempCallBack);
         }else{
             Ext.Msg.alert('提示','请选择类型');
-            return;
+            callBack();
         }
         // return this.getForm().getValues();
     },
@@ -67,12 +72,6 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
                 forceFit: true,
                 stripeRows: true//在表格中显示斑马线
             },
-            plugins: [{
-                ptype: 'rowexpander',
-                rowBodyTpl : [
-                    "<a href='javascript:void(0);'><img width='95%' height='100' src='{image}'/></a>"
-                ]
-            }],
             store: {
                 fields: [
                     {name: 'name', type: 'string'},
@@ -83,15 +82,23 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
                 data: [{name: '段落大图', type: 'BigImage', image: '/images/EFDFEEE9-6ABA-450E-A3DD-66492D648466.png'},
                     {name: '段落文本', type: 'JustifyText', image: '/images/01511AA0-3AD4-455D-B7FF-22A2DAFDDF79.png'},
                     {name: '居中文本', type: 'CenterText', image: '/images/291A9F24-87E5-45AD-B2DA-B3017F39F28F.png'},
-                    {name: '作品预订', type: 'ImageProduct', image: '/images/846642E5-BA36-42B0-BD4E-124F4DD43885.png'}
+                    {name: '作品预订', type: 'ImageProduct', image: '/images/846642E5-BA36-42B0-BD4E-124F4DD43885.png'},
+                    {name: '段落双图', type: 'DoubleImage', image: '/images/IMG_2016.JPG'}
                 ],//读取内嵌数据
                 autoLoad: true//自动加载
             },
             columns: [
                 {
                     text: '添加类型',
-                    dataIndex: 'name',
-                    width: '100%'
+                    dataIndex: 'image',
+                    width: '100%',
+                    renderer: function (value, metaData, record, rowIndex, colIndex, store, view) {
+                        if (value)
+                            return  record.get('name')+"<br/><a href='javascript:void(0);' target='_blank' title='" + record.get('name') + "'><img width='100%' height='100' src='" + value + "'/></a>";
+                        else
+                            return value;
+                    }
+
                 }
             ]
         }, {

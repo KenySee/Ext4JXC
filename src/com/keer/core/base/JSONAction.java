@@ -94,6 +94,11 @@ public abstract class JSONAction extends ActionSupport implements ServletRequest
 	 * 上传文件
 	 */
 	protected File upload;
+
+	/**
+	 * 批量上传文件
+	 */
+	protected File[] uploads;
 	
 	/**
 	 * 文件名称
@@ -676,5 +681,13 @@ public abstract class JSONAction extends ActionSupport implements ServletRequest
 
 	public void setOrderString(String orderString) {
 		this.orderString = orderString;
+	}
+
+	public File[] getUploads() {
+		return uploads;
+	}
+
+	public void setUploads(File[] uploads) {
+		this.uploads = uploads;
 	}
 }

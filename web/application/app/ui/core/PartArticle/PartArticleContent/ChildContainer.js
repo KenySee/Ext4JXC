@@ -78,7 +78,8 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer', {
                             "BigImage": "段落大图",
                             "JustifyText": "段落文本",
                             "CenterText": "居中文本",
-                            "ImageProduct": "作品预订"
+                            "ImageProduct": "作品预订",
+                            "DoubleImage":"段落双图",
                         }
                         return data[v];
                     }

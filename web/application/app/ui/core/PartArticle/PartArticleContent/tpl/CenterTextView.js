@@ -26,7 +26,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.CenterTextView',{
         var store = grid.getStore();
         store.loadData(data.sectionContent||[]);
     },
-    fetchData:function () {
+    fetchData:function (callBack) {
         var data = this.getForm().getValues();
         var grid = this.down('grid');
         var store = grid.getStore();
@@ -35,7 +35,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.CenterTextView',{
             sectionContent.push(model.getData());
         });
         data['sectionContent'] = sectionContent;
-        return data;
+        callBack(data);
     },
     items:{
         layout: 'column',

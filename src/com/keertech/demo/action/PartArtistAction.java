@@ -17,6 +17,8 @@ import com.keer.core.annotation.Description;
 import com.keer.core.base.CRUDAction;
 import com.keer.core.bean.base.JSONBean;
 
+import java.io.File;
+
 @Description(Name="匠人")
 @Action("PartArtistAction")
 @SuppressWarnings({"serial","rawtypes"})
@@ -46,6 +48,32 @@ public class PartArtistAction extends CRUDAction<PartArtist> {
 		DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
 		response(String.format("{\"success\":true,\"url\":\"https://gam.zallhy.com/%s\"}",putRet.key));
 	}
+
+	@Permission(action="ADDBATCH",desc="批量上传")
+	public void addBatch() throws Exception {
+//		Configuration cfg = new Configuration(Zone.zone0());
+//		UploadManager uploadManager = new UploadManager(cfg);
+//		String localFilePath = "/Users/hadoop/Desktop/img_07.png";
+		String upToken = auth.uploadToken(bucket);
+		String key = null;
+		String url1 = "";
+		String url2 = "";
+		int i = 0;
+		for(File file : uploads) {
+			Response response = uploadManager.put(file.getAbsolutePath(), key, upToken);
+			DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
+			if(i==0){
+				url1 = putRet.key;
+			}
+			else if(i==1){
+				url2 = putRet.key;
+			}
+			i++;
+		}
+
+		response("{\"success\":true,\"url\":[\"https://gam.zallhy.com/"+url1+"\",\"https://gam.zallhy.com/"+url2+"\"]}");
+	}
+
 	@Override
 	public void buildFilterString(Class<JSONBean> clazz, SQLBuilder builder) throws Exception {
 		String beanName = clazz.getSimpleName();

@@ -26,7 +26,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.ImageProductView',{
         var store = grid.getStore();
         store.loadData(data.prolist||[]);
     },
-    fetchData:function () {
+    fetchData:function (callBack) {
         var data = {};
         var grid = this.down('grid');
         var store = grid.getStore();
@@ -35,7 +35,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.ImageProductView',{
             prolist.push(model.getData());
         });
         data['prolist'] = prolist;
-        return data;
+        callBack(data);
     },
     items:{
         layout: 'column',

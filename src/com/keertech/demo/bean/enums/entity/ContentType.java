@@ -12,7 +12,9 @@ public enum ContentType implements IEnums{
     ImageProduct("ImageProduct","产品"),
     CImageText("CImageText","作品"),
     BigImage("BigImage", "图片"),
+    DoubleImage("DoubleImage","双图"),
     SingleImage("SingleImage", "单图");
+
     private final String value;
 
     private final String name;

@@ -10,8 +10,8 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.JustifyTextView',{
     loadData:function (data) {
         this.getForm().setValues(data);
     },
-    fetchData:function () {
-        return this.getForm().getValues();
+    fetchData:function (callBack) {
+        callBack(this.getForm().getValues());
     },
     items:{
         layout: 'column',
