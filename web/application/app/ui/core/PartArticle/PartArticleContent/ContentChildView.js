@@ -14,9 +14,9 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
     bodyBorder: false,
     defaults: {
         collapsible: false,
+        border: 0,
         split: true
     },
-    bodyPadding: 5,
     contentType:"",
     loadData: function (contentType, data) {
         //根据类型加载数据
@@ -67,6 +67,12 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
                 forceFit: true,
                 stripeRows: true//在表格中显示斑马线
             },
+            plugins: [{
+                ptype: 'rowexpander',
+                rowBodyTpl : [
+                    "<a href='javascript:void(0);'><img width='95%' height='100' src='{image}'/></a>"
+                ]
+            }],
             store: {
                 fields: [
                     {name: 'name', type: 'string'},
@@ -84,15 +90,8 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
             columns: [
                 {
                     text: '添加类型',
-                    dataIndex: 'image',
-                    width: '100%',
-                    renderer: function (value, metaData, record, rowIndex, colIndex, store, view) {
-                        if (value)
-                            return "<a href='javascript:void(0);' target='_blank' title='" + record.get('name') + "'><img width='100%' height='100' src='" + value + "'/></a>";
-                        else
-                            return value;
-                    }
-
+                    dataIndex: 'name',
+                    width: '100%'
                 }
             ]
         }, {
