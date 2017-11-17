@@ -2,8 +2,10 @@ package com.keertech.demo.action;
 import com.google.gson.Gson;
 import com.keer.core.annotation.Permission;
 import com.keer.core.dao.SQLBuilder;
+import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
 import com.qiniu.http.Response;
+import com.qiniu.storage.BucketManager;
 import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
@@ -47,6 +49,23 @@ public class PartArtistAction extends CRUDAction<PartArtist> {
 		Response response = uploadManager.put(upload.getAbsolutePath(), key, upToken);
 		DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
 		response(String.format("{\"success\":true,\"url\":\"https://gam.zallhy.com/%s\"}",putRet.key));
+	}
+
+	@Permission(action="CUT",desc="剪切图片")
+	public void cut() throws Exception {
+		Auth auth = Auth.create(accessKey, secretKey);
+		BucketManager bucketManager = new BucketManager(auth, cfg);
+		String key = "";
+		//抓取网络资源到空间
+		try {
+			DefaultPutRet fetchRet = bucketManager.fetch(request.getParameter("url"), bucket);
+			key= fetchRet.key;
+			System.out.println(fetchRet.hash);
+			System.out.println(fetchRet.key);
+		} catch (QiniuException ex) {
+			System.err.println(ex.response.toString());
+		}
+		response(String.format("{\"success\":true,\"url\":\"https://gam.zallhy.com/%s\"}",key));
 	}
 
 	@Permission(action="ADDBATCH",desc="批量上传")
