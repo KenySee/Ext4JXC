@@ -209,7 +209,7 @@ Ext.define('Keer.widget.mvc.Controller',{
   		
   		appConfig.initParam = appConfig.initParam || {};
   		Ext.apply(appConfig.initParam,{
-			actionUrl: this.getActionUrl(),
+			actionUrl: appConfig.actionUrl || this.getActionUrl(),
 			callController: this
 		});
   		Ext.apply(viewConfig,{appParams:appConfig});
@@ -338,7 +338,7 @@ Ext.define('Keer.widget.mvc.Controller',{
   				});
   				appConfig.initParam = appConfig.initParam || {};
   				Ext.apply(appConfig.initParam,{
-					actionUrl: this.getActionUrl(),
+					actionUrl: appConfig.actionUrl || this.getActionUrl(),
 					callController: this
 				});
   				Ext.apply(viewConfig,{

@@ -17,7 +17,7 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildContainer',{
 		addHeight: 0,
 		tabLayout: false,
 		autoLayout: true,
-		iconAlign: 'left',
+		iconAlign: 'top',
 		childAlign: 'right',
 		navWidth: 220,
 		navTitle: '匠人',
@@ -82,7 +82,7 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildContainer',{
 			tbar:{
 				xtype: 'toolbar',
 				itemId: 'cmdToolBar',
-				items: []//this.cmdToolbar
+				items: this.cmdToolbar
 			},
 			layout: 'fit',
 			itemId: 'mainPanel',

@@ -33,6 +33,7 @@ public class EditorObjectCombo extends EditorComponent {
 		}
 		config.accumulate("displayField", this.AsString(getDisplayField()));
 		config.accumulate("dataIndex", this.AsString(desc.getDataIndex()));
+		config.accumulate("triggerCtrl",true);
 		if (readOnly != null && readOnly == true){
 			config.accumulate("readOnly",readOnly);
 		}

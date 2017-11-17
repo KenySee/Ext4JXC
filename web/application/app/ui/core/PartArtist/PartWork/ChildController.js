@@ -2,7 +2,7 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildController',{
 	extend: 'Keer.widget.mvc.Controller',
 	//【加载依赖】
 	requires: [
-		'Keer.ui.core.PartArtist.PartWork.EditWindow'
+        'Keer.ui.core.PartWork.EditWindow'
 	],
 	//【混入功能】
 	mixins: {
@@ -27,9 +27,9 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildController',{
 				selectionchange: 'onGridItemSelection'
 			}
 		},
-		// toolbar_add: 	{	listeners: { click: 'doCreate'	} },
-		// toolbar_remove: {	listeners: { click: 'doRemove'	} },
-		// toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
+		toolbar_add: 	{	listeners: { click: 'doCreate'	} },
+		toolbar_remove: {	listeners: { click: 'doRemove'	} },
+		toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
 	},
 	//【监听Store事件】
 	observe: {
@@ -79,9 +79,9 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildController',{
   	onCreateRecord: function(component,record){
      	this.callParent(arguments);
      	var parent = this.get('parent');
-		if (parent){
-			record.set('parent',this.getJSONBean(parent,'workName'));
-		}
+        if (parent){
+            record.set('artist',this.getJSONBean(parent,'nickname'));
+        }
   	},
 	onViewBoxReady: function(){
 		var loadSync = this.get('loadSync');
@@ -97,7 +97,7 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildController',{
 		var store = this.getGridStore();
 		var model = this.getGridModel();
 		if (model){
-			this.doOpenEditWindow('ui-core-PartArtist-PartWork-editwindow',grid,store,model,false);
+			this.doOpenEditWindow('ui-core-PartWork-editwindow',grid,store,model,false);
 		}
 		else {
 			Ext.Msg.alert('提示','请选择记录');
@@ -110,7 +110,7 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildController',{
 	},
 	doAddRecord: function(store,model){
 		var grid = this.getGridView();
-		this.doOpenEditWindow('ui-core-PartArtist-PartWork-editwindow',grid,store,model,true);
+		this.doOpenEditWindow('ui-core-PartWork-editwindow',grid,store,model,true);
 	},
 	doRemove: function(){
 		var store = this.getGridStore();
@@ -168,8 +168,8 @@ Ext.define('Keer.ui.core.PartArtist.PartWork.ChildController',{
 		this.doResetToolBar(toolbar);	
 	},
 	onGridItemDbClick: function(grid, record, item, index){
-		// this.setGridModel(record);
-		// this.doEdit();
+		this.setGridModel(record);
+		this.doEdit();
 	},
 	onResetToolBar: function(toolbar){
 		var model = this.getGridModel();

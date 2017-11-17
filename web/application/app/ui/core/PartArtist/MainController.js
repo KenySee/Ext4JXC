@@ -8,7 +8,7 @@ Ext.define('Keer.ui.core.PartArtist.MainController',{
 	},
 	//【成员变量】
 	config: {
-		actionUrl: 'PartArtist',
+		actionUrl: null,
 		controllerType: 'main',
 		editing: null,
 		ready: null,

@@ -43,35 +43,52 @@ Ext.define('Keer.ui.core.PartWork.PartWorkContent.ChildContainer',{
 				items: [
 				]
 			},
-			cmdToolbar:[
-                {text:'新增',itemId:'toolbar_add',iconCls:'add',iconAlign: this.iconAlign,xtype:'splitbutton',
-                    menu: new Ext.menu.Menu({
-                        items:[
-                            {text: '段落大图',iconCls:'photo_add', handler:Ext.bind(controller.doOpenTemplate,controller,['BigImage'])},
-                            {text: '段落文本',iconCls:'text_allcaps',handler:Ext.bind(controller.doOpenTemplate,controller,['JustifyText'])},
-                            {text: '居中文本',iconCls:'text_double_underline',handler:Ext.bind(controller.doOpenTemplate,controller,['CenterText'])},
-                            {text: '作品预订',iconCls:'text_letter_omega',handler:Ext.bind(controller.doOpenTemplate,controller,['ImageProduct'])}
-                        ]}
-                    )
-                    , privilege: 'ADD',childReady:'ready'},
-				{text:'删除',itemId:'toolbar_remove',iconCls:'remove',iconAlign: this.iconAlign, disabled:true, privilege: 'DEL',childRemove:'canRemove'},
-				{text:'查看',itemId:'toolbar_edit',iconCls:'application_form_magnify',iconAlign: this.iconAlign, disabled:true, hidden:true, privilege: 'VIEW',childView:'canView'}
-			],
-            gridColumns:[
-                {text:'No.',xtype: 'rownumberer',width:32}
-                ,{text:'序号',dataIndex:'contentIndex',width:60}
-                ,{text:'类型',dataIndex:'contentType',width:120,renderer:function (v) {
-                    var data ={
-                        "BigImage":"段落大图",
-                        "JustifyText":"段落文本",
-                        "CenterText":"居中文本",
-                        "ImageProduct":"作品预订"
+            cmdToolbar: [
+                {
+                    text: '新增', itemId: 'toolbar_add', iconCls: 'add', iconAlign: this.iconAlign
+                    , handler: Ext.bind(controller.doOpenTemplate, controller,[])
+                    , privilege: 'ADD', childReady: 'ready'
+                },
+                {
+                    text: '删除',
+                    itemId: 'toolbar_remove',
+                    iconCls: 'remove',
+                    iconAlign: this.iconAlign,
+                    disabled: true,
+                    privilege: 'DEL',
+                    childRemove: 'canRemove'
+                },
+                {
+                    text: '查看',
+                    itemId: 'toolbar_edit',
+                    iconCls: 'application_form_magnify',
+                    iconAlign: this.iconAlign,
+                    disabled: true,
+                    hidden: true,
+                    privilege: 'VIEW',
+                    childView: 'canView'
+                }
+            ],
+            gridColumns: [
+                {text: 'No.', xtype: 'rownumberer', width: 32}
+                , {text: '序号', dataIndex: 'contentIndex', width: 60}
+                , {
+                    text: '类型', dataIndex: 'contentType', width: 120, renderer: function (v) {
+                        var data = {
+                            "BigImage": "段落大图",
+                            "JustifyText": "段落文本",
+                            "CenterText": "居中文本",
+                            "ImageProduct": "作品预订",
+                            "DoubleImage":"段落双图",
+                        }
+                        return data[v];
                     }
-                    return data[v];
-                }}
-                ,{text:'内容',dataIndex:'contentValue',flex:1,renderer:function (data) {
-                    return data && JSON.stringify(data)
-                }}
+                }
+                , {
+                    text: '内容', dataIndex: 'contentValue', flex: 1, renderer: function (data) {
+                        return data && JSON.stringify(data)
+                    }
+                }
             ],
 			pagingtoolbar : {
 				xtype: 'pagingtoolbar',

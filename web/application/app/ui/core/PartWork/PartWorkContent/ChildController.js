@@ -3,10 +3,7 @@ Ext.define('Keer.ui.core.PartWork.PartWorkContent.ChildController',{
 	//【加载依赖】
 	requires: [
         'Keer.ui.core.PartArticle.PartArticleContent.tpl.JustifyTextView',
-        'Keer.ui.core.PartArticle.PartArticleContent.tpl.BigImageView',
-        'Keer.ui.core.PartArticle.PartArticleContent.tpl.ImageProductView',
-        'Keer.ui.core.PartArticle.PartArticleContent.tpl.CenterTextView',
-		'Keer.ui.core.PartWork.PartWorkContent.EditWindow'
+        'Keer.ui.core.PartArticle.PartArticleContent.ContentChildView'
 	],
 	//【混入功能】
 	mixins: {
@@ -30,7 +27,7 @@ Ext.define('Keer.ui.core.PartWork.PartWorkContent.ChildController',{
 				selectionchange: 'onGridItemSelection'
 			}
 		},
-		toolbar_add: 	{	listeners: { click: 'doCreate'	} },
+		// toolbar_add: 	{	listeners: { click: 'doCreate'	} },
 		toolbar_remove: {	listeners: { click: 'doRemove'	} },
 		toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
 	},
@@ -43,50 +40,80 @@ Ext.define('Keer.ui.core.PartWork.PartWorkContent.ChildController',{
 			onLoadDataComplete: 'onLoadDataComplete'
 		}
 	},
-    doOpenTemplate:function (contentType,record) {
-        console.log(contentType)
+    doOpenTemplate: function (contentType, record) {
         var me = this;
         var win = Ext.create('Ext.window.Window', {
-            title:'添加图片',
+            title: '添加模板',
             height: 600,
-            width: 750,
-            layout:'fit',
-            items:{
-                xtype: 'ui-core-PartArticle-tpl-'+contentType+'View',
-                listeners:{
+            width: 900,
+            layout: 'fit',
+            items: {
+                xtype: 'ui-core-PartArticle-PartArticleContent-ContentChildView',
+                listeners: {
                     'boxready': function () {
-                        if(record){
-                            var data = record.get('contentValue');
-                            if(data){
-                                this.loadData(Ext.isObject(data) ? data : JSON.parse(data));
-                            }
+                        var data = {};
+                        if (record) {
+                            data = record.get('contentValue');
                         }
+                        this.loadData(contentType, data);
                     }
                 }
             },
-            buttons:[
-                {text: "保存",handler: function () {
-                    var form = this.up('window').down('form');
+            buttons: [
+                {
+                    text: "保存", handler: function () {
+                    var form = this.up('window').down('panel');
+                    function callBack(data){
+                        if (data) {
+                            if (record) {
+                                record.set('contentValue', JSON.stringify(data.data));
+                            }
+                            else {
+                                var grid = me.getGridView();
+                                var store = me.getGridStore();
+                                var model = store.createModel({
+                                    contentIndex: store.getCount() + 1,
+                                    contentType: data.contentType,
+                                    contentValue: data.data
+                                });
+                                me.doCreateRecord(grid, model);
+                                store.add(model);
+                            }
+                            win.close();
+                        }
+                    }
+                    form.fetchData(callBack);
+                }
+                },
+                {
+                    text: "保存并继续添加", handler: function () {
+                    var form = this.up('window').down('panel');
                     var data = form.fetchData();
-                    if(record){
-                        record.set('contentValue',JSON.stringify(data));
+                    if (data) {
+                        if (record) {
+                            record.set('contentValue', JSON.stringify(data.data));
+                        }
+                        else {
+                            var grid = me.getGridView();
+                            var store = me.getGridStore();
+                            var model = store.createModel({
+                                contentIndex: store.getCount() + 1,
+                                contentType: data.contentType,
+                                contentValue: JSON.stringify(data.data)
+                            });
+                            me.doCreateRecord(grid, model);
+                            store.add(model);
+                            Ext.Msg.alert('提示', '添加成功！');
+                            form.clearData();
+                        }
                     }
-                    else {
-                        var grid = me.getGridView();
-                        var store = me.getGridStore();
-                        var model = store.createModel({
-                            contentIndex: store.getCount() + 1,
-                            contentType: contentType,
-                            contentValue: JSON.stringify(data)
-                        });
-                        me.doCreateRecord(grid, model);
-                        store.add(model);
-                    }
+                }
+                },
+                {
+                    text: "取消", handler: function () {
                     win.close();
-                }},
-                {text: "取消",handler: function () {
-                    win.close();
-                }}
+                }
+                }
             ]
         });
         win.show();

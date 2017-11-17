@@ -2,7 +2,7 @@ Ext.define('Keer.ui.core.PartArtist.PartStory.ChildController',{
 	extend: 'Keer.widget.mvc.Controller',
 	//【加载依赖】
 	requires: [
-		'Keer.ui.core.PartArtist.PartStory.EditWindow'
+		'Keer.ui.core.PartStory.EditWindow'
 	],
 	//【混入功能】
 	mixins: {
@@ -27,9 +27,9 @@ Ext.define('Keer.ui.core.PartArtist.PartStory.ChildController',{
 				selectionchange: 'onGridItemSelection'
 			}
 		},
-		// toolbar_add: 	{	listeners: { click: 'doCreate'	} },
-		// toolbar_remove: {	listeners: { click: 'doRemove'	} },
-		// toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
+		toolbar_add: 	{	listeners: { click: 'doCreate'	} },
+		toolbar_remove: {	listeners: { click: 'doRemove'	} },
+		toolbar_edit: 	{	listeners: { click: 'doEdit'	} }
 	},
 	//【监听Store事件】
 	observe: {
@@ -97,7 +97,7 @@ Ext.define('Keer.ui.core.PartArtist.PartStory.ChildController',{
 		var store = this.getGridStore();
 		var model = this.getGridModel();
 		if (model){
-			this.doOpenEditWindow('ui-core-PartArtist-PartStory-editwindow',grid,store,model,false);
+			this.doOpenEditWindow('ui-core-PartStory-editwindow',grid,store,model,false);
 		}
 		else {
 			Ext.Msg.alert('提示','请选择记录');
@@ -110,7 +110,7 @@ Ext.define('Keer.ui.core.PartArtist.PartStory.ChildController',{
 	},
 	doAddRecord: function(store,model){
 		var grid = this.getGridView();
-		this.doOpenEditWindow('ui-core-PartArtist-PartStory-editwindow',grid,store,model,true);
+		this.doOpenEditWindow('ui-core-PartStory-editwindow',grid,store,model,true);
 	},
 	doRemove: function(){
 		var store = this.getGridStore();

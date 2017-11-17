@@ -79,11 +79,11 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ContentChildView', {
                     {name: 'image', type: 'string'}
                 ],
                 xtype: 'store.array',
-                data: [{name: '段落大图', type: 'BigImage', image: '/images/EFDFEEE9-6ABA-450E-A3DD-66492D648466.png'},
-                    {name: '段落文本', type: 'JustifyText', image: '/images/01511AA0-3AD4-455D-B7FF-22A2DAFDDF79.png'},
-                    {name: '居中文本', type: 'CenterText', image: '/images/291A9F24-87E5-45AD-B2DA-B3017F39F28F.png'},
-                    {name: '作品预订', type: 'ImageProduct', image: '/images/846642E5-BA36-42B0-BD4E-124F4DD43885.png'},
-                    {name: '段落双图', type: 'DoubleImage', image: '/images/IMG_2016.JPG'}
+                data: [{name: '段落大图', type: 'BigImage', image: './images/EFDFEEE9-6ABA-450E-A3DD-66492D648466.png'},
+                    {name: '段落文本', type: 'JustifyText', image: './images/01511AA0-3AD4-455D-B7FF-22A2DAFDDF79.png'},
+                    {name: '居中文本', type: 'CenterText', image: './images/291A9F24-87E5-45AD-B2DA-B3017F39F28F.png'},
+                    {name: '作品预订', type: 'ImageProduct', image: './images/846642E5-BA36-42B0-BD4E-124F4DD43885.png'},
+                    {name: '段落双图', type: 'DoubleImage', image: './images/IMG_2016.JPG'}
                 ],//读取内嵌数据
                 autoLoad: true//自动加载
             },
