@@ -8,10 +8,11 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.DoubleImageView', {
     border: 0,
     bodyPadding: 0,
     loadData: function (data) {
-        var imgurl = data.doubleImage;
-        if (imgurl && imgurl.length==2) {
-            Ext.getCmp('browseImage').getEl().dom.src = imgurl[0] + '?imageView/2/w/460';
-            Ext.getCmp('browseImage').getEl().dom.src = imgurl[1] + '?imageView/2/w/460';
+        var imgurl1 = data.doubleImage1;
+        var imgurl2 = data.doubleImage2;
+        if (imgurl1 && imgurl2) {
+            Ext.getCmp('browseImage').getEl().dom.src = imgurl1 + '?imageView/2/w/460';
+            Ext.getCmp('browseImage1').getEl().dom.src = imgurl2 + '?imageView/2/w/460';
         }
     },
     fetchData: function (callBack) {
@@ -26,7 +27,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.DoubleImageView', {
             },
             success: function (form, action) {
                 if (action.result.success === true) {
-                    callBack({doubleImage1: action.result.url[0],doubleImage1: action.result.url[1],});
+                    callBack({doubleImage1: action.result.url[0],doubleImage2: action.result.url[1]});
                 }
             },
             failure: function (form, action) {
