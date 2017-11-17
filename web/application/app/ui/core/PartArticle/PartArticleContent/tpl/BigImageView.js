@@ -18,6 +18,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.BigImageView',{
         var form = panel.getForm();
         var photoName = form.findField('upload').getValue();
         form.submit({
+            waitMsg: '正在上传...',
             url:'PartArtistAction!uploadArit.action',
             method: "POST",
             params:{

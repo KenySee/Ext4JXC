@@ -18,6 +18,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.tpl.DoubleImageView', {
         var panel = this.up('window').down('form');
         var form = panel.getForm()
         form.submit({
+            waitMsg: '正在上传...',
             url: 'PartArtistAction!addBatch.action',
             method: "POST",
             params: {
