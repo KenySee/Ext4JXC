@@ -37,6 +37,7 @@ Ext.define('Ext.ux.CropWindow', {
                 this.close();
                 Ext.Msg.alert('失败', '图片宽度不能超过1000');
             } else if (imgLoad.height > 800) {
+                this.close();
                 Ext.Msg.alert('失败', '图片高度不能超过800');
             } else {
                 this.setSize(imgLoad.width + 20, imgLoad.height + 70);
