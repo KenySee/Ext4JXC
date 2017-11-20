@@ -50,7 +50,7 @@ Ext.define('Keer.widget.view.GridView',{
 						var sortno = 1;
 						store.each(function(item) {
 							item.set('modifyFlag','EDIT');
-							item.set('sortno',Ext.String.leftPad(sortno, 5, '0'));
+							item.set(config.sortFiled||'sortno',Ext.String.leftPad(sortno, 5, '0'));
 							sortno += 1;
 						});
 					}

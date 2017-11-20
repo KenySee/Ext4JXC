@@ -5,7 +5,7 @@ Ext.define('Keer.widget.field.FileTrigger', {
         controller: null,
         outValue: null
     },
-    editable: false,
+    editable: true,
     urlIndex: 'urlPath',
     triggerCls: 'x-form-search-trigger',
     onTriggerClick: function() {
