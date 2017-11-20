@@ -5,6 +5,7 @@ Ext.define('Keer.ui.core.PartHomeSwiper.MainContainer',{
 	requires:[
 		'Keer.widget.field.EnumCombo',
 		'Keer.store.PartHomeSwiper.Store',
+        'Keer.widget.field.FileTrigger',
 		'Keer.ui.core.PartHomeSwiper.MainController'
 	],	
 	config:{
@@ -33,6 +34,7 @@ Ext.define('Keer.ui.core.PartHomeSwiper.MainContainer',{
 		this.callParent(arguments);
 	},
 	initComponent: function(){
+		var controller = this.getController();
 		Ext.apply(this,{
 			queryToolbar:{
 				xtype: 'querybar',
@@ -53,9 +55,15 @@ Ext.define('Keer.ui.core.PartHomeSwiper.MainContainer',{
 				{text:'No.',xtype: 'rownumberer',width:32}
 				,{text:'排序',dataIndex:'sortno',width:120,editor:{xtype:'textfield'}}
 				,{text:'轮播标题',dataIndex:'title',width:120,editor:{xtype:'textfield'}}
-				,{text:'图片地址',dataIndex:'coverImg',width:120,editor:{xtype:'textfield'}}
+				,{text:'图片地址',dataIndex:'coverImg',width:120,editor:{
+					listeners:{
+						'focus':function () {
+							this.record = controller.getGridModel();
+						}
+					},urlIndex:'coverImg',
+                xtype:'widget-field-filetrigger'} }
 				,{text:'链接地址',dataIndex:'pathUrl',width:120,editor:{xtype:'textfield'}}
-				,{text:'状态',dataIndex:'status',width:120,editor:{xtype:'widget-field-enumcombo',store:Keer.enumstore['status'],displayField:'name',dataIndex:'status',triggerCtrl:true},renderer:this.enumRender(status)}
+				,{text:'状态',dataIndex:'status',width:120,editor:{xtype:'widget-field-enumcombo',store:Keer.enumstore['status'],displayField:'name',dataIndex:'status',triggerCtrl:true}}
 			],
 			pagingtoolbar : {
 				xtype: 'pagingtoolbar',
