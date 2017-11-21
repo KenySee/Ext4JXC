@@ -8,6 +8,7 @@ Ext.define('Keer.ui.core.PartStory.EditWindow',{
 		'Keer.widget.field.CollectionHidden',
 		'Keer.ui.core.PartStory.PartStoryContent.ChildContainer',
 		'Keer.store.PartStoryContent.Store',
+        'Keer.widget.field.ImageCutTrigger',
 		'Keer.ui.core.PartStory.EditController'
 	],
 	//【混入功能】
@@ -46,7 +47,7 @@ Ext.define('Keer.ui.core.PartStory.EditWindow',{
 			],
 			formFields : [
                 {fieldLabel:'标题',name:'title',itemId:'title',dataIndex:'title',xtype:'textfield',addFocus:'adding'},
-                {fieldLabel:'主图',name:'coverImage',itemId:'coverImage',triggerCtrl:true,emptyText:'尺寸【750*500】',dataIndex:'coverImage',xtype:'widget-field-filetrigger'},
+                {fieldLabel:'主图',name:'coverImage',itemId:'coverImage',triggerCtrl:true,emptyText:'尺寸【750*500】',dataIndex:'coverImage',xtype:'widget-field-imagecuttrigger'},
                 {fieldLabel:'描述',name:'description',itemId:'description',dataIndex:'description',xtype:'textarea',fullLine:true,growMin:2},
 				{fieldLabel:'故事内容',name:'contents',itemId:'contents',dataIndex:'contents',loadSync:true,writeSync:true,store:this.contentsStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartStory-PartStoryContent-childcontainer'}
 			]
