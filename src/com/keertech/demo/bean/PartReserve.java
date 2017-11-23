@@ -4,6 +4,7 @@ import com.keer.core.annotation.Description;
 import com.keer.core.bean.base.BaseBean;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -19,6 +20,18 @@ public class PartReserve  extends BaseBean {
 
     @Description(Name="手机号码")
     private String userMobile;
+
+    @Description(Name="作品")
+    @ManyToOne
+    private PartWork work;
+
+    public PartWork getWork() {
+        return work;
+    }
+
+    public void setWork(PartWork work) {
+        this.work = work;
+    }
 
     public String getUserName() {
         return userName;

@@ -61,6 +61,7 @@ Ext.define('Keer.ui.core.PartReserve.MainContainer',{
 				,{text:'手机号码',dataIndex:'userMobile',width:120,editor:{xtype:'textfield'}}
 				,{text:'创建时间',dataIndex:'createdTime',width:120,editor:{xtype:'datefield',format:'Y-m-d H:i:s'},xtype:'datecolumn',format:'Y-m-d H:i:s'}
 				,{text:'状态',dataIndex:'status',width:120,editor:{xtype:'widget-field-enumcombo',store:Keer.enumstore['status'],displayField:'name',dataIndex:'status',triggerCtrl:true}}
+				,{text:'作品',dataIndex:'work',width:120,renderer:this.enumRender(null,'workName')}
 			],
 			pagingtoolbar : {
 				xtype: 'pagingtoolbar',
