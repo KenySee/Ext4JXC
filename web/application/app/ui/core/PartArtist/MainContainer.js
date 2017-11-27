@@ -74,6 +74,7 @@ Ext.define('Keer.ui.core.PartArtist.MainContainer',{
 				{fieldLabel:'个人图像',name:'headUrl',itemId:'headUrl',dataIndex:'headUrl',emptyText:'尺寸【85*85】',triggerCtrl:true,xtype:'widget-field-imagecuttrigger'},
                 {fieldLabel:'匠人类型',name:'artistType',itemId:'artistType',dataIndex:'artistType',triggerCtrl:true,xtype:'widget-field-enumcombo',store:Keer.enumstore['artistTypeEnum'],displayField:'name'},
 				{fieldLabel:'匠人头衔',name:'signature',itemId:'signature',dataIndex:'signature',xtype:'textfield'},
+            	{fieldLabel:'个人封面',name:'coverImage',itemId:'coverImage',dataIndex:'coverImage',emptyText:'',triggerCtrl:true,fullLine:true,xtype:'widget-field-imagecuttrigger'},
 				{fieldLabel:'匠人介绍',name:'description',itemId:'description',dataIndex:'description',xtype:'textarea',fullLine:true,rows:8},
 				{fieldLabel:'文章集',name:'articles',itemId:'articles',dataIndex:'articles',loadSync:true,writeSync:true,store:this.articlesStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartArticle-childcontainer'},
 				{fieldLabel:'作品集',name:'works',itemId:'works',dataIndex:'works',loadSync:true,writeSync:true,store:this.worksStore,xtype:'widget-field-collectionhidden',xcontainer:'ui-core-PartArtist-PartWork-childcontainer'},
