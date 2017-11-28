@@ -17,7 +17,7 @@ Ext.define('Keer.ui.core.PartArticle.EditWindow',{
 	config:{
 		column: 1,
 		addWidth: 400,
-		addHeight: 200,
+		addHeight: 50,
 		labelWidth: 60,
 		labelAlign: 'left',
 		autoLayout: true,
