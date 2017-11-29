@@ -3,6 +3,7 @@ package com.keertech.demo.bean;
 import com.keer.core.annotation.Description;
 import com.keer.core.bean.base.GenericBean;
 import com.keertech.demo.bean.enums.entity.ContentType;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
@@ -24,6 +25,9 @@ public class PartArticleContent extends GenericBean {
     private ContentType contentType;
 
     @Description(Name="类型值")
+    @Lob
+    @Column(length=50000)
+    @Type(type="org.springframework.orm.hibernate3.support.ClobStringType")
     private String contentValue;
 
     @Description(Name="内容序号")

@@ -10,7 +10,8 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer', {
     config: {
         canMulti: false,
         innerEdit: false,
-        dragDrop: false,
+        sortFiled: 'contentIndex',
+        dragDrop: true,
         mainWidth: 220,
         mainHeight: 320,
         mainTitle: null,
@@ -106,6 +107,7 @@ Ext.define('Keer.ui.core.PartArticle.PartArticleContent.ChildContainer', {
             region: 'center',
             innerEdit: this.innerEdit,
             dragDrop: this.dragDrop,
+            sortFiled: this.sortFiled,
             canMulti: this.canMulti,
             tbar: this.queryToolbar,
             store: this.gridStore,
