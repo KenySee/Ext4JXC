@@ -33,6 +33,7 @@ public class PartHomeSwiperAction extends CRUDAction<PartHomeSwiper> {
 				builder.AddFilterWhere("title like '%"+title+"%'");
 			}
 		}
+		System.out.println("PartHomeSwiper");
 	}
 	
 	public String getTitle() {
