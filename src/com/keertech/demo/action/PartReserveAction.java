@@ -48,6 +48,7 @@ public class PartReserveAction extends CRUDAction<PartReserve> {
 			if (StringUtils.isNotBlank(createdTime)) {
 				builder.AddFilterWhere(String.format("createdTime = '%s'", createdTime));
 			}
+			System.out.println("PartReserve");
 		}
 	}
 	
